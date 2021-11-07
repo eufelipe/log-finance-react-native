@@ -1,5 +1,10 @@
 {
-  "name": "LogFinance",
+  "name": "log-finance-react-native",
+  "author": {
+    "name": "Felipe Rosas",
+    "email": "contato@eufelipe.com",
+    "url": "http://eufelipe.com"
+  },
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,11 +12,18 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
+    "prettier:fix": "prettier --write",
+    "prettier:check": "prettier --check ."
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
     "react": "17.0.2",
-    "react-native": "0.66.2"
+    "react-native": "0.66.2",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.9.0",
+    "react-native-vector-icons": "^9.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -19,16 +31,31 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.65.0",
+    "@types/react-native-vector-icons": "^6.4.9",
     "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
     "babel-jest": "^26.6.3",
-    "eslint": "^7.14.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.4",
     "jest": "^26.6.3",
+    "lint-staged": "^11.2.6",
     "metro-react-native-babel-preset": "^0.66.2",
+    "prettier": "^2.4.1",
     "react-test-renderer": "17.0.2",
     "typescript": "^3.8.3"
   },
   "resolutions": {
     "@types/react": "^17"
+  },
+  "lint-staged": {
+    "src/*.{ts,tsx}": [
+      "yarn prettier:fix",
+      "yarn lint"
+    ]
   },
   "jest": {
     "preset": "react-native",
