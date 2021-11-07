@@ -32,6 +32,7 @@ module.exports = {
     'react/display-name': 'off',
     'react/prop-types': 'off',
     'prettier/prettier': 'error',
+    '@typescript-eslint/unbound-method': 'error',
   },
   overrides: [
     {
