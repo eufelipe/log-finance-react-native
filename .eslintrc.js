@@ -33,6 +33,14 @@ module.exports = {
     'react/prop-types': 'off',
     'prettier/prettier': 'error',
   },
+  overrides: [
+    {
+      files: ['*.jsx', '*.tsx'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': ['off'],
+      },
+    },
+  ],
   settings: {
     react: {
       version: 'detect',
