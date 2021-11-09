@@ -1,17 +1,18 @@
-import React, {Fragment, Suspense} from 'react';
+import React, {Suspense} from 'react';
 
 import Routes from 'routes';
+import Theme from 'styles/theme';
 
 import 'locales';
 import {ActivityIndicator} from 'react-native';
 
 const App = () => {
   return (
-    <Fragment>
+    <Theme>
       <Suspense fallback={<ActivityIndicator />}>
         <Routes />
       </Suspense>
-    </Fragment>
+    </Theme>
   );
 };
 
