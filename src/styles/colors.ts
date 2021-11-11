@@ -10,5 +10,6 @@ export default {
   success: '#50806A',
 
   gray: '#7C828E',
+  grayLight: '#EDEDED',
   paragraph: '#808080',
 };

@@ -1,11 +1,13 @@
 import {scaleSize} from './mixins';
 
-export const TALL = scaleSize(10);
-export const GREAT = scaleSize(20);
+export const SMALL = scaleSize(5);
+export const GREAT = scaleSize(10);
+export const TALL = scaleSize(20);
 export const VENTI = scaleSize(30);
 
 export default {
-  tall: TALL,
+  small: SMALL,
   great: GREAT,
+  tall: TALL,
   venti: VENTI,
 };

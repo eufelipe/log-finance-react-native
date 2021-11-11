@@ -11,6 +11,7 @@ declare module 'styled-components' {
       danger: string;
       success: string;
       gray: string;
+      grayLight: string;
       paragraph: string;
     };
 
@@ -43,6 +44,7 @@ declare module 'styled-components' {
     };
 
     spacing: {
+      small: number;
       great: number;
       tall: number;
       venti: number;
