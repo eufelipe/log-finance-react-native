@@ -2,12 +2,14 @@ import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {Button} from 'react-native';
 
-import {Container, Title} from './styles';
+import {Container, Content, Salutation} from './styles';
 import {HomeScreenNavigationProp} from './Types';
 import {useTranslation} from 'react-i18next';
 
 import {Header} from './components';
-import CategoryIcon from 'components/CategoryIcon';
+import {EntriesList} from 'components';
+
+import ENTRIES from '../../../__mocks__/entries.json';
 
 const HomeScreen = (): JSX.Element => {
   const navigation = useNavigation<HomeScreenNavigationProp>();
@@ -17,14 +19,17 @@ const HomeScreen = (): JSX.Element => {
   return (
     <Container>
       <Header />
-      <Title>{t('welcome')}</Title>
 
-      <CategoryIcon name="food" />
+      <Content>
+        <Salutation>{t('today')}</Salutation>
 
-      <Button
-        title="Abrir modal"
-        onPress={() => navigation.navigate('Details')}
-      />
+        <EntriesList entries={ENTRIES} />
+
+        <Button
+          title="Abrir modal"
+          onPress={() => navigation.navigate('Details')}
+        />
+      </Content>
     </Container>
   );
 };

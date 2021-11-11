@@ -1,5 +1,10 @@
 {
+    "entry": {
+        "accessibility-button": "Detalhes do lançamento",
+        "accessibility-button-hint": "Toque aqui para abrir detalhes do lançamento"
+    },
+
     "home": {
-        "welcome": "Bem-vindos!"
+        "today": "Hoje"
     }
 }

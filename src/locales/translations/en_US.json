@@ -1,5 +1,10 @@
 {
+    "entry": {
+        "accessibility-button": "Entry details",
+        "accessibility-button-hint": "Tap here to open entry details"
+    },
+
     "home": {
-        "welcome": "Welcome!"
+        "today": "Today"
     }
 }
