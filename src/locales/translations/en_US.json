@@ -1,4 +1,13 @@
 {
+    "tabs": {
+        "home-label": "Home",
+        "home-accessibility-label": "Menu Home Screen - Tap here go to app's first screen",
+        "add-label": "Add Entry",
+        "add-accessibility-label": "Menu Add Entry - Tap here to open the earn or expense registration screen",
+        "reports-label": "Reports",
+        "reports-accessibility-label": "Menu Reports - Tap here to open the financial report screen"
+    },
+
     "entry": {
         "accessibility-button": "Entry details",
         "accessibility-button-hint": "Tap here to open entry details"

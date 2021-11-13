@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/unbound-method */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 import {fireEvent} from '@testing-library/react-native';
 

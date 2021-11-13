@@ -1,4 +1,12 @@
 {
+    "tabs": {
+        "home-label": "Início",
+        "home-accessibility-label": "Toque aqui para ir para primeira tela do app",
+        "add-label": "Adicionar Novo",
+        "add-accessibility-label": "Toque aqui para ir abrir a tela de cadastro de ganho ou despesa",
+        "reports-label": "Relatórios",
+        "reports-accessibility-label": "Toque aqui para ir abrir a tela de relatorio financeiro"
+    },
     "entry": {
         "accessibility-button": "Detalhes do lançamento",
         "accessibility-button-hint": "Toque aqui para abrir detalhes do lançamento"

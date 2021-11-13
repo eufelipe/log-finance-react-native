@@ -29,7 +29,8 @@ const EntryItem = ({entry, onPressEntry}: Props): JSX.Element => {
       testID="entry-item-button"
       accessible={true}
       accessibilityLabel={t('accessibility-button')}
-      accessibilityHint={t('accessibility-button-hint')}>
+      accessibilityHint={t('accessibility-button-hint')}
+    >
       <Category>
         <CategoryIcon name={category.icon} />
       </Category>

@@ -4,15 +4,15 @@ import {Button} from 'react-native';
 
 import {Container, Title} from './styles';
 
-const DetailsScreen = (): JSX.Element => {
+const AddEntryScreen = (): JSX.Element => {
   const navigation = useNavigation();
 
   return (
     <Container>
-      <Title>Detalhes</Title>
+      <Title>AddEntry</Title>
       <Button title="Voltar" onPress={() => navigation.goBack()} />
     </Container>
   );
 };
 
-export default DetailsScreen;
+export default AddEntryScreen;

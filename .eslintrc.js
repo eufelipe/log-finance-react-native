@@ -25,13 +25,14 @@ module.exports = {
   rules: {
     indent: ['error', 2, {SwitchCase: 1}],
     quotes: ['error', 'single', {avoidEscape: true}],
-    semi: ['error', 'always'],
+    semi: 'off',
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     'react/display-name': 'off',
     'react/prop-types': 'off',
     'prettier/prettier': 'error',
     '@typescript-eslint/unbound-method': 'error',
+    '@typescript-eslint/semi': ['error'],
   },
   overrides: [
     {
