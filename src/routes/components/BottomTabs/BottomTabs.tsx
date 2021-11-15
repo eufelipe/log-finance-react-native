@@ -48,7 +48,7 @@ const BottomTabs = ({
         const onPress = () => {
           if (isMenuAddEntry) {
             navigation.navigate('AddEntryStack', {
-              screan: 'AddEntry',
+              screen: 'AddEntry',
             });
             return;
           }

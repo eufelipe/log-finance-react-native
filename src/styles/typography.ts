@@ -27,7 +27,7 @@ export const fontWeight = {
 };
 
 // FONT SIZE
-const FONT_SIZE_TINY = scaleFont(12);
+const FONT_SIZE_TINY = scaleFont(10);
 const FONT_SIZE_SMALL = scaleFont(14);
 const FONT_SIZE_MEDIUM = scaleFont(18);
 const FONT_SIZE_LARGE = scaleFont(22);

@@ -2,12 +2,13 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {EntryContext} from 'hooks';
-import {AddEntryStack, SettingsStack} from './StacksRoute';
+import {AddEntryStack, SettingsStack, CategoriesStack} from './StacksRoute';
 import TabsRoute from './TabsRoute';
 
 export type RootStackParamList = {
   Tabs: undefined;
   AddEntryStack: undefined;
+  CategoriesStack: undefined;
   SettingsStack: {screen: 'Settings'};
 };
 
@@ -35,6 +36,11 @@ const Routes = (): JSX.Element => {
             <RootStack.Screen
               name="SettingsStack"
               component={SettingsStack}
+              options={{headerShown: false}}
+            />
+            <RootStack.Screen
+              name="CategoriesStack"
+              component={CategoriesStack}
               options={{headerShown: false}}
             />
           </RootStack.Group>
