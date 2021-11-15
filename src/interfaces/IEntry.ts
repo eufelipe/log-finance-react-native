@@ -4,7 +4,7 @@ export type EntryType = 'expense' | 'earning';
 
 export default interface IEntry {
   id: number;
-  description: string;
+  description?: string;
   type: EntryType;
   value: number;
   date: Date;

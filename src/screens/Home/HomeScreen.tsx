@@ -6,9 +6,10 @@ import {useTranslation} from 'react-i18next';
 import {Header} from './components';
 import {EntriesList} from 'components';
 
-import ENTRIES from '../../../__mocks__/entries.json';
+import {useEntry} from 'hooks/useEntry';
 
 const HomeScreen = (): JSX.Element => {
+  const {entries = []} = useEntry();
   const {t} = useTranslation('home');
 
   return (
@@ -18,7 +19,7 @@ const HomeScreen = (): JSX.Element => {
       <Content>
         <Salutation>{t('today')}</Salutation>
 
-        <EntriesList entries={ENTRIES} />
+        <EntriesList entries={entries} />
       </Content>
     </Container>
   );

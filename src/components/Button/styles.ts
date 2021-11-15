@@ -1,8 +1,9 @@
 import styled from 'styled-components/native';
 import {Text, TouchableOpacity} from 'styles/layout';
 
-export const Container = styled(TouchableOpacity)`
-  background: ${({theme}) => theme.colors.seconday};
+export const Container = styled(TouchableOpacity)<{disabled?: boolean}>`
+  background: ${({theme, disabled}) =>
+    disabled ? theme.colors.seconday + '40' : theme.colors.seconday};
   margin: ${({theme}) => theme.spacing.small}px;
   padding: ${({theme}) => theme.spacing.great}px
     ${({theme}) => theme.spacing.tall}px;

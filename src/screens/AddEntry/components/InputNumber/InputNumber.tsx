@@ -1,8 +1,9 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState} from 'react';
 import {createNumberMask} from 'react-native-mask-input';
 
 import {useEntry} from 'hooks/useEntry';
 import {Container, Input, Touchable, BackspaceIcon} from './styles';
+import {sanitizeToFloat} from 'utils/number';
 
 const InputNumber = (): JSX.Element => {
   const {value = 0, setValue} = useEntry();
@@ -15,7 +16,6 @@ const InputNumber = (): JSX.Element => {
   };
 
   useEffect(() => {
-    console.log('looop');
     setShowBackSpace(value > 0);
   }, [value]);
 
@@ -29,8 +29,8 @@ const InputNumber = (): JSX.Element => {
           separator: ',',
           precision: 2,
         })}
-        onChangeText={(masked, unmasked) => {
-          const parseValue = parseFloat(unmasked);
+        onChangeText={masked => {
+          const parseValue = sanitizeToFloat(masked);
           setValue(parseValue);
         }}
       />

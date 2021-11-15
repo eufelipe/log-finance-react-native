@@ -10,8 +10,18 @@ import {
 } from './components';
 
 import {Container, SubmitContainer, AnchorDismiss, Content} from './styles';
+import {useEntry} from 'hooks/useEntry';
+import {useNavigation} from '@react-navigation/native';
 
 const AddEntryScreen = (): JSX.Element => {
+  const navigation = useNavigation();
+  const {value, saveEntry} = useEntry();
+
+  const onSubmit = () => {
+    saveEntry();
+    navigation.goBack();
+  };
+
   return (
     <Container>
       <AnchorDismiss />
@@ -25,7 +35,7 @@ const AddEntryScreen = (): JSX.Element => {
         <EntryDate />
 
         <SubmitContainer>
-          <Button title="Salvar" onPress={() => {}} />
+          <Button title="Salvar" onPress={onSubmit} disabled={!value} />
         </SubmitContainer>
       </Content>
     </Container>
