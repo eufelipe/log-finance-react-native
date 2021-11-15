@@ -2,7 +2,7 @@
 
 exports[`CategoryIcon Test match snapshot CategoryIcon 1`] = `
 <Icon
-  color="#7C828E"
+  color="#464E5F"
   name="settings"
   size={24}
   style={
@@ -15,7 +15,7 @@ exports[`CategoryIcon Test match snapshot CategoryIcon 1`] = `
 
 exports[`CategoryIcon Test match snapshot CategoryIcon default value 1`] = `
 <Icon
-  color="#7C828E"
+  color="#464E5F"
   name="list"
   size={24}
   style={

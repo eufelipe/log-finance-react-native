@@ -45,7 +45,7 @@ exports[`EntryItem Test match snapshot EntryItem 1`] = `
     }
   >
     <Icon
-      color="#7C828E"
+      color="#464E5F"
       name="list"
       size={24}
       style={

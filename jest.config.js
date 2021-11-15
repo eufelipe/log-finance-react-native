@@ -1,6 +1,9 @@
 module.exports = {
   preset: 'react-native',
   verbose: true,
+  setupFilesAfterEnv: [
+    '@testing-library/react-hooks/dont-cleanup-after-each.js',
+  ],
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   setupFiles: ['./node_modules/react-native-gesture-handler/jestSetup.js'],
   transformIgnorePatterns: [

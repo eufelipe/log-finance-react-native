@@ -13,6 +13,27 @@
         "accessibility-button-hint": "Tap here to open entry details"
     },
 
+    "add": {
+        "expense": "Expense",
+        "earning": "Earning",
+        "description": "Description",
+        "description-placeholder": "add a description",
+        "category": "Category",
+        "date": "Date",
+        "today": "Today",
+        "at": "at",
+        "day": "Day",
+        "of": "of",
+        "category-default": "Others",
+        "accessibility-button-type-hint": "Tap to change release type to",
+        "accessibility-button-backspace": "Backspace",
+        "accessibility-button-backspace-hint": "Tap to clear the entered value",
+        "accessibility-button-category": "add category",
+        "accessibility-button-category-hint": "Tap to add category",
+        "accessibility-button-submit": "Save",
+        "accessibility-button-submit-hint": "Tap to save data"
+    },
+
     "home": {
         "today": "Today"
     }

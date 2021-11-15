@@ -2,8 +2,30 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
-  justify-content: center;
   align-items: center;
+  background: ${({theme}) => theme.colors.accent};
 `;
 
-export const Title = styled.Text``;
+export const Content = styled.View`
+  flex: 1;
+  width: 100%;
+  margin-top: ${({theme}) => theme.spacing.great}px;
+  padding-top: ${({theme}) => theme.spacing.great}px;
+  background: ${({theme}) => theme.colors.gray};
+  border-top-right-radius: ${({theme}) => theme.spacing.great}px;
+  border-top-left-radius: ${({theme}) => theme.spacing.great}px;
+`;
+
+export const AnchorDismiss = styled.View`
+  height: 5px;
+  width: 100px;
+  border-radius: 2.5px;
+  margin: 10px 0px;
+  background: ${({theme}) => theme.colors.gray}10;
+`;
+
+export const SubmitContainer = styled.View`
+  width: 100%;
+  padding: ${({theme}) => theme.spacing.tall}px
+    ${({theme}) => theme.spacing.venti}px;
+`;

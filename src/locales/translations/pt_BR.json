@@ -12,6 +12,27 @@
         "accessibility-button-hint": "Toque aqui para abrir detalhes do lançamento"
     },
 
+    "add": {
+        "expense": "Despesa",
+        "earning": "Receita",
+        "description": "Descrição",
+        "description-placeholder": "Adicione uma descrição",
+        "category": "Categoria",
+        "date": "Data",
+        "today": "Hoje",
+        "at": "às",
+        "day": "Dia",
+        "of": "de",
+        "category-default": "Outros",
+        "accessibility-button-type-hint": "Toque para mudar o tipo de lançamento para",
+        "accessibility-button-backspace": "Apagar",
+        "accessibility-button-backspace-hint": "Toque para apagar o valor informado",
+        "accessibility-button-category": "Incluir categoria",
+        "accessibility-button-category-hint": "Toque para adicionar a categoria",
+        "accessibility-button-submit": "Salvar",
+        "accessibility-button-submit-hint": "Toque para Salvar os dados"
+    },
+
     "home": {
         "today": "Hoje"
     }

@@ -6,6 +6,7 @@ declare module 'styled-components' {
       primary: string;
       seconday: string;
       tertiary: string;
+      accent: string;
       black: string;
       white: string;
       danger: string;
@@ -41,6 +42,7 @@ declare module 'styled-components' {
       medium: string;
       large: string;
       big: string;
+      extraBig: string;
     };
 
     spacing: {

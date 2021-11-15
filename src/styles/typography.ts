@@ -32,6 +32,7 @@ const FONT_SIZE_SMALL = scaleFont(14);
 const FONT_SIZE_MEDIUM = scaleFont(18);
 const FONT_SIZE_LARGE = scaleFont(22);
 const FONT_SIZE_BIG = scaleFont(30);
+const FONT_SIZE_EXTRA_BIG = scaleFont(40);
 
 export const fontSizes = {
   tiny: `${FONT_SIZE_TINY}px`,
@@ -39,6 +40,7 @@ export const fontSizes = {
   medium: `${FONT_SIZE_MEDIUM}px`,
   large: `${FONT_SIZE_LARGE}px`,
   big: `${FONT_SIZE_BIG}px`,
+  extraBig: `${FONT_SIZE_EXTRA_BIG}px`,
 };
 
 // LINE HEIGHT
