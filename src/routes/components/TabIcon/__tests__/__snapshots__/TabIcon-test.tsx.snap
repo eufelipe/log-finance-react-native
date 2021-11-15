@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabIcon Test match snapshot TabIcon 1`] = `
+<Icon
+  color="#ffffff"
+  name="home"
+  size={32}
+  style={
+    Array [
+      Object {},
+    ]
+  }
+/>
+`;

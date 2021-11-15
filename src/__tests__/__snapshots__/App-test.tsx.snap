@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Test match snapshot App 1`] = `<ActivityIndicator />`;

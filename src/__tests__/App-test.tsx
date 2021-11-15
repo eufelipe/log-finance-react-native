@@ -1,14 +1,18 @@
-/**
- * @format
- */
-
-import 'react-native';
+/* eslint-disable @typescript-eslint/unbound-method */
 import React from 'react';
+import {render} from 'utils/test-utils';
+
 import App from '../App';
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+describe('App', () => {
+  it('Test match snapshot App', () => {
+    // given
+    const props = {};
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+    // when
+    const {toJSON} = render(<App {...props} />);
+
+    // then
+    expect(toJSON()).toMatchSnapshot();
+  });
 });

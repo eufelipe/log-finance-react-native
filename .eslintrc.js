@@ -10,7 +10,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -26,13 +25,23 @@ module.exports = {
   rules: {
     indent: ['error', 2, {SwitchCase: 1}],
     quotes: ['error', 'single', {avoidEscape: true}],
-    semi: ['error', 'always'],
+    semi: 'off',
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     'react/display-name': 'off',
     'react/prop-types': 'off',
     'prettier/prettier': 'error',
+    '@typescript-eslint/unbound-method': 'error',
+    '@typescript-eslint/semi': ['error'],
   },
+  overrides: [
+    {
+      files: ['*.jsx', '*.tsx'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': ['off'],
+      },
+    },
+  ],
   settings: {
     react: {
       version: 'detect',
