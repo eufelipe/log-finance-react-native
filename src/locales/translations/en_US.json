@@ -39,6 +39,7 @@
     },
 
     "categories": {
+        "searchbar-placeholder": "Search Category",
         "accessibility-button-label": "Category",
         "accessibility-button-hint": "Tap here to choose a category:",
 

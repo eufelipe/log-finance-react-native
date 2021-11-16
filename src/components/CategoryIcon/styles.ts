@@ -20,8 +20,8 @@ export const Contained = styled.View<{color?: string; large?: boolean}>`
 `;
 
 export const IconItem = styled(MaterialIcons).attrs(
-  ({large}: {large: boolean}) => ({
+  ({large, color}: {large: boolean; color: string}) => ({
     size: !large ? 24 : 32,
-    color: Colors.gray,
+    color: color ?? Colors.gray,
   }),
 )``;

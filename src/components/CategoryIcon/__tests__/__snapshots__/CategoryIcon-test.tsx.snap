@@ -3,7 +3,7 @@
 exports[`CategoryIcon Test match snapshot CategoryIcon 1`] = `
 <Icon
   color="#464E5F"
-  name="settings"
+  name="fastfood"
   size={24}
   style={
     Array [
