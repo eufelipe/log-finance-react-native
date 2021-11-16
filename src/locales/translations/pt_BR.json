@@ -35,5 +35,44 @@
 
     "home": {
         "today": "Hoje"
+    },
+
+    "categories": {
+        "searchbar-placeholder": "Procure uma categoria",
+        "accessibility-button-label": "Categoria",
+        "accessibility-button-hint": "Toque aqui para escolher uma categoria:",
+
+        "personal": "Pessoal",
+        "payments": "Pagamentos",
+        "car": "Carro",
+        "clothing": "Roupas",
+        "salary": "Salário",
+        "bonus": "Bônus",
+        "education": "Educação",
+        "electronics": "Eletrônicos",
+        "health": "Saúde",
+        "home": "Casa",
+        "leisure": "Lazer",
+        "others": "Outros",
+        "restaurant": "Restaurante",
+        "services": "Serviços",
+        "supermarket": "Mercado",
+        "transportation": "Transporte",
+        "debits": "Debits",
+        "loans": "Empréstimos",
+        "entertainment": "Entretenimento",
+        "hobbies": "Hobbies",
+        "food": "Alimentação",
+        "family": "Família",
+        "gift": "Presentes",
+        "donations": "Doações",
+        "investiments": "Investimentos",
+        "shopping": "Shopping",
+        "pets": "Pets",
+        "taxes": "Impostos e taxas",
+        "work": "Trabalho",
+        "kids": "Crianças",
+        "amusement": "Diversão",
+        "utilities": "Utilities"
     }
 }

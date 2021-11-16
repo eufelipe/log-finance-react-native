@@ -26,6 +26,7 @@ const MOCK_ENTRY: IEntry = {
   description: 'Salário',
   type: 'earning',
   value: 99.45,
+  date: new Date(),
   category: CATEGORY_MOCK,
 };
 

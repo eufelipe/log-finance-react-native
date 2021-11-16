@@ -16,8 +16,8 @@ const CategoryIcon = ({
 
   if (contained) {
     return (
-      <Contained color={iconOption.contained}>
-        <IconItem name={iconOption.name} />
+      <Contained color={iconOption.contained} large>
+        <IconItem name={iconOption.name} color={iconOption.color} />
       </Contained>
     );
   }

@@ -36,5 +36,44 @@
 
     "home": {
         "today": "Today"
+    },
+
+    "categories": {
+        "searchbar-placeholder": "Search Category",
+        "accessibility-button-label": "Category",
+        "accessibility-button-hint": "Tap here to choose a category:",
+
+        "personal": "Personal",
+        "payments": "Payments",
+        "car": "Car",
+        "clothing": "Clothing",
+        "salary": "Salary",
+        "bonus": "Bonus",
+        "education": "Education",
+        "electronics": "Electronics",
+        "health": "Health",
+        "home": "Home",
+        "leisure": "Leisure",
+        "others": "Others",
+        "restaurant": "Restaurant",
+        "services": "Services",
+        "supermarket": "Supermarket",
+        "transportation": "Transportation",
+        "debits": "Debts",
+        "loans": "Loans",
+        "entertainment": "Entertainment",
+        "hobbies": "Hobbies",
+        "food": "Food",
+        "family": "Family",
+        "gift": "Gifts",
+        "donations": "Donations",
+        "investiments": "Investiments",
+        "shopping": "Shopping",
+        "pets": "Pets",
+        "taxes": "Taxes",
+        "work": "Work",
+        "kids": "Kids",
+        "amusement": "Amusement",
+        "utilities": "Utilities"
     }
 }

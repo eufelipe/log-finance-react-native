@@ -4,10 +4,10 @@ import React, {
   useState,
   useMemo,
   useCallback,
-  useEffect,
 } from 'react';
 
 import IEntry, {EntryType} from 'interfaces/IEntry';
+import {ICategory} from 'interfaces';
 
 interface EntryProviderProps {
   children: React.ReactNode;
@@ -22,6 +22,9 @@ interface EntryContextData {
 
   description?: string;
   setDescription: (value: string) => void;
+
+  category?: ICategory;
+  setCategory: (value: ICategory) => void;
 
   date?: Date;
   setDate: (value: Date) => void;
@@ -40,6 +43,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
   const [value, setValue] = useState<number>(0);
   const [description, setDescription] = useState<string>();
   const [date, setDate] = useState<Date>();
+  const [category, setCategory] = useState<ICategory>();
   const [entryType, setEntryType] = useState<EntryType>('expense');
 
   const saveEntry = useCallback(() => {
@@ -64,10 +68,6 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
     setEntryType('expense');
   }, [entries, entryType, description, value]);
 
-  useEffect(() => {
-    console.log('entries', entries);
-  }, [entries]);
-
   const values = useMemo(
     () => ({
       entries,
@@ -75,13 +75,15 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       value,
       setValue,
       date,
+      category,
+      setCategory,
       setDate,
       description,
       setDescription,
       entryType,
       setEntryType,
     }),
-    [entries, value, description, date, entryType, saveEntry],
+    [entries, value, description, date, category, entryType, saveEntry],
   );
 
   return (

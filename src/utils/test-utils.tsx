@@ -5,12 +5,18 @@ import {render, RenderAPI, RenderOptions} from '@testing-library/react-native';
 import {theme} from 'styles/theme';
 import {ThemeProvider} from 'styled-components/native';
 
+import {NavigationContainer} from '@react-navigation/native';
+
 interface Props {
   children: JSX.Element;
 }
 
 const AllTheProviders = ({children}: Props) => {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider theme={theme}>
+      <NavigationContainer>{children}</NavigationContainer>
+    </ThemeProvider>
+  );
 };
 
 const customRender = (

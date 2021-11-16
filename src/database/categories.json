@@ -1,0 +1,158 @@
+[{
+        "id": 1,
+        "description": "Pessoal",
+        "icon": "personal"
+    },
+    {
+        "id": 2,
+        "description": "Pagamentos",
+        "icon": "payments"
+    },
+    {
+        "id": 3,
+        "description": "Carro",
+        "icon": "car"
+    },
+    {
+        "id": 4,
+        "description": "Roupas",
+        "icon": "clothing"
+    },
+
+    {
+        "id": 5,
+        "description": "Salário",
+        "icon": "salary"
+    },
+    {
+        "id": 6,
+        "description": "Bônus",
+        "icon": "bonus"
+    },
+
+    {
+        "id": 7,
+        "description": "Educação",
+        "icon": "education"
+    },
+    {
+        "id": 8,
+        "description": "Eletrônicos",
+        "icon": "electronics"
+    },
+
+    {
+        "id": 9,
+        "description": "Saúde",
+        "icon": "health"
+    },
+    {
+        "id": 10,
+        "description": "Casa",
+        "icon": "home"
+    },
+    {
+        "id": 11,
+        "description": "Lazer",
+        "icon": "leisure"
+    },
+    {
+        "id": 12,
+        "description": "Outros",
+        "icon": "others"
+    },
+    {
+        "id": 13,
+        "description": "Restaurante",
+        "icon": "restaurant"
+    },
+    {
+        "id": 14,
+        "description": "Serviços",
+        "icon": "services"
+    },
+    {
+        "id": 15,
+        "description": "Mercado",
+        "icon": "supermarket"
+    },
+    {
+        "id": 16,
+        "description": "Transporte",
+        "icon": "transportation"
+    },
+    {
+        "id": 18,
+        "description": "Empréstimos",
+        "icon": "loans"
+    },
+    {
+        "id": 19,
+        "description": "Entretenimento",
+        "icon": "entertainment"
+    },
+    {
+        "id": 20,
+        "description": "Hobbies",
+        "icon": "hobbies"
+    },
+    {
+        "id": 21,
+        "description": "Alimentação",
+        "icon": "food"
+    },
+    {
+        "id": 22,
+        "description": "Família",
+        "icon": "family"
+    },
+
+    {
+        "id": 23,
+        "description": "Presentes",
+        "icon": "gift"
+    },
+
+    {
+        "id": 24,
+        "description": "Doações",
+        "icon": "donations"
+    },
+
+    {
+        "id": 25,
+        "description": "Investimentos",
+        "icon": "investiments"
+    },
+    {
+        "id": 26,
+        "description": "Shopping",
+        "icon": "shopping"
+    },
+    {
+        "id": 27,
+        "description": "Pets",
+        "icon": "pets"
+    },
+
+    {
+        "id": 28,
+        "description": "Impostos e taxas",
+        "icon": "taxes"
+    },
+    {
+        "id": 29,
+        "description": "Trabalho",
+        "icon": "work"
+    },
+    {
+        "id": 30,
+        "description": "Crianças",
+        "icon": "kids"
+    },
+    {
+        "id": 32,
+        "description": "Utilities",
+        "icon": "utilities"
+    }
+]
