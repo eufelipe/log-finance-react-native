@@ -16,6 +16,7 @@ export const Content = styled.View`
 export const Salutation = styled(Text)`
   color: ${({theme}) => theme.colors.paragraph};
   font-size: ${({theme}) => theme.fontSizes.small};
+
   margin: ${({theme}) => theme.spacing.tall}px
     ${({theme}) => theme.spacing.tall}px ${({theme}) => theme.spacing.small}px;
 `;
