@@ -7,8 +7,6 @@ import {render} from 'utils/test-utils';
 import {ICategory} from 'interfaces';
 import CategoryItem from '../CategoryItem';
 
-jest.mock('react-native-vector-icons/MaterialIcons', () => 'Icon');
-
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({
     t: (key: any) => {

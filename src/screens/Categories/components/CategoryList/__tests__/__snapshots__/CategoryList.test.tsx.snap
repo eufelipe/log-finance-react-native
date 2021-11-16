@@ -335,16 +335,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="account-box"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -406,16 +418,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="account-balance-wallet"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -477,16 +501,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="directions-car"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -567,16 +603,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="dry-cleaning"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -638,16 +686,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="attach-money"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -709,16 +769,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="exposure-plus-1"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -799,16 +871,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="menu-book"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -870,16 +954,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="radio"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -941,16 +1037,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="local-hospital"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1031,16 +1139,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="home"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1102,16 +1222,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="sports-handball"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1173,16 +1305,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="list"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1263,16 +1407,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="restaurant"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1334,16 +1490,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="home-repair-service"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1405,16 +1573,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="shopping-cart"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1495,16 +1675,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="directions-subway"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1566,16 +1758,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="monetization-on"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1637,16 +1841,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="assistant"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1727,16 +1943,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="sports-tennis"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1798,16 +2026,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="fastfood"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1869,16 +2109,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="family-restroom"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -1959,16 +2211,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="card-giftcard"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -2030,16 +2294,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="attach-money"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -2101,16 +2377,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="insights"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -2191,16 +2479,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="shopping-bag"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -2262,16 +2562,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="pets"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -2333,16 +2645,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="local-atm"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -2423,16 +2747,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="home-repair-service"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -2494,16 +2830,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="child-care"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={
@@ -2565,16 +2913,28 @@ exports[`CategoryList Test match snapshot CategoryList 1`] = `
               ]
             }
           >
-            <Icon
-              color="#ffffff"
-              name="all-inbox"
-              size={24}
+            <Text
+              allowFontScaling={false}
               style={
                 Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
                   Object {},
                 ]
               }
-            />
+            >
+              
+            </Text>
           </View>
           <Text
             style={

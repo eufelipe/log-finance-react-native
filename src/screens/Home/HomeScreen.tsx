@@ -3,7 +3,7 @@ import React from 'react';
 import {Container, Content, Salutation} from './styles';
 import {useTranslation} from 'react-i18next';
 
-import {Header} from './components';
+import {Header, ListEmpty} from './components';
 import {EntriesList} from 'components';
 
 import {useEntry} from 'hooks/useEntry';
@@ -18,8 +18,9 @@ const HomeScreen = (): JSX.Element => {
 
       <Content>
         <Salutation>{t('today')}</Salutation>
+        {!!entries.length && <EntriesList entries={entries} />}
 
-        <EntriesList entries={entries} />
+        {!entries.length && <ListEmpty />}
       </Content>
     </Container>
   );

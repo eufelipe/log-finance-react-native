@@ -1,5 +1,7 @@
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
+import {SettingsNavigationProp} from 'routes/StacksRoute';
+import {useTranslation} from 'react-i18next';
 
 import {
   Container,
@@ -10,18 +12,9 @@ import {
   SettingIcon,
 } from './styles';
 
-import {StackNavigationProp} from '@react-navigation/stack';
-import {CompositeNavigationProp} from '@react-navigation/core';
-
-import {RootStackParamList} from 'routes';
-
-export type HeaderNavigationProp = CompositeNavigationProp<
-  StackNavigationProp<RootStackParamList, 'SettingsStack'>,
-  StackNavigationProp<RootStackParamList>
->;
-
 const Header = (): JSX.Element => {
-  const navigation = useNavigation<HeaderNavigationProp>();
+  const navigation = useNavigation<SettingsNavigationProp>();
+  const {t} = useTranslation('home');
 
   const handleSettings = () =>
     navigation.navigate('SettingsStack', {screen: 'Settings'});
@@ -29,7 +22,7 @@ const Header = (): JSX.Element => {
   return (
     <Container>
       <Content>
-        <Description>Balanço</Description>
+        <Description>{t('balance')}</Description>
         <Title>R$ -109,90</Title>
       </Content>
       <SettingTouchable onPress={handleSettings}>

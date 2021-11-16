@@ -16,6 +16,7 @@ interface EntryProviderProps {
 interface EntryContextData {
   entries?: IEntry[];
   saveEntry: () => void;
+  removeEntry: (entry: IEntry) => void;
 
   value?: number;
   setValue: (value: number) => void;
@@ -38,13 +39,20 @@ export const EntryContext = createContext<EntryContextData>(
 );
 
 export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
-  const [entries, setEntry] = useState<IEntry[]>([]);
+  const [entries, setEntries] = useState<IEntry[]>([]);
 
   const [value, setValue] = useState<number>(0);
   const [description, setDescription] = useState<string>();
   const [date, setDate] = useState<Date>();
   const [category, setCategory] = useState<ICategory>();
   const [entryType, setEntryType] = useState<EntryType>('expense');
+
+  const cleanEntry = useCallback(() => {
+    setValue(0);
+    setDescription(undefined);
+    setDate(undefined);
+    setEntryType('expense');
+  }, []);
 
   const saveEntry = useCallback(() => {
     const entry: IEntry = {
@@ -60,18 +68,23 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       },
     };
 
-    setEntry([...entries, entry]);
+    setEntries([...entries, entry]);
 
-    setValue(0);
-    setDescription(undefined);
-    setDate(undefined);
-    setEntryType('expense');
-  }, [entries, entryType, description, value]);
+    cleanEntry();
+  }, [entries, entryType, description, value, cleanEntry]);
+
+  const removeEntry = useCallback(
+    (entry: IEntry) => {
+      setEntries(entries.filter(item => item.id !== entry.id));
+    },
+    [entries],
+  );
 
   const values = useMemo(
     () => ({
       entries,
       saveEntry,
+      removeEntry,
       value,
       setValue,
       date,
@@ -83,7 +96,16 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       entryType,
       setEntryType,
     }),
-    [entries, value, description, date, category, entryType, saveEntry],
+    [
+      entries,
+      value,
+      description,
+      date,
+      category,
+      entryType,
+      saveEntry,
+      removeEntry,
+    ],
   );
 
   return (

@@ -3,8 +3,6 @@ import React from 'react';
 import {render} from 'utils/test-utils';
 import CategoryIcon from '../CategoryIcon';
 
-jest.mock('react-native-vector-icons/MaterialIcons', () => 'Icon');
-
 describe('CategoryIcon', () => {
   it('Test match snapshot CategoryIcon', () => {
     // given

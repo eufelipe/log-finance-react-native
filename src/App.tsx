@@ -3,8 +3,8 @@ import React, {Suspense} from 'react';
 import Routes from 'routes';
 import Theme from 'styles/theme';
 
-import 'locales';
 import {ActivityIndicator} from 'react-native';
+import 'locales';
 
 const App = () => {
   return (

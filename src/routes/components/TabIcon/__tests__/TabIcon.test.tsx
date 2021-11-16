@@ -5,8 +5,6 @@ import {render} from 'utils/test-utils';
 
 import TabIcon from '../TabIcon';
 
-jest.mock('react-native-vector-icons/MaterialIcons', () => 'Icon');
-
 describe('TabIcon', () => {
   it('Test match snapshot TabIcon', () => {
     // given

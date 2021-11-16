@@ -20,6 +20,16 @@ export type CategoriesNavigationProp = CompositeNavigationProp<
   StackNavigationProp<RootStackParamList>
 >;
 
+export type AddEntryNavigationProp = CompositeNavigationProp<
+  StackNavigationProp<RootStackParamList, 'AddEntryStack'>,
+  StackNavigationProp<RootStackParamList>
+>;
+
+export type SettingsNavigationProp = CompositeNavigationProp<
+  StackNavigationProp<RootStackParamList, 'SettingsStack'>,
+  StackNavigationProp<RootStackParamList>
+>;
+
 const RootStack = createNativeStackNavigator<StackParamList>();
 
 export const AddEntryStack = () => {
