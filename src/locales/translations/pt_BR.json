@@ -39,6 +39,7 @@
     },
 
     "home": {
+        "balance": "Balanço",
         "today": "Hoje",
         "no-entries": "Nenhum lançamento registrado ainda",
         "message-add-new": "Toque em (+) para adicionar um lançamento"

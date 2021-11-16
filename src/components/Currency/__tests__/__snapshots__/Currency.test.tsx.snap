@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currency Test match snapshot Currency 1`] = `
+<Text>
+  R$ 100,28
+</Text>
+`;

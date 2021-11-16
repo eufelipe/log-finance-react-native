@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Test match snapshot Header 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2B303A",
+        "flexDirection": "row",
+        "height": 150,
+        "justifyContent": "space-between",
+        "paddingBottom": 0,
+        "paddingLeft": 21.428571428571427,
+        "paddingRight": 21.428571428571427,
+        "paddingTop": 62.857142857142854,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 28,
+            "fontWeight": "400",
+          },
+        ]
+      }
+    >
+      balance
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontFamily": "Poppins-SemiBold",
+            "fontSize": 60,
+            "fontWeight": "700",
+          },
+        ]
+      }
+    >
+      R$ -109,90
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      backgroundColor="transparent"
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 28,
+          },
+          Array [
+            Object {
+              "paddingRight": 0,
+            },
+          ],
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;

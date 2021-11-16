@@ -41,6 +41,7 @@
     },
 
     "home": {
+        "balance": "Balance",
         "today": "Today",
         "no-entries": "You have no transaction registered",
         "message-add-new": "Tap (+) to add a new transaction"
