@@ -1,16 +1,17 @@
 import React, {useCallback, useEffect, useState} from 'react';
+import {useNavigation} from '@react-navigation/native';
 
 import {filter} from 'lodash';
 import {ICategory} from 'interfaces';
+import {useEntry} from 'hooks/useEntry';
 
+import HeaderCategories from '../HeaderCategories';
 import CategoryItem from '../CategoryItem';
+
+import {sanitizeString} from 'utils/strings';
 import {FlatList} from './styles';
 
 import CATEGORIES from 'database/categories.json';
-import HeaderCategories from '../HeaderCategories/HeaderCategories';
-import {sanitizeString} from 'utils/strings';
-import {useEntry} from 'hooks/useEntry';
-import {useNavigation} from '@react-navigation/native';
 
 const CategoryList = (): JSX.Element => {
   const navigation = useNavigation();

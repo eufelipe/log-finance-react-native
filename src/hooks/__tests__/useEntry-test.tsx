@@ -10,10 +10,14 @@ import {EntryProvider, EntryContext} from '../useEntry';
 const entryType: EntryType = 'expense';
 
 const MOCK = {
+  entries: [],
+  saveEntry: jest.fn(),
   value: 0,
   setValue: jest.fn(),
   description: undefined,
   setDescription: jest.fn(),
+  category: undefined,
+  setCategory: jest.fn(),
   date: new Date(),
   setDate: jest.fn(),
   entryType,

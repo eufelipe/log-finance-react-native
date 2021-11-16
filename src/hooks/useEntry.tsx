@@ -4,7 +4,6 @@ import React, {
   useState,
   useMemo,
   useCallback,
-  useEffect,
 } from 'react';
 
 import IEntry, {EntryType} from 'interfaces/IEntry';
@@ -68,10 +67,6 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
     setDate(undefined);
     setEntryType('expense');
   }, [entries, entryType, description, value]);
-
-  useEffect(() => {
-    console.log('entries', entries);
-  }, [entries]);
 
   const values = useMemo(
     () => ({

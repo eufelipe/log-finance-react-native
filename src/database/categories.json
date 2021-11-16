@@ -82,11 +82,6 @@
         "icon": "transportation"
     },
     {
-        "id": 17,
-        "description": "Débitos",
-        "icon": "debits"
-    },
-    {
         "id": 18,
         "description": "Empréstimos",
         "icon": "loans"
@@ -154,11 +149,6 @@
         "id": 30,
         "description": "Crianças",
         "icon": "kids"
-    },
-    {
-        "id": 31,
-        "description": "Diversão",
-        "icon": "amusement"
     },
     {
         "id": 32,
