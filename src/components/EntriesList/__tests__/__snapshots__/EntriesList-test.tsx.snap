@@ -10,7 +10,7 @@ exports[`EntriesList Test match snapshot EntriesList 1`] = `
           "icon": "money",
           "id": 1,
         },
-        "date": 2021-11-16T15:18:52.308Z,
+        "date": 2021-11-16T17:20:35.654Z,
         "description": "Salário",
         "id": 1,
         "type": "earning",
@@ -22,7 +22,7 @@ exports[`EntriesList Test match snapshot EntriesList 1`] = `
           "icon": "money",
           "id": 1,
         },
-        "date": 2021-11-16T15:18:52.308Z,
+        "date": 2021-11-16T17:20:35.654Z,
         "description": "Pizza",
         "id": 2,
         "type": "earning",
@@ -34,7 +34,7 @@ exports[`EntriesList Test match snapshot EntriesList 1`] = `
           "icon": "money",
           "id": 1,
         },
-        "date": 2021-11-16T15:18:52.308Z,
+        "date": 2021-11-16T17:20:35.654Z,
         "description": "Hamburguer",
         "id": 3,
         "type": "earning",
@@ -130,6 +130,7 @@ exports[`EntriesList Test match snapshot EntriesList 1`] = `
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+                "justifyContent": "center",
               },
             ]
           }
@@ -245,6 +246,7 @@ exports[`EntriesList Test match snapshot EntriesList 1`] = `
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+                "justifyContent": "center",
               },
             ]
           }
@@ -360,6 +362,7 @@ exports[`EntriesList Test match snapshot EntriesList 1`] = `
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
+                "justifyContent": "center",
               },
             ]
           }

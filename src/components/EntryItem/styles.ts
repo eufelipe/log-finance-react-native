@@ -18,6 +18,7 @@ export const Category = styled.View`
 `;
 export const Description = styled.View`
   flex: 1;
+  justify-content: center;
 `;
 
 export const BaseText = styled(Text)`

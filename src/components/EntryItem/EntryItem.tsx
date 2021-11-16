@@ -36,7 +36,7 @@ const EntryItem = ({entry, onPressEntry}: Props): JSX.Element => {
       </Category>
 
       <Description>
-        <Title>{description}</Title>
+        {description && <Title>{description}</Title>}
         <SubTitle>{category.description}</SubTitle>
       </Description>
 
