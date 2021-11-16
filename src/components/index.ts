@@ -3,3 +3,4 @@ export {default as EntriesList} from './EntriesList';
 export {default as Currency} from './Currency';
 export {default as Button} from './Button';
 export {default as Dismiss} from './Dismiss';
+export {default as SwipeRemoveButton} from './SwipeRemoveButton';

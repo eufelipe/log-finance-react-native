@@ -1,4 +1,9 @@
 {
+    "global": {
+        "remove-label": "Remover",
+        "accessibility-remove-label": "Remover lançamento",
+        "accessibility-remove-hint": "Toque aqui excluir esse lançamento"
+    },
     "tabs": {
         "home-label": "Início",
         "home-accessibility-label": "Toque aqui para ir para primeira tela do app",
@@ -36,7 +41,7 @@
     "home": {
         "today": "Hoje",
         "no-entries": "Nenhum lançamento registrado ainda",
-        "message-add-new": "Toque em (+) para adicionar um lançamento "
+        "message-add-new": "Toque em (+) para adicionar um lançamento"
     },
 
     "categories": {

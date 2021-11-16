@@ -9,8 +9,6 @@ import EntriesList from '../EntriesList';
 import {FlatList} from 'react-native';
 import EntryItem from 'components/EntryItem';
 
-jest.mock('react-native-vector-icons/MaterialIcons', () => 'Icon');
-
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({t: (key: any) => key}),
 }));

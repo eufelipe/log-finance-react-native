@@ -1,14 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TabIcon Test match snapshot TabIcon 1`] = `
-<Icon
-  color="#ffffff"
-  name="home"
-  size={32}
+<Text
+  allowFontScaling={false}
   style={
     Array [
+      Object {
+        "color": "#ffffff",
+        "fontSize": 32,
+      },
+      Array [
+        Object {},
+      ],
+      Object {
+        "fontFamily": "Material Icons",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
       Object {},
     ]
   }
-/>
+>
+  
+</Text>
 `;

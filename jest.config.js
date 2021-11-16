@@ -1,6 +1,7 @@
 module.exports = {
   preset: 'react-native',
   verbose: true,
+  setupFiles: ['<rootDir>/jest-setup.js'],
   setupFilesAfterEnv: [
     '@testing-library/react-hooks/dont-cleanup-after-each.js',
   ],

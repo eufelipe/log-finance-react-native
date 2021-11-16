@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+
 import {Text, TouchableOpacity} from 'styles/layout';
 
 export const Container = styled(TouchableOpacity)`

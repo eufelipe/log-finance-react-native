@@ -11,8 +11,6 @@ import {FlatList} from '../styles';
 
 import CATEGORIES from 'database/categories.json';
 
-jest.mock('react-native-vector-icons/MaterialIcons', () => 'Icon');
-
 jest.mock('react-i18next', () => ({
   useTranslation: () => ({
     t: (key: any) => {

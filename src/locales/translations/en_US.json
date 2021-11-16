@@ -1,4 +1,10 @@
 {
+    "global": {
+        "remove-label": "Remove",
+        "accessibility-remove-label": "Remove entry",
+        "accessibility-remove-hint": "Tap here to delete this transaction"
+    },
+
     "tabs": {
         "home-label": "Home",
         "home-accessibility-label": "Menu Home Screen - Tap here go to app's first screen",
@@ -38,7 +44,6 @@
         "today": "Today",
         "no-entries": "You have no transaction registered",
         "message-add-new": "Tap (+) to add a new transaction"
-
     },
 
     "categories": {

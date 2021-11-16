@@ -7,6 +7,7 @@ import {render} from 'utils/test-utils';
 import {IEntry} from 'interfaces';
 import EntryItem from '../EntryItem';
 
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 jest.mock('react-native-vector-icons/MaterialIcons', () => 'Icon');
 
 jest.mock('react-i18next', () => ({
@@ -18,6 +19,7 @@ const MOCK: IEntry = {
   description: 'Salário',
   type: 'earning',
   value: 99.45,
+  date: new Date(),
   category: {
     id: 1,
     description: 'Restaurante',

@@ -45,16 +45,28 @@ exports[`CategoryItem Test match snapshot CategoryItem 1`] = `
       ]
     }
   >
-    <Icon
-      color="#ffffff"
-      name="list"
-      size={24}
+    <Text
+      allowFontScaling={false}
       style={
         Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 24,
+          },
+          Array [
+            Object {},
+          ],
+          Object {
+            "fontFamily": "Material Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
           Object {},
         ]
       }
-    />
+    >
+      
+    </Text>
   </View>
   <Text
     style={
