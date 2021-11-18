@@ -2,7 +2,10 @@
     "global": {
         "remove-label": "Remove",
         "accessibility-remove-label": "Remove entry",
-        "accessibility-remove-hint": "Tap here to delete this transaction"
+        "accessibility-remove-hint": "Tap here to delete this transaction",
+        "done": "Done",
+        "cancel": "Cancel",
+        "clear": "Clear"
     },
 
     "tabs": {
@@ -26,6 +29,7 @@
         "description-placeholder": "add a description",
         "category": "Category",
         "date": "Date",
+        "save": "Save",
         "today": "Today",
         "at": "at",
         "day": "Day",

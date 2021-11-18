@@ -19,19 +19,19 @@ interface EntryContextData {
   removeEntry: (entry: IEntry) => void;
 
   value?: number;
-  setValue: (value: number) => void;
+  setValue: (value: number) => number;
 
   description?: string;
-  setDescription: (value: string) => void;
+  setDescription: (value: string) => string;
 
   category?: ICategory;
-  setCategory: (value: ICategory) => void;
+  setCategory: (value: ICategory) => ICategory;
 
   date?: Date;
-  setDate: (value: Date) => void;
+  setDate: (value: Date) => Date;
 
   entryType?: EntryType;
-  setEntryType: (value: EntryType) => void;
+  setEntryType: (value: EntryType) => EntryType;
 }
 
 export const EntryContext = createContext<EntryContextData>(

@@ -2,7 +2,10 @@
     "global": {
         "remove-label": "Remover",
         "accessibility-remove-label": "Remover lançamento",
-        "accessibility-remove-hint": "Toque aqui excluir esse lançamento"
+        "accessibility-remove-hint": "Toque aqui excluir esse lançamento",
+        "done": "Pronto",
+        "cancel": "Cancelar",
+        "clear": "Limpar"
     },
     "tabs": {
         "home-label": "Início",
@@ -24,6 +27,7 @@
         "description-placeholder": "Adicione uma descrição",
         "category": "Categoria",
         "date": "Data",
+        "save": "Salvar",
         "today": "Hoje",
         "at": "às",
         "day": "Dia",

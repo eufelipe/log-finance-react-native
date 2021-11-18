@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
+import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import {useTranslation} from 'react-i18next';
 import {isToday, format} from 'date-fns';
-import DateTimePickerModal from 'react-native-modal-datetime-picker';
 
+import {useEntry} from 'hooks/useEntry';
 import Row from '../Row';
 
 import {Label, Title, Touchable} from './styles';
-import {useEntry} from 'hooks/useEntry';
 
 const EntryDate = (): JSX.Element => {
   const {t} = useTranslation('add');
@@ -26,13 +26,10 @@ const EntryDate = (): JSX.Element => {
     hideDatePicker();
   };
 
-  const today = isToday(date);
-
+  const prefix = `${isToday(date) ? t('today') + ', ' : t('day')}`;
   const formattedDate = format(
     date,
-    `'${today ? t('today') + ', ' : t('day')}' dd '${t('of')}' MMMM', ${t(
-      'at',
-    )} ' HH:mm'h'`,
+    `'${prefix}' dd '${t('of')}' MMMM', ${t('at')} ' HH:mm'h'`,
   );
 
   return (
