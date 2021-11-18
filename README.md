@@ -6,6 +6,10 @@
 
 A ideia é construir um app simples para gerenciamento de gastos para dar mais controle na vida financeira do usuário.
 
+<p align="center">
+  <img alt="Demo on Log Finance" src="https://res.cloudinary.com/eufelipe/image/upload/v1637242265/out_lpegzv.gif">
+</p>
+
 ## 😄 Esse app é para mim?
 
 O **Log Finance** é um gerenciador financeiro pessoal que busca como objetivo ajudar seus usuários a administrarem seus ganhos e gastos.

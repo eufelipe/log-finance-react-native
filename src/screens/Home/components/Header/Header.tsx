@@ -11,10 +11,13 @@ import {
   SettingTouchable,
   SettingIcon,
 } from './styles';
+import {useEntry} from 'hooks/useEntry';
+import {Currency} from 'components';
 
 const Header = (): JSX.Element => {
   const navigation = useNavigation<SettingsNavigationProp>();
   const {t} = useTranslation('home');
+  const {balance = 0} = useEntry();
 
   const handleSettings = () =>
     navigation.navigate('SettingsStack', {screen: 'Settings'});
@@ -23,7 +26,8 @@ const Header = (): JSX.Element => {
     <Container>
       <Content>
         <Description>{t('balance')}</Description>
-        <Title>R$ -109,90</Title>
+
+        <Currency value={balance} render={value => <Title>{value}</Title>} />
       </Content>
       <SettingTouchable onPress={handleSettings}>
         <SettingIcon />

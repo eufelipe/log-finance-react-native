@@ -55,6 +55,10 @@
     },
 
     "categories": {
+
+        "category": "Categoria",
+        "category-default": "Outros",
+
         "searchbar-placeholder": "Procure uma categoria",
         "accessibility-button-label": "Categoria",
         "accessibility-button-hint": "Toque aqui para escolher uma categoria:",

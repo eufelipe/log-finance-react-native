@@ -4,6 +4,7 @@ import React, {
   useState,
   useMemo,
   useCallback,
+  useEffect,
 } from 'react';
 
 import IEntry, {EntryType} from 'interfaces/IEntry';
@@ -14,6 +15,7 @@ interface EntryProviderProps {
 }
 
 interface EntryContextData {
+  balance?: number;
   entries?: IEntry[];
   saveEntry: () => void;
   removeEntry: (entry: IEntry) => void;
@@ -22,19 +24,19 @@ interface EntryContextData {
   setEntry: (entry: IEntry) => void;
 
   value?: number;
-  setValue: (value: number) => number;
+  setValue: (value: number) => void;
 
   description?: string;
-  setDescription: (value: string) => string;
+  setDescription: (value: string) => void;
 
   category?: ICategory;
-  setCategory: (value: ICategory) => ICategory;
+  setCategory: (value: ICategory) => void;
 
   date?: Date;
-  setDate: (value: Date) => Date;
+  setDate: (value: Date) => void;
 
   entryType?: EntryType;
-  setEntryType: (value: EntryType) => EntryType;
+  setEntryType: (value: EntryType) => void;
 
   fillValuesFromEntry: (value: IEntry) => void;
   cleanValues: () => void;
@@ -56,6 +58,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
   const [entries, setEntries] = useState<IEntry[]>([]);
   const [entry, setEntry] = useState<IEntry>();
 
+  const [balance, setBalance] = useState<number>(0);
   const [value, setValue] = useState<number>(0);
   const [description, setDescription] = useState<string>();
   const [date, setDate] = useState<Date>();
@@ -100,8 +103,24 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
     [entries],
   );
 
+  const sumValues = useCallback(() => {
+    const sum = entries.reduce((acc, item) => {
+      let num = item.value;
+      if (item.type === 'expense') {
+        num = Math.abs(num) * -1;
+      }
+      return acc + num;
+    }, 0);
+    setBalance(sum);
+  }, [entries]);
+
+  useEffect(() => {
+    sumValues();
+  }, [entries, sumValues]);
+
   const values = useMemo(
     () => ({
+      balance,
       entries,
       saveEntry,
       removeEntry,
@@ -121,6 +140,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       cleanValues,
     }),
     [
+      balance,
       entries,
       entry,
       value,

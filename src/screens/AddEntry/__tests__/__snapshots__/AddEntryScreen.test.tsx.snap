@@ -2,15 +2,25 @@
 
 exports[`AddEntryScreen Test match snapshot AddEntryScreen 1`] = `
 <View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
-    Array [
-      Object {
-        "backgroundColor": "#181D26",
-        "flexBasis": 0,
-        "flexGrow": 1,
-        "flexShrink": 1,
-      },
-    ]
+    Object {
+      "backgroundColor": "#181D26",
+      "flexBasis": 0,
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "opacity": 1,
+    }
   }
 >
   <View
@@ -504,7 +514,7 @@ exports[`AddEntryScreen Test match snapshot AddEntryScreen 1`] = `
                 ]
               }
             >
-              today,  18 of November, at  01:06h
+              today,  18 of November, at  10:33h
             </Text>
           </View>
         </View>

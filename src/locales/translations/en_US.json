@@ -57,6 +57,10 @@
     },
 
     "categories": {
+
+        "category": "Category",
+        "category-default": "Others",
+        
         "searchbar-placeholder": "Search Category",
         "accessibility-button-label": "Category",
         "accessibility-button-hint": "Tap here to choose a category:",

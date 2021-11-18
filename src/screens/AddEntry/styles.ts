@@ -1,6 +1,8 @@
 import styled from 'styled-components/native';
 
-export const Screen = styled.View`
+export const Screen = styled.TouchableOpacity.attrs({
+  activeOpacity: 1,
+})`
   flex: 1;
   background: ${({theme}) => theme.colors.accent};
 `;
