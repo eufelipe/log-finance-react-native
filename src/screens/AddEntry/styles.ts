@@ -1,9 +1,15 @@
 import styled from 'styled-components/native';
 
+export const Screen = styled.TouchableOpacity.attrs({
+  activeOpacity: 1,
+})`
+  flex: 1;
+  background: ${({theme}) => theme.colors.accent};
+`;
+
 export const Container = styled.View`
   flex: 1;
   align-items: center;
-  background: ${({theme}) => theme.colors.accent};
 `;
 
 export const Content = styled.View`
@@ -14,14 +20,6 @@ export const Content = styled.View`
   background: ${({theme}) => theme.colors.gray};
   border-top-right-radius: ${({theme}) => theme.spacing.great}px;
   border-top-left-radius: ${({theme}) => theme.spacing.great}px;
-`;
-
-export const AnchorDismiss = styled.View`
-  height: 5px;
-  width: 100px;
-  border-radius: 2.5px;
-  margin: 10px 0px;
-  background: ${({theme}) => theme.colors.gray}10;
 `;
 
 export const SubmitContainer = styled.View`

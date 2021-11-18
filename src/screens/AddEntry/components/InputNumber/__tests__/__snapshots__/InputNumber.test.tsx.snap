@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputNumber Test match snapshot InputNumber 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "flex-end",
+          "flexDirection": "row",
+          "marginRight": 21.428571428571427,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 80,
+            "fontWeight": "400",
+          },
+        ]
+      }
+    >
+      R$ 0,00
+    </Text>
+  </View>,
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "bottom": 0,
+        "height": 60,
+        "left": 0,
+        "opacity": 1,
+        "position": "absolute",
+        "right": 60,
+        "top": 100,
+        "width": 750,
+      }
+    }
+  />,
+]
+`;

@@ -1,8 +1,7 @@
 import styled from 'styled-components/native';
-import MaskInput from 'react-native-mask-input';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {TouchableOpacity} from 'styles/layout';
-import Colors from 'styles/colors';
+import {TouchableOpacity, Colors, Text} from 'styles/layout';
+import {width} from 'styles/mixins';
 
 export const Container = styled.View`
   align-self: flex-end;
@@ -10,15 +9,24 @@ export const Container = styled.View`
   margin-right: ${({theme}) => theme.spacing.great}px;
 `;
 
-export const Input = styled(MaskInput).attrs({
-  selectionColor: Colors.gray,
-  keyboardType: 'number-pad',
-  autoFocus: true,
-})`
+export const Input = styled(Text)`
   font-family: ${({theme}) => theme.fontFamily.regular};
   font-size: ${({theme}) => theme.fontSizes.extraBig};
   font-weight: ${({theme}) => theme.fontWeight.regular};
   color: ${({theme}) => theme.colors.white};
+`;
+
+export const InputValue = styled.TouchableOpacity.attrs({})<{
+  addSpaceRight: boolean;
+}>`
+  background: transparent;
+  width: ${({addSpaceRight = false}) => (addSpaceRight ? width - 40 : width)}px;
+  height: 60px;
+  position: absolute;
+  left: 0px;
+  right: 60px;
+  top: 100px;
+  bottom: 0px;
 `;
 
 export const Touchable = styled(TouchableOpacity)`

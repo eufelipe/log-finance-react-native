@@ -2,7 +2,10 @@
     "global": {
         "remove-label": "Remove",
         "accessibility-remove-label": "Remove entry",
-        "accessibility-remove-hint": "Tap here to delete this transaction"
+        "accessibility-remove-hint": "Tap here to delete this transaction",
+        "done": "Done",
+        "cancel": "Cancel",
+        "clear": "Clear"
     },
 
     "tabs": {
@@ -26,10 +29,16 @@
         "description-placeholder": "add a description",
         "category": "Category",
         "date": "Date",
+        "save": "Save",
         "today": "Today",
         "at": "at",
         "day": "Day",
         "of": "of",
+        "yes": "Yes",
+        "no": "No",
+        "confirm-delete-title": "Are your sure?",
+        "confirm-delete-description": "Are you sure you want to remove this transaction",
+        "remove": "Remove",
         "category-default": "Others",
         "accessibility-button-type-hint": "Tap to change release type to",
         "accessibility-button-backspace": "Backspace",
@@ -48,6 +57,10 @@
     },
 
     "categories": {
+
+        "category": "Category",
+        "category-default": "Others",
+        
         "searchbar-placeholder": "Search Category",
         "accessibility-button-label": "Category",
         "accessibility-button-hint": "Tap here to choose a category:",

@@ -1,18 +1,50 @@
 import React from 'react';
 
+import {Title, PrimaryButton, DangerButton, InverseButton} from './styles';
+
+export type ButtonType = 'primary' | 'danger';
+
 interface Props {
   title: string;
   disabled?: boolean;
+  inverse?: boolean;
+  type?: ButtonType;
   onPress: () => void;
 }
 
-import {Container, Title} from './styles';
+const Button = ({
+  title,
+  onPress,
+  disabled = false,
+  inverse = false,
+  type,
+}: Props): JSX.Element => {
+  const Label = (
+    <Title type={type} inverse={inverse}>
+      {title}
+    </Title>
+  );
 
-const Button = ({title, onPress, disabled = false}: Props): JSX.Element => {
+  if (inverse) {
+    return (
+      <InverseButton onPress={onPress} disabled={disabled}>
+        {Label}
+      </InverseButton>
+    );
+  }
+
+  if (type === 'danger') {
+    return (
+      <DangerButton onPress={onPress} disabled={disabled}>
+        {Label}
+      </DangerButton>
+    );
+  }
+
   return (
-    <Container onPress={onPress} disabled={disabled}>
-      <Title>{title}</Title>
-    </Container>
+    <PrimaryButton onPress={onPress} disabled={disabled}>
+      {Label}
+    </PrimaryButton>
   );
 };
 

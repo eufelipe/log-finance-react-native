@@ -2,7 +2,10 @@
     "global": {
         "remove-label": "Remover",
         "accessibility-remove-label": "Remover lançamento",
-        "accessibility-remove-hint": "Toque aqui excluir esse lançamento"
+        "accessibility-remove-hint": "Toque aqui excluir esse lançamento",
+        "done": "Pronto",
+        "cancel": "Cancelar",
+        "clear": "Limpar"
     },
     "tabs": {
         "home-label": "Início",
@@ -24,11 +27,17 @@
         "description-placeholder": "Adicione uma descrição",
         "category": "Categoria",
         "date": "Data",
+        "save": "Salvar",
         "today": "Hoje",
         "at": "às",
         "day": "Dia",
         "of": "de",
+        "yes": "Sim",
+        "no": "Não",
+        "confirm-delete-title": "Tem certeza?",
+        "confirm-delete-description": "Tem certeza que deseja remover esse lançamento",
         "category-default": "Outros",
+        "remove": "Remover",
         "accessibility-button-type-hint": "Toque para mudar o tipo de lançamento para",
         "accessibility-button-backspace": "Apagar",
         "accessibility-button-backspace-hint": "Toque para apagar o valor informado",
@@ -46,6 +55,10 @@
     },
 
     "categories": {
+
+        "category": "Categoria",
+        "category-default": "Outros",
+
         "searchbar-placeholder": "Procure uma categoria",
         "accessibility-button-label": "Categoria",
         "accessibility-button-hint": "Toque aqui para escolher uma categoria:",

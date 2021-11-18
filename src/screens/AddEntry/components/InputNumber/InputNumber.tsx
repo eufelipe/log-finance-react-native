@@ -1,11 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import {createNumberMask} from 'react-native-mask-input';
 
 import {useEntry} from 'hooks/useEntry';
-import {Container, Input, Touchable, BackspaceIcon} from './styles';
-import {sanitizeToFloat} from 'utils/number';
+import {Container, Input, InputValue, Touchable, BackspaceIcon} from './styles';
+import {Currency} from 'components';
 
-const InputNumber = (): JSX.Element => {
+interface Props {
+  setShowKeyboard: () => void;
+}
+
+const InputNumber = ({setShowKeyboard}: Props): JSX.Element => {
   const {value = 0, setValue} = useEntry();
 
   const [showBackSpace, setShowBackSpace] = useState(false);
@@ -20,27 +23,21 @@ const InputNumber = (): JSX.Element => {
   }, [value]);
 
   return (
-    <Container>
-      <Input
-        value={`${value ?? 0}`}
-        mask={createNumberMask({
-          prefix: ['R', '$', ' '],
-          delimiter: '.',
-          separator: ',',
-          precision: 2,
-        })}
-        onChangeText={masked => {
-          const parseValue = sanitizeToFloat(masked);
-          setValue(parseValue);
-        }}
-      />
+    <>
+      <Container>
+        <Currency
+          value={Number(value ?? 0)}
+          render={text => <Input>{text}</Input>}
+        />
 
-      {!!showBackSpace && (
-        <Touchable onPress={onBackSpace}>
-          <BackspaceIcon />
-        </Touchable>
-      )}
-    </Container>
+        {!!showBackSpace && (
+          <Touchable onPress={onBackSpace}>
+            <BackspaceIcon />
+          </Touchable>
+        )}
+      </Container>
+      <InputValue onPress={setShowKeyboard} addSpaceRight={!!showBackSpace} />
+    </>
   );
 };
 
