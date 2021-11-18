@@ -25,7 +25,7 @@ interface Props {
 
 const MAX_NUMBER_SIZE = 8;
 
-const Keyboard = ({
+export const NumberKeyboard = ({
   onDone,
   onDismiss,
   valueDefault = 0,
@@ -122,4 +122,4 @@ const Keyboard = ({
   );
 };
 
-export default Keyboard;
+export default NumberKeyboard;

@@ -40,6 +40,8 @@ interface EntryContextData {
   cleanValues: () => void;
 }
 
+const entryTypeDefault = 'expense';
+
 const categoryDefault: ICategory = {
   id: 12,
   description: 'Outros',
@@ -58,14 +60,14 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
   const [description, setDescription] = useState<string>();
   const [date, setDate] = useState<Date>();
   const [category, setCategory] = useState<ICategory>(categoryDefault);
-  const [entryType, setEntryType] = useState<EntryType>('expense');
+  const [entryType, setEntryType] = useState<EntryType>(entryTypeDefault);
 
   const cleanValues = useCallback((): void => {
     setValue(0);
     setDescription(undefined);
     setDate(undefined);
     setCategory(categoryDefault);
-    setEntryType('expense');
+    setEntryType(entryTypeDefault);
   }, []);
 
   const fillValuesFromEntry = useCallback((entry: IEntry): void => {

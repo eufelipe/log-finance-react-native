@@ -3,7 +3,7 @@ import {Keyboard as RNKeyboard, Alert} from 'react-native';
 import {useTranslation} from 'react-i18next';
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 
-import {Button, Keyboard, Strap} from 'components';
+import {Button, NumberKeyboard, Strap} from 'components';
 
 import {
   MenuEntryType,
@@ -52,7 +52,7 @@ const AddEntryScreen = (): JSX.Element => {
         {
           text: t('yes'),
           onPress: () => {
-            removeEntry(entry);
+            if (entry) removeEntry(entry);
             navigation.goBack();
           },
         },
@@ -116,7 +116,7 @@ const AddEntryScreen = (): JSX.Element => {
         </Content>
       </Container>
       {showKeyboard && (
-        <Keyboard
+        <NumberKeyboard
           valueDefault={value}
           onDone={onDoneKeyboard}
           onDismiss={() => setShowKeyboard(false)}

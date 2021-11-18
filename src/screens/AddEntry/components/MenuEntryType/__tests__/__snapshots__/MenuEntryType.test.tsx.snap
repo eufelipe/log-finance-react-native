@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuEntryType Test match snapshot MenuEntryType 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "paddingTop": 10.714285714285714,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "marginBottom": 42.857142857142854,
+        "marginLeft": 21.428571428571427,
+        "marginRight": 21.428571428571427,
+        "marginTop": 0,
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      active={false}
+      style={
+        Array [
+          Object {
+            "color": "#464E5F",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 36,
+            "fontWeight": "700",
+          },
+        ]
+      }
+    >
+      expense
+    </Text>
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "transparent",
+            "borderRadius": 2,
+            "height": 3,
+            "marginBottom": 10,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 8,
+            "width": 30,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "marginBottom": 42.857142857142854,
+        "marginLeft": 21.428571428571427,
+        "marginRight": 21.428571428571427,
+        "marginTop": 0,
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      active={false}
+      style={
+        Array [
+          Object {
+            "color": "#464E5F",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 36,
+            "fontWeight": "700",
+          },
+        ]
+      }
+    >
+      earning
+    </Text>
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "transparent",
+            "borderRadius": 2,
+            "height": 3,
+            "marginBottom": 10,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 8,
+            "width": 30,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

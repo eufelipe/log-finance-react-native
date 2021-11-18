@@ -4,5 +4,5 @@ export {default as Currency} from './Currency';
 export {default as Button} from './Button';
 export {default as Dismiss} from './Dismiss';
 export {default as SwipeRemoveButton} from './SwipeRemoveButton';
-export {default as Keyboard} from './Keyboard';
+export {default as NumberKeyboard} from './NumberKeyboard';
 export {default as Strap} from './Strap';
