@@ -16,9 +16,15 @@ const EntriesList = ({entries}: Props): JSX.Element => {
   const navigation = useNavigation<AddEntryNavigationProp>();
   const {removeEntry} = useEntry();
 
-  const onPressEntry = useCallback(() => {
-    navigation.navigate('AddEntryStack');
-  }, [navigation]);
+  const onPressEntry = useCallback(
+    (entry?: IEntry) => {
+      navigation.navigate('AddEntryStack', {
+        screen: 'AddEntry',
+        params: {entry},
+      });
+    },
+    [navigation],
+  );
 
   const onPressRemoveEntry = useCallback(
     (entry: IEntry) => {
@@ -33,7 +39,7 @@ const EntriesList = ({entries}: Props): JSX.Element => {
     ({item}) => (
       <EntryItem
         entry={item}
-        onPressEntry={onPressEntry}
+        onPressEntry={() => onPressEntry(item)}
         onPressRemoveEntry={onPressRemoveEntry}
       />
     ),

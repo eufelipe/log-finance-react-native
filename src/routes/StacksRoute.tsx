@@ -9,10 +9,15 @@ import AddEntryScreen from 'screens/AddEntry';
 import SettingsScreen from 'screens/Settings';
 import CategoriesScreen from 'screens/Categories';
 
+import {IEntry} from 'interfaces';
+
 export type StackParamList = {
-  Settings: undefined;
-  AddEntry: undefined;
+  AddEntry: {entry?: IEntry};
+  AddEntryStack: {screen: 'AddEntry'; params: {entry?: IEntry}};
   Categories: undefined;
+  CategoriesStack: undefined;
+  Settings: undefined;
+  SettingsStack: undefined;
 };
 
 export type CategoriesNavigationProp = CompositeNavigationProp<
@@ -21,8 +26,8 @@ export type CategoriesNavigationProp = CompositeNavigationProp<
 >;
 
 export type AddEntryNavigationProp = CompositeNavigationProp<
-  StackNavigationProp<RootStackParamList, 'AddEntryStack'>,
-  StackNavigationProp<RootStackParamList>
+  StackNavigationProp<StackParamList, 'AddEntryStack'>,
+  StackNavigationProp<StackParamList>
 >;
 
 export type SettingsNavigationProp = CompositeNavigationProp<

@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {useTranslation} from 'react-i18next';
 
 import HomeScreen from 'screens/Home';
 import ReportsScreen from 'screens/Reports';
 import {AddEntryStack} from './StacksRoute';
 import {BottomTabs} from './components';
-import {useTranslation} from 'react-i18next';
+import {IEntry} from 'interfaces';
 
 export const TAB_KEY_HOME = 'Home';
 export const TAB_KEY_ADD_ENTRY = 'Add';
@@ -13,7 +14,7 @@ export const TAB_KEY_REPORTS = 'Reports';
 
 export type RootStackParamList = {
   Home: undefined;
-  Add: undefined;
+  Add: {entry?: IEntry};
   Reports: undefined;
 };
 
