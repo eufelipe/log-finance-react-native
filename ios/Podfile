@@ -12,6 +12,9 @@ target 'LogFinance' do
     :hermes_enabled => false
   )
 
+  pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi', :modular_headers => true
+  pod 'simdjson', path: '../node_modules/@nozbe/simdjson'
+
   target 'LogFinanceTests' do
     inherit! :complete
     # Pods for testing
