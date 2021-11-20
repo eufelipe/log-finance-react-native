@@ -9,6 +9,9 @@
         "yes": "Yes",
         "no": "No"
     },
+    "routes": {
+        "title-settings": "Settings"
+    },
 
     "tabs": {
         "home-label": "Home",
@@ -99,5 +102,13 @@
         "kids": "Kids",
         "amusement": "Amusement",
         "utilities": "Utilities"
+    },
+
+    "settings": { 
+        "language": "Language",
+        "currency": "Currency",
+        "pt-BR": "Portuguese",
+        "en-US": "English"
     }
+
 }

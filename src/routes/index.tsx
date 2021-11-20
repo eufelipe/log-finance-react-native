@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {EntryContext} from 'hooks';
 import {AddEntryStack, SettingsStack, CategoriesStack} from './StacksRoute';
 import TabsRoute from './TabsRoute';
+import {useTranslation} from 'react-i18next';
 
 export type RootStackParamList = {
   Tabs: undefined;
@@ -15,6 +16,7 @@ export type RootStackParamList = {
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 const Routes = (): JSX.Element => {
+  const {t} = useTranslation('routes');
   return (
     <NavigationContainer>
       <EntryContext>
@@ -34,14 +36,19 @@ const Routes = (): JSX.Element => {
               options={{headerShown: false}}
             />
             <RootStack.Screen
-              name="SettingsStack"
-              component={SettingsStack}
-              options={{headerShown: false}}
-            />
-            <RootStack.Screen
               name="CategoriesStack"
               component={CategoriesStack}
               options={{headerShown: false}}
+            />
+          </RootStack.Group>
+
+          <RootStack.Group>
+            <RootStack.Screen
+              name="SettingsStack"
+              options={{
+                title: t('title-settings'),
+              }}
+              component={SettingsStack}
             />
           </RootStack.Group>
         </RootStack.Navigator>

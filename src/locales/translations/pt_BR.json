@@ -9,6 +9,11 @@
         "yes": "Sim",
         "no": "Não"
     },
+
+    "routes": {
+        "title-settings": "Configurações"
+    },
+
     "tabs": {
         "home-label": "Início",
         "home-accessibility-label": "Toque aqui para ir para primeira tela do app",
@@ -97,5 +102,12 @@
         "kids": "Crianças",
         "amusement": "Diversão",
         "utilities": "Utilities"
+    },
+
+    "settings": {
+        "language": "Idioma",
+        "currency": "Moeda",
+        "pt-BR": "Português",
+        "en-US": "Inglês"
     }
 }
