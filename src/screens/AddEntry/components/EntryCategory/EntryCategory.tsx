@@ -23,9 +23,9 @@ const EntryCategory = (): JSX.Element => {
     <Row>
       <Label>{t('category')}</Label>
       <Touchable onPress={handleCategories}>
-        <CategoryIcon contained name={category?.icon} />
+        <CategoryIcon contained name={category?.key} />
         <Title>
-          {category?.icon ? t(category.icon) : t('category-default')}
+          {category?.key ? t(category.key) : t('category-default')}
         </Title>
       </Touchable>
     </Row>

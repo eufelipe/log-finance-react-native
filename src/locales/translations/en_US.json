@@ -59,7 +59,7 @@
     "categories": {
 
         "category": "Category",
-        "category-default": "Others",
+        "category-default": "Choose a category",
         
         "searchbar-placeholder": "Search Category",
         "accessibility-button-label": "Category",
