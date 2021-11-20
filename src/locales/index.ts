@@ -29,7 +29,10 @@ const languageDetector: LanguageDetectorAsyncModule = {
 
     return callback(deviceLanguage);
   },
+  // TODO: implementar obter language default e tratar mudança
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   init: () => {},
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   cacheUserLanguage: () => {},
 };
 

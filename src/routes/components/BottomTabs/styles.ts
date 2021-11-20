@@ -12,7 +12,7 @@ export const Button = styled(TouchableOpacity).attrs(
   ({disableActiveOpacity = false}: {disableActiveOpacity: boolean}) => ({
     activeOpacity: disableActiveOpacity ? 1 : 0.8,
   }),
-)`
+)<{disableActiveOpacity: boolean}>`
   display: flex;
   flex-direction: column;
   align-items: center;

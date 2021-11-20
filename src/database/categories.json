@@ -1,158 +1,159 @@
-[{
+[
+    {
+        "id": 12,
+        "description": "Outros",
+        "key": "others"
+    },
+    {
         "id": 1,
         "description": "Pessoal",
-        "icon": "personal"
+        "key": "personal"
     },
     {
         "id": 2,
         "description": "Pagamentos",
-        "icon": "payments"
+        "key": "payments"
     },
     {
         "id": 3,
         "description": "Carro",
-        "icon": "car"
+        "key": "car"
     },
     {
         "id": 4,
         "description": "Roupas",
-        "icon": "clothing"
+        "key": "clothing"
     },
 
     {
         "id": 5,
         "description": "Salário",
-        "icon": "salary"
+        "key": "salary"
     },
     {
         "id": 6,
         "description": "Bônus",
-        "icon": "bonus"
+        "key": "bonus"
     },
 
     {
         "id": 7,
         "description": "Educação",
-        "icon": "education"
+        "key": "education"
     },
     {
         "id": 8,
         "description": "Eletrônicos",
-        "icon": "electronics"
+        "key": "electronics"
     },
 
     {
         "id": 9,
         "description": "Saúde",
-        "icon": "health"
+        "key": "health"
     },
     {
         "id": 10,
         "description": "Casa",
-        "icon": "home"
+        "key": "home"
     },
     {
         "id": 11,
         "description": "Lazer",
-        "icon": "leisure"
-    },
-    {
-        "id": 12,
-        "description": "Outros",
-        "icon": "others"
+        "key": "leisure"
     },
     {
         "id": 13,
         "description": "Restaurante",
-        "icon": "restaurant"
+        "key": "restaurant"
     },
     {
         "id": 14,
         "description": "Serviços",
-        "icon": "services"
+        "key": "services"
     },
     {
         "id": 15,
         "description": "Mercado",
-        "icon": "supermarket"
+        "key": "supermarket"
     },
     {
         "id": 16,
         "description": "Transporte",
-        "icon": "transportation"
+        "key": "transportation"
     },
     {
         "id": 18,
         "description": "Empréstimos",
-        "icon": "loans"
+        "key": "loans"
     },
     {
         "id": 19,
         "description": "Entretenimento",
-        "icon": "entertainment"
+        "key": "entertainment"
     },
     {
         "id": 20,
         "description": "Hobbies",
-        "icon": "hobbies"
+        "key": "hobbies"
     },
     {
         "id": 21,
         "description": "Alimentação",
-        "icon": "food"
+        "key": "food"
     },
     {
         "id": 22,
         "description": "Família",
-        "icon": "family"
+        "key": "family"
     },
 
     {
         "id": 23,
         "description": "Presentes",
-        "icon": "gift"
+        "key": "gift"
     },
 
     {
         "id": 24,
         "description": "Doações",
-        "icon": "donations"
+        "key": "donations"
     },
 
     {
         "id": 25,
         "description": "Investimentos",
-        "icon": "investiments"
+        "key": "investiments"
     },
     {
         "id": 26,
         "description": "Shopping",
-        "icon": "shopping"
+        "key": "shopping"
     },
     {
         "id": 27,
         "description": "Pets",
-        "icon": "pets"
+        "key": "pets"
     },
 
     {
         "id": 28,
         "description": "Impostos e taxas",
-        "icon": "taxes"
+        "key": "taxes"
     },
     {
         "id": 29,
         "description": "Trabalho",
-        "icon": "work"
+        "key": "work"
     },
     {
         "id": 30,
         "description": "Crianças",
-        "icon": "kids"
+        "key": "kids"
     },
     {
         "id": 32,
         "description": "Utilities",
-        "icon": "utilities"
+        "key": "utilities"
     }
 ]

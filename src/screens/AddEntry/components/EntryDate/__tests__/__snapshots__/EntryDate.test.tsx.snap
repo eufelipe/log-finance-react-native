@@ -37,30 +37,18 @@ Array [
         ]
       }
     >
-      <Text
-        allowFontScaling={false}
+      <Icon
+        color="#ffffff"
+        name="event"
+        size={24}
         style={
           Array [
             Object {
-              "color": "#ffffff",
-              "fontSize": 24,
+              "marginRight": 21.428571428571427,
             },
-            Array [
-              Object {
-                "marginRight": 21.428571428571427,
-              },
-            ],
-            Object {
-              "fontFamily": "Material Icons",
-              "fontStyle": "normal",
-              "fontWeight": "normal",
-            },
-            Object {},
           ]
         }
-      >
-        
-      </Text>
+      />
       <View
         style={
           Array [
@@ -96,7 +84,7 @@ Array [
             ]
           }
         >
-          today,  18 of November, at  10:33h
+          today,  20 of November, at  15:41h
         </Text>
       </View>
     </View>

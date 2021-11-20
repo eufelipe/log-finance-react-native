@@ -6,7 +6,7 @@
         "category": {
             "id": 1,
             "description": "Salario",
-            "icon": "money"
+            "key": "money"
         }
     }, {
         "id": 2,
@@ -16,7 +16,7 @@
         "category": {
             "id": 1,
             "description": "Restaurante",
-            "icon": "food"
+            "key": "food"
         }
     },
     {
@@ -27,7 +27,7 @@
         "category": {
             "id": 1,
             "description": "Conveniência",
-            "icon": "others"
+            "key": "others"
         }
 
     }

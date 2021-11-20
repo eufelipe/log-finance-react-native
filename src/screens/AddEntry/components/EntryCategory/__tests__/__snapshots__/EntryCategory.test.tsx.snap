@@ -79,28 +79,16 @@ exports[`EntryCategory Test match snapshot EntryCategory 1`] = `
           ]
         }
       >
-        <Text
-          allowFontScaling={false}
+        <Icon
+          color="#ffffff"
+          name="list"
+          size={24}
           style={
             Array [
-              Object {
-                "color": "#ffffff",
-                "fontSize": 24,
-              },
-              Array [
-                Object {},
-              ],
-              Object {
-                "fontFamily": "Material Icons",
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-              },
               Object {},
             ]
           }
-        >
-          
-        </Text>
+        />
       </View>
       <Text
         style={

@@ -1,15 +1,14 @@
 import React, {useCallback} from 'react';
 import {useNavigation} from '@react-navigation/native';
 
-import {IEntry} from 'interfaces';
-
 import EntryItem from 'components/EntryItem';
 import {AddEntryNavigationProp} from 'routes/StacksRoute';
 
 import {useEntry} from 'hooks/useEntry';
 import {FlatList} from './styles';
+import {Entry} from 'models';
 interface Props {
-  entries: IEntry[];
+  entries: Entry[];
 }
 
 const EntriesList = ({entries}: Props): JSX.Element => {
@@ -17,7 +16,7 @@ const EntriesList = ({entries}: Props): JSX.Element => {
   const {removeEntry} = useEntry();
 
   const onPressEntry = useCallback(
-    (entry?: IEntry) => {
+    (entry?: Entry) => {
       navigation.navigate('AddEntryStack', {
         screen: 'AddEntry',
         params: {entry},
@@ -27,7 +26,7 @@ const EntriesList = ({entries}: Props): JSX.Element => {
   );
 
   const onPressRemoveEntry = useCallback(
-    (entry: IEntry) => {
+    (entry: Entry) => {
       removeEntry(entry);
     },
     [removeEntry],

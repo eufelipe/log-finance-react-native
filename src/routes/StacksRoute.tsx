@@ -8,12 +8,11 @@ import {RootStackParamList} from 'routes';
 import AddEntryScreen from 'screens/AddEntry';
 import SettingsScreen from 'screens/Settings';
 import CategoriesScreen from 'screens/Categories';
-
-import {IEntry} from 'interfaces';
+import {Entry} from 'models';
 
 export type StackParamList = {
-  AddEntry: {entry?: IEntry};
-  AddEntryStack: {screen: 'AddEntry'; params: {entry?: IEntry}};
+  AddEntry: {entry?: Entry};
+  AddEntryStack: {screen: 'AddEntry'; params: {entry?: Entry}};
   Categories: undefined;
   CategoriesStack: undefined;
   Settings: undefined;

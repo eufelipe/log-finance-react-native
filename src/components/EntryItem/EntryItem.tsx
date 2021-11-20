@@ -2,32 +2,37 @@ import React from 'react';
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 
 import {CategoryIcon, Currency, SwipeRemoveButton} from 'components';
-import {IEntry} from 'interfaces';
+import {Category, Entry} from 'models';
 
 import {
   Container,
-  Category,
+  CategoryContainer,
   Description,
   Title,
   SubTitle,
   Value,
 } from './styles';
 import {useTranslation} from 'react-i18next';
+import withObservables from '@nozbe/with-observables';
 
-interface Props {
-  entry: IEntry;
-  onPressEntry: (entry: IEntry) => void;
-  onPressRemoveEntry: (entry: IEntry) => void;
+interface EntryItemProps {
+  category?: Category;
+  entry: Entry;
+  onPressEntry: (entry: Entry) => void;
+  onPressRemoveEntry: (entry: Entry) => void;
 }
 
 const EntryItem = ({
+  category,
   entry,
   onPressEntry,
   onPressRemoveEntry,
-}: Props): JSX.Element => {
-  const {description, value, category, type} = entry;
-
+}: EntryItemProps): JSX.Element => {
   const {t} = useTranslation('entry');
+
+  const {description, value, type} = entry;
+
+  const isExpense = type === 'expense';
 
   return (
     <Swipeable
@@ -42,22 +47,29 @@ const EntryItem = ({
         accessibilityLabel={t('accessibility-button')}
         accessibilityHint={t('accessibility-button-hint')}
       >
-        <Category>
-          <CategoryIcon name={category.icon} />
-        </Category>
+        <CategoryContainer>
+          <CategoryIcon name={category?.key} />
+        </CategoryContainer>
 
         <Description>
           {description && <Title>{description}</Title>}
-          <SubTitle>{category.description}</SubTitle>
+          {category?.description && <SubTitle>{category.description}</SubTitle>}
         </Description>
 
         <Currency
           value={value}
-          render={text => <Value isExpense={type === 'expense'}>{text}</Value>}
+          render={text => <Value isExpense={isExpense}>{text}</Value>}
         />
       </Container>
     </Swipeable>
   );
 };
 
-export default EntryItem;
+const enhance = withObservables<EntryItemProps, unknown>(
+  ['entry'],
+  ({entry}: EntryItemProps) => ({
+    category: entry.category.observe(),
+  }),
+);
+
+export default enhance(EntryItem);

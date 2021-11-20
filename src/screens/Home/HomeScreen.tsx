@@ -1,4 +1,5 @@
 import React from 'react';
+import withObservables from '@nozbe/with-observables';
 
 import {Container, Content, Salutation} from './styles';
 import {useTranslation} from 'react-i18next';
@@ -6,16 +7,19 @@ import {useTranslation} from 'react-i18next';
 import {Header, ListEmpty} from './components';
 import {EntriesList} from 'components';
 
-import {useEntry} from 'hooks/useEntry';
+import {Entry} from 'models';
+import EntryRepository from 'repositories/EntryRepository';
 
-const HomeScreen = (): JSX.Element => {
-  const {entries = []} = useEntry();
+interface HomeScreenProps {
+  entries: Entry[];
+}
+
+const HomeScreen = ({entries = []}: HomeScreenProps): JSX.Element => {
   const {t} = useTranslation('home');
 
   return (
     <Container>
-      <Header />
-
+      <Header entries={entries} />
       <Content>
         <Salutation>{t('today')}</Salutation>
         {!!entries.length && <EntriesList entries={entries} />}
@@ -26,4 +30,8 @@ const HomeScreen = (): JSX.Element => {
   );
 };
 
-export default HomeScreen;
+const enhance = withObservables(['entries'], () => ({
+  entries: EntryRepository.getTodayEntries(),
+}));
+
+export default enhance(HomeScreen);

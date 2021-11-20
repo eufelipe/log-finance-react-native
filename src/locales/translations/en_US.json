@@ -5,7 +5,9 @@
         "accessibility-remove-hint": "Tap here to delete this transaction",
         "done": "Done",
         "cancel": "Cancel",
-        "clear": "Clear"
+        "clear": "Clear",
+        "yes": "Yes",
+        "no": "No"
     },
 
     "tabs": {
@@ -59,7 +61,7 @@
     "categories": {
 
         "category": "Category",
-        "category-default": "Others",
+        "category-default": "Choose a category",
         
         "searchbar-placeholder": "Search Category",
         "accessibility-button-label": "Category",

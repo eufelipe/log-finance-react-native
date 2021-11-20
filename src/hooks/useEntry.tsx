@@ -8,20 +8,20 @@ import React, {
 } from 'react';
 
 import IEntry, {EntryType} from 'interfaces/IEntry';
-import {ICategory} from 'interfaces';
+import {Category, Entry} from 'models';
+import {EntryRepository} from 'repositories';
 
+import {useCategory} from 'hooks/useCategory';
+import {getDateToday} from 'utils/dates';
 interface EntryProviderProps {
   children: React.ReactNode;
 }
-
 interface EntryContextData {
-  balance?: number;
-  entries?: IEntry[];
   saveEntry: () => void;
-  removeEntry: (entry: IEntry) => void;
+  removeEntry: (entry: Entry) => void;
 
-  entry?: IEntry;
-  setEntry: (entry: IEntry) => void;
+  entry?: Entry;
+  setEntry: (entry: Entry) => void;
 
   value?: number;
   setValue: (value: number) => void;
@@ -29,51 +29,44 @@ interface EntryContextData {
   description?: string;
   setDescription: (value: string) => void;
 
-  category?: ICategory;
-  setCategory: (value: ICategory) => void;
+  category?: Category;
+  setCategory: (value: Category) => void;
 
-  date?: Date;
-  setDate: (value: Date) => void;
+  date?: string;
+  setDate: (value: string) => void;
 
   entryType?: EntryType;
   setEntryType: (value: EntryType) => void;
 
-  fillValuesFromEntry: (value: IEntry) => void;
+  fillValuesFromEntry: (value: Entry) => void;
   cleanValues: () => void;
 }
 
 const entryTypeDefault = 'expense';
-
-const categoryDefault: ICategory = {
-  id: 12,
-  description: 'Outros',
-  icon: 'others',
-};
 
 export const EntryContext = createContext<EntryContextData>(
   {} as EntryContextData,
 );
 
 export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
-  const [entries, setEntries] = useState<IEntry[]>([]);
-  const [entry, setEntry] = useState<IEntry>();
-
-  const [balance, setBalance] = useState<number>(0);
+  const [entry, setEntry] = useState<Entry>();
   const [value, setValue] = useState<number>(0);
   const [description, setDescription] = useState<string>();
-  const [date, setDate] = useState<Date>();
-  const [category, setCategory] = useState<ICategory>(categoryDefault);
+  const [date, setDate] = useState<string>();
+  const [category, setCategory] = useState<Category>();
   const [entryType, setEntryType] = useState<EntryType>(entryTypeDefault);
+
+  const {categoryDefault} = useCategory();
 
   const cleanValues = useCallback((): void => {
     setValue(0);
     setDescription(undefined);
     setDate(undefined);
-    setCategory(categoryDefault);
+    setCategory(undefined);
     setEntryType(entryTypeDefault);
   }, []);
 
-  const fillValuesFromEntry = useCallback((entry: IEntry): void => {
+  const fillValuesFromEntry = useCallback((entry: Entry): void => {
     setEntry(entry);
     setValue(entry.value);
     setDescription(entry.description);
@@ -81,47 +74,38 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
     setEntryType(entry.type);
   }, []);
 
-  const saveEntry = useCallback(() => {
-    const entry: IEntry = {
-      id: Math.random(),
+  const saveEntry = useCallback(async () => {
+    if (!category) return;
+    const data: IEntry = {
       description,
       type: entryType,
-      date: new Date(),
+      date: date ?? getDateToday(),
       value,
       category,
     };
 
-    setEntries([...entries, entry]);
+    if (entry) {
+      await EntryRepository.editEntry(entry, data);
+    } else {
+      await EntryRepository.addEntry(data);
+    }
 
     cleanValues();
-  }, [entries, entryType, category, description, value, cleanValues]);
+  }, [entry, entryType, category, description, value, date, cleanValues]);
 
   const removeEntry = useCallback(
-    (entry: IEntry) => {
-      setEntries(entries.filter(item => item.id !== entry.id));
-    },
-    [entries],
+    async (entry: Entry) => await EntryRepository.removeEntry(entry),
+    [],
   );
 
-  const sumValues = useCallback(() => {
-    const sum = entries.reduce((acc, item) => {
-      let num = item.value;
-      if (item.type === 'expense') {
-        num = Math.abs(num) * -1;
-      }
-      return acc + num;
-    }, 0);
-    setBalance(sum);
-  }, [entries]);
-
   useEffect(() => {
-    sumValues();
-  }, [entries, sumValues]);
+    if (categoryDefault && !category) {
+      setCategory(categoryDefault);
+    }
+  }, [categoryDefault, category]);
 
   const values = useMemo(
     () => ({
-      balance,
-      entries,
       saveEntry,
       removeEntry,
       value,
@@ -140,8 +124,6 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       cleanValues,
     }),
     [
-      balance,
-      entries,
       entry,
       value,
       description,

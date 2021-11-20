@@ -1,12 +1,10 @@
-import ICategory from './ICategory';
+import {Category} from 'models';
 
 export type EntryType = 'expense' | 'earning';
-
 export default interface IEntry {
-  id: number;
   description?: string;
   type: EntryType;
   value: number;
-  date: Date;
-  category: ICategory;
+  date: string;
+  category: Category;
 }
