@@ -379,28 +379,16 @@ exports[`AddEntryScreen Test match snapshot AddEntryScreen 1`] = `
                 ]
               }
             >
-              <Text
-                allowFontScaling={false}
+              <Icon
+                color="#ffffff"
+                name="list"
+                size={24}
                 style={
                   Array [
-                    Object {
-                      "color": "#ffffff",
-                      "fontSize": 24,
-                    },
-                    Array [
-                      Object {},
-                    ],
-                    Object {
-                      "fontFamily": "Material Icons",
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                    },
                     Object {},
                   ]
                 }
-              >
-                
-              </Text>
+              />
             </View>
             <Text
               style={
@@ -455,30 +443,18 @@ exports[`AddEntryScreen Test match snapshot AddEntryScreen 1`] = `
             ]
           }
         >
-          <Text
-            allowFontScaling={false}
+          <Icon
+            color="#ffffff"
+            name="event"
+            size={24}
             style={
               Array [
                 Object {
-                  "color": "#ffffff",
-                  "fontSize": 24,
+                  "marginRight": 21.428571428571427,
                 },
-                Array [
-                  Object {
-                    "marginRight": 21.428571428571427,
-                  },
-                ],
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-                Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
           <View
             style={
               Array [
@@ -514,7 +490,7 @@ exports[`AddEntryScreen Test match snapshot AddEntryScreen 1`] = `
                 ]
               }
             >
-              today,  18 of November, at  10:33h
+              today,  20 of November, at  15:41h
             </Text>
           </View>
         </View>
@@ -1337,30 +1313,18 @@ exports[`AddEntryScreen Test match snapshot AddEntryScreen 1`] = `
             }
           }
         >
-          <Text
-            allowFontScaling={false}
+          <Icon
+            color="#ffffff"
+            name="backspace"
+            size={24}
             style={
               Array [
                 Object {
-                  "color": "#ffffff",
-                  "fontSize": 24,
+                  "marginLeft": 21.428571428571427,
                 },
-                Array [
-                  Object {
-                    "marginLeft": 21.428571428571427,
-                  },
-                ],
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-                Object {},
               ]
             }
-          >
-            
-          </Text>
+          />
         </View>
       </View>
     </View>

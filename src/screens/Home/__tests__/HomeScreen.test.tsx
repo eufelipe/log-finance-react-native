@@ -5,9 +5,7 @@ import {render} from 'utils/test-utils';
 
 import HomeScreen from '../HomeScreen';
 
-jest.mock('react-i18next', () => ({
-  useTranslation: () => ({t: (key: any) => key}),
-}));
+jest.runAllTimers();
 
 describe('HomeScreen', () => {
   it('Test match snapshot HomeScreen', () => {

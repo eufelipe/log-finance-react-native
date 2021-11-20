@@ -35,28 +35,16 @@ exports[`SwipeRemoveButton Test match snapshot SwipeRemoveButton 1`] = `
   }
   testID="remove-item-button"
 >
-  <Text
-    allowFontScaling={false}
+  <Icon
+    color="#ffffff"
+    name="delete"
+    size={24}
     style={
       Array [
-        Object {
-          "color": "#ffffff",
-          "fontSize": 24,
-        },
-        Array [
-          Object {},
-        ],
-        Object {
-          "fontFamily": "Material Icons",
-          "fontStyle": "normal",
-          "fontWeight": "normal",
-        },
         Object {},
       ]
     }
-  >
-    
-  </Text>
+  />
   <Text
     style={
       Array [

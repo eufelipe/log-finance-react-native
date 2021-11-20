@@ -62,10 +62,7 @@ const BottomTabs = ({
           if (!isFocused && !event.defaultPrevented) {
             navigation.navigate(routeName);
           } else {
-            const temp = console.error;
-            console.error = () => {};
             navigation.dispatch(StackActions.popToTop());
-            console.error = temp;
           }
         };
 

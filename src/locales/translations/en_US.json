@@ -5,7 +5,9 @@
         "accessibility-remove-hint": "Tap here to delete this transaction",
         "done": "Done",
         "cancel": "Cancel",
-        "clear": "Clear"
+        "clear": "Clear",
+        "yes": "Yes",
+        "no": "No"
     },
 
     "tabs": {

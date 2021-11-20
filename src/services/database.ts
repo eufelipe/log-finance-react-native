@@ -3,7 +3,7 @@ import SQLiteAdapter, {
   SQLiteAdapterOptions,
 } from '@nozbe/watermelondb/adapters/sqlite';
 
-import {schema, migrations, modelClasses} from 'database';
+import {schema, migrations, modelClasses, seeds} from 'database';
 import {DATABASE_NAME} from 'database/schema';
 import {isIos} from 'styles/mixins';
 
@@ -26,6 +26,10 @@ export function getDatabase(): Database {
     });
   }
   return database;
+}
+
+export function runSeeds(): void {
+  seeds.run();
 }
 
 export default getDatabase;

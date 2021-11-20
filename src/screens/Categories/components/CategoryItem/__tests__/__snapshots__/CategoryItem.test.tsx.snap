@@ -2,8 +2,8 @@
 
 exports[`CategoryItem Test match snapshot CategoryItem 1`] = `
 <View
-  accessibilityHint="accessibility-button-hint Restaurante"
-  accessibilityLabel="accessibility-button-label Restaurante"
+  accessibilityHint="accessibility-button-hint undefined"
+  accessibilityLabel="accessibility-button-label undefined"
   accessible={true}
   collapsable={false}
   focusable={true}
@@ -45,28 +45,16 @@ exports[`CategoryItem Test match snapshot CategoryItem 1`] = `
       ]
     }
   >
-    <Text
-      allowFontScaling={false}
+    <Icon
+      color="#ffffff"
+      name="list"
+      size={24}
       style={
         Array [
-          Object {
-            "color": "#ffffff",
-            "fontSize": 24,
-          },
-          Array [
-            Object {},
-          ],
-          Object {
-            "fontFamily": "Material Icons",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-          },
           Object {},
         ]
       }
-    >
-      
-    </Text>
+    />
   </View>
   <Text
     style={
@@ -80,8 +68,6 @@ exports[`CategoryItem Test match snapshot CategoryItem 1`] = `
         },
       ]
     }
-  >
-    Restaurante
-  </Text>
+  />
 </View>
 `;

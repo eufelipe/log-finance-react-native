@@ -76,31 +76,19 @@ exports[`Header Test match snapshot Header 1`] = `
       }
     }
   >
-    <Text
-      allowFontScaling={false}
+    <Icon
       backgroundColor="transparent"
+      color="#ffffff"
+      name="settings"
+      size={28}
       style={
         Array [
           Object {
-            "color": "#ffffff",
-            "fontSize": 28,
+            "paddingRight": 0,
           },
-          Array [
-            Object {
-              "paddingRight": 0,
-            },
-          ],
-          Object {
-            "fontFamily": "Material Icons",
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-          },
-          Object {},
         ]
       }
-    >
-      
-    </Text>
+    />
   </View>
 </View>
 `;

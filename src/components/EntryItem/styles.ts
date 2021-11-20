@@ -14,7 +14,7 @@ export const Container = styled(TouchableOpacity)`
   align-items: center;
 `;
 
-export const Category = styled.View`
+export const CategoryContainer = styled.View`
   margin-right: ${({theme}) => theme.spacing.great}px;
 `;
 export const Description = styled.View`

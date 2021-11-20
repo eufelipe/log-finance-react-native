@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Keyboard as RNKeyboard, Alert } from 'react-native';
-import { useTranslation } from 'react-i18next';
-import { RouteProp, useNavigation, useRoute } from '@react-navigation/native';
+import React, {useState, useEffect} from 'react';
+import {Keyboard as RNKeyboard} from 'react-native';
+import {useTranslation} from 'react-i18next';
+import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 
-import { Button, NumberKeyboard, Strap } from 'components';
+import {Button, NumberKeyboard, Strap} from 'components';
 
 import {
   MenuEntryType,
@@ -13,15 +13,18 @@ import {
   EntryDate,
 } from './components';
 
-import { Screen, Container, SubmitContainer, Content } from './styles';
-import { useEntry } from 'hooks/useEntry';
-import { StackParamList } from 'routes/StacksRoute';
+import {Screen, Container, SubmitContainer, Content} from './styles';
+import {useEntry} from 'hooks/useEntry';
+import {StackParamList} from 'routes/StacksRoute';
+import {useDialog} from 'hooks/useDialog';
 
 const AddEntryScreen = (): JSX.Element => {
   const navigation = useNavigation();
   const route = useRoute<RouteProp<StackParamList, 'AddEntry'>>();
 
-  const { t } = useTranslation('add');
+  const {t} = useTranslation('add');
+
+  const {alertYesOrNo} = useDialog();
   const {
     entry,
     value,
@@ -46,23 +49,16 @@ const AddEntryScreen = (): JSX.Element => {
     navigation.goBack();
   };
 
-  const showConfirmRemoveDialog = () => {
-    return Alert.alert(
-      t('confirm-delete-title'),
-      t('confirm-delete-description'),
-      [
-        {
-          text: t('yes'),
-          onPress: () => {
-            if (entry) removeEntry(entry);
-            navigation.goBack();
-          },
-        },
-        {
-          text: t('no'),
-        },
-      ],
-    );
+  const showConfirmRemoveDialog = async () => {
+    if (
+      await alertYesOrNo({
+        title: t('confirm-delete-title'),
+        message: t('confirm-delete-description'),
+      })
+    ) {
+      if (entry) removeEntry(entry);
+      navigation.goBack();
+    }
   };
 
   useEffect(() => {
@@ -112,7 +108,11 @@ const AddEntryScreen = (): JSX.Element => {
             <EntryDate />
 
             <SubmitContainer>
-              <Button title={t('save')} onPress={onSubmit} disabled={!value} />
+              <Button
+                title={t('save')}
+                onPress={onSubmit}
+                disabled={!value || !category}
+              />
               {entry && editMode && (
                 <Button
                   type="danger"

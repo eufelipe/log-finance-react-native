@@ -1,7 +1,10 @@
-import React from 'react';
-import {useNavigation} from '@react-navigation/native';
+import React, {useCallback, useState} from 'react';
+import {useFocusEffect, useNavigation} from '@react-navigation/native';
 import {SettingsNavigationProp} from 'routes/StacksRoute';
 import {useTranslation} from 'react-i18next';
+
+import {Currency} from 'components';
+import {Entry} from 'models';
 
 import {
   Container,
@@ -11,22 +14,41 @@ import {
   SettingTouchable,
   SettingIcon,
 } from './styles';
-import {useEntry} from 'hooks/useEntry';
-import {Currency} from 'components';
 
-const Header = (): JSX.Element => {
+interface HeaderProps {
+  entries?: Entry[];
+}
+
+const Header = ({entries = []}: HeaderProps): JSX.Element => {
   const navigation = useNavigation<SettingsNavigationProp>();
   const {t} = useTranslation('home');
-  const {balance = 0} = useEntry();
+  const [balance, setBalance] = useState(0);
 
   const handleSettings = () =>
     navigation.navigate('SettingsStack', {screen: 'Settings'});
+
+  const calculateCurrentBalance = useCallback((): void => {
+    const sumValues = entries.reduce((previousEntry, currentEntry) => {
+      let value = currentEntry.value;
+      if (currentEntry.type === 'expense') {
+        value = Math.abs(value) * -1;
+      }
+      return previousEntry + value;
+    }, 0);
+
+    setBalance(sumValues);
+  }, [entries]);
+
+  useFocusEffect(
+    useCallback(() => {
+      calculateCurrentBalance();
+    }, [calculateCurrentBalance]),
+  );
 
   return (
     <Container>
       <Content>
         <Description>{t('balance')}</Description>
-
         <Currency value={balance} render={value => <Title>{value}</Title>} />
       </Content>
       <SettingTouchable onPress={handleSettings}>

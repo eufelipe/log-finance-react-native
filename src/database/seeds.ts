@@ -1,8 +1,8 @@
 import RNFS from 'react-native-fs';
 
-import { getDatabase } from 'services/database';
+import {getDatabase} from 'services/database';
 
-import { getCategoryCollection } from 'repositories/CategoryRepository';
+import {getCategoryCollection} from 'repositories/CategoryRepository';
 import CATEGORIES from './categories.json';
 
 export const run = async (): Promise<void> => {
@@ -14,7 +14,7 @@ export const run = async (): Promise<void> => {
   await getDatabase().write(() => getDatabase().unsafeResetDatabase());
 
   await getDatabase().write(async () => {
-    const records = CATEGORIES.map(({ description, key }) => {
+    const records = CATEGORIES.map(({description, key}) => {
       return getCategoryCollection().prepareCreate(record => {
         record.description = description;
         record.key = key;
@@ -28,4 +28,4 @@ export const run = async (): Promise<void> => {
   });
 };
 
-export default { run };
+export default {run};

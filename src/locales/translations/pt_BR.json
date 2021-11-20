@@ -5,7 +5,9 @@
         "accessibility-remove-hint": "Toque aqui excluir esse lançamento",
         "done": "Pronto",
         "cancel": "Cancelar",
-        "clear": "Limpar"
+        "clear": "Limpar",
+        "yes": "Sim",
+        "no": "Não"
     },
     "tabs": {
         "home-label": "Início",

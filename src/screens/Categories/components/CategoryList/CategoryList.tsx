@@ -1,36 +1,42 @@
 import React, {useCallback, useEffect, useState} from 'react';
+import withObservables from '@nozbe/with-observables';
 import {useNavigation} from '@react-navigation/native';
-
 import {filter} from 'lodash';
-import {ICategory} from 'interfaces';
-import {useEntry} from 'hooks/useEntry';
 
 import HeaderCategories from '../HeaderCategories';
 import CategoryItem from '../CategoryItem';
 
+import {Category} from 'models';
+import {getCategories} from 'repositories/CategoryRepository';
+
+import {useEntry} from 'hooks/useEntry';
 import {sanitizeString} from 'utils/strings';
 import {FlatList} from './styles';
 
-import CATEGORIES from 'database/categories.json';
+interface CategoryListProps {
+  categories: Category[];
+}
 
-const CategoryList = (): JSX.Element => {
+const CategoryList = ({categories}: CategoryListProps): JSX.Element => {
   const navigation = useNavigation();
   const {setCategory} = useEntry();
 
   const [query, setQuery] = useState('');
-  const [categories, setCategories] = useState<ICategory[]>(CATEGORIES ?? []);
+  const [filteredCategories, setFilteredCategories] = useState<Category[]>(
+    categories ?? [],
+  );
 
   const handleSearch = (term: string) => {
     const formattedQuery = sanitizeString(term);
-    const filteredCategories = filter(CATEGORIES, category => {
-      return sanitizeString(category.description).includes(formattedQuery);
+    const filtered = filter(categories, ({description}) => {
+      return sanitizeString(description).includes(formattedQuery);
     });
-    setCategories(filteredCategories);
+    setFilteredCategories(filtered);
     setQuery(term);
   };
 
   const onPressCategory = useCallback(
-    (category: ICategory) => {
+    (category: Category) => {
       setCategory(category);
       navigation.goBack();
     },
@@ -48,21 +54,27 @@ const CategoryList = (): JSX.Element => {
 
   useEffect(() => {
     if (!query) {
-      setCategories(CATEGORIES);
+      setFilteredCategories(categories);
     }
-  }, [query]);
+  }, [query, categories]);
 
   return (
-    <FlatList
-      ListHeaderComponent={
-        <HeaderCategories onChangeText={handleSearch} query={query} />
-      }
-      testID="category-list"
-      data={categories}
-      renderItem={renderItem}
-      keyExtractor={ListKeyExtractor}
-    />
+    <>
+      <FlatList
+        ListHeaderComponent={
+          <HeaderCategories onChangeText={handleSearch} query={query} />
+        }
+        testID="category-list"
+        data={filteredCategories}
+        renderItem={renderItem}
+        keyExtractor={ListKeyExtractor}
+      />
+    </>
   );
 };
 
-export default CategoryList;
+const enhance = withObservables(['categories'], () => ({
+  categories: getCategories(),
+}));
+
+export default enhance(CategoryList);

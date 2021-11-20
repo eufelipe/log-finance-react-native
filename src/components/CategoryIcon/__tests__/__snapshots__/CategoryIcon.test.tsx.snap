@@ -1,51 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CategoryIcon Test match snapshot CategoryIcon 1`] = `
-<Text
-  allowFontScaling={false}
+<Icon
+  color="#464E5F"
+  name="fastfood"
+  size={24}
   style={
     Array [
-      Object {
-        "color": "#464E5F",
-        "fontSize": 24,
-      },
-      Array [
-        Object {},
-      ],
-      Object {
-        "fontFamily": "Material Icons",
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-      },
       Object {},
     ]
   }
->
-  
-</Text>
+/>
 `;
 
 exports[`CategoryIcon Test match snapshot CategoryIcon default value 1`] = `
-<Text
-  allowFontScaling={false}
+<Icon
+  color="#464E5F"
+  name="list"
+  size={24}
   style={
     Array [
-      Object {
-        "color": "#464E5F",
-        "fontSize": 24,
-      },
-      Array [
-        Object {},
-      ],
-      Object {
-        "fontFamily": "Material Icons",
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-      },
       Object {},
     ]
   }
->
-  
-</Text>
+/>
 `;
