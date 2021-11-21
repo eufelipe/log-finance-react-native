@@ -7,7 +7,8 @@
         "cancel": "Cancel",
         "clear": "Clear",
         "yes": "Yes",
-        "no": "No"
+        "no": "No",
+        "searchbar-placeholder": "pesquise um item"
     },
     "routes": {
         "title-settings": "Settings"
@@ -105,10 +106,12 @@
     },
 
     "settings": { 
+        "title-settings": "Settings",
         "language": "Language",
         "currency": "Currency",
         "pt-BR": "Portuguese",
-        "en-US": "English"
+        "en-US": "English",
+        "active": "Selected"
     }
 
 }
