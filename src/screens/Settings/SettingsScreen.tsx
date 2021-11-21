@@ -3,20 +3,21 @@ import {useNavigation} from '@react-navigation/native';
 
 import {Container} from './styles';
 import {useTranslation} from 'react-i18next';
-import SettingList from './components/SettingList';
+
+import List, {ListItemProps} from 'components/List';
 
 const SettingsScreen = (): JSX.Element => {
   const navigation = useNavigation();
 
   const {t} = useTranslation('settings');
 
-  const menu = [
+  const menu: ListItemProps[] = [
     {
       id: 1,
       title: t('language'),
       selected: t('pt-BR'),
       icon: 'language',
-      onPress: () => {},
+      onPress: () => navigation.navigate('LanguageStack'),
     },
     {
       id: 2,
@@ -29,7 +30,7 @@ const SettingsScreen = (): JSX.Element => {
 
   return (
     <Container>
-      <SettingList items={menu} />
+      <List items={menu} />
     </Container>
   );
 };

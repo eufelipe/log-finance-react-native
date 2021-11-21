@@ -2,15 +2,17 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {EntryContext} from 'hooks';
-import {AddEntryStack, SettingsStack, CategoriesStack} from './StacksRoute';
+import {AddEntryStack, LanguageStack, CategoriesStack} from './StacksRoute';
 import TabsRoute from './TabsRoute';
 import {useTranslation} from 'react-i18next';
+import SettingsScreen from 'screens/Settings';
 
 export type RootStackParamList = {
   Tabs: undefined;
   AddEntryStack: undefined;
   CategoriesStack: undefined;
-  SettingsStack: {screen: 'Settings'};
+  Settings: undefined;
+  LanguageStack: {screen: 'Language'};
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -42,13 +44,21 @@ const Routes = (): JSX.Element => {
             />
           </RootStack.Group>
 
+          <RootStack.Group screenOptions={{presentation: 'modal'}}>
+            <RootStack.Screen
+              name="LanguageStack"
+              component={LanguageStack}
+              options={{headerShown: false}}
+            />
+          </RootStack.Group>
+
           <RootStack.Group>
             <RootStack.Screen
-              name="SettingsStack"
+              name="Settings"
               options={{
                 title: t('title-settings'),
               }}
-              component={SettingsStack}
+              component={SettingsScreen}
             />
           </RootStack.Group>
         </RootStack.Navigator>

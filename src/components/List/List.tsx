@@ -1,18 +1,26 @@
 import React, {useCallback} from 'react';
 
 import {FlatList} from './styles';
-import Item, {SettingItemProps} from './Item';
+import Item from './Item';
 
-interface Props {
-  items: SettingItemProps[];
+export interface ListItemProps {
+  id: number;
+  title: string;
+  selected?: string;
+  icon?: string;
+  onPress: () => void;
 }
 
-const SettingList = ({items}: Props): JSX.Element => {
+interface Props {
+  items: ListItemProps[];
+}
+
+const List = ({items}: Props): JSX.Element => {
   const ListKeyExtractor = useCallback(item => item.id, []);
   const renderItem = useCallback(({item}) => <Item {...item} />, []);
   return (
     <FlatList
-      testID="settings-list"
+      testID="list-items"
       data={items}
       renderItem={renderItem}
       keyExtractor={ListKeyExtractor}
@@ -20,4 +28,4 @@ const SettingList = ({items}: Props): JSX.Element => {
   );
 };
 
-export default SettingList;
+export default List;

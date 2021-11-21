@@ -7,6 +7,7 @@ import {RootStackParamList} from 'routes';
 
 import AddEntryScreen from 'screens/AddEntry';
 import SettingsScreen from 'screens/Settings';
+import LanguageScreen from 'screens/Language';
 import CategoriesScreen from 'screens/Categories';
 import {Entry} from 'models';
 
@@ -17,6 +18,8 @@ export type StackParamList = {
   CategoriesStack: undefined;
   Settings: undefined;
   SettingsStack: undefined;
+  Language: undefined;
+  LanguageStack: undefined;
 };
 
 export type CategoriesNavigationProp = CompositeNavigationProp<
@@ -58,6 +61,19 @@ export const SettingsStack = () => {
     </RootStack.Navigator>
   );
 };
+
+export const LanguageStack = () => {
+  return (
+    <RootStack.Navigator>
+      <RootStack.Screen
+        name="Language"
+        component={LanguageScreen}
+        options={{headerShown: false}}
+      />
+    </RootStack.Navigator>
+  );
+};
+
 export const CategoriesStack = () => {
   return (
     <RootStack.Navigator>
