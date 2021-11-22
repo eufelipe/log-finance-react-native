@@ -9,6 +9,8 @@ import AddEntryScreen from 'screens/AddEntry';
 import SettingsScreen from 'screens/Settings';
 import LanguageScreen from 'screens/Language';
 import CategoriesScreen from 'screens/Categories';
+import CurrencyScreen from 'screens/Currency';
+
 import {Entry} from 'models';
 
 export type StackParamList = {
@@ -68,6 +70,18 @@ export const LanguageStack = () => {
       <RootStack.Screen
         name="Language"
         component={LanguageScreen}
+        options={{headerShown: false}}
+      />
+    </RootStack.Navigator>
+  );
+};
+
+export const CurrencyStack = () => {
+  return (
+    <RootStack.Navigator>
+      <RootStack.Screen
+        name="Language"
+        component={CurrencyScreen}
         options={{headerShown: false}}
       />
     </RootStack.Navigator>

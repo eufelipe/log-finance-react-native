@@ -2,17 +2,26 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {EntryContext} from 'hooks';
-import {AddEntryStack, LanguageStack, CategoriesStack} from './StacksRoute';
+import {
+  AddEntryStack,
+  LanguageStack,
+  CategoriesStack,
+  CurrencyStack,
+} from './StacksRoute';
+
 import TabsRoute from './TabsRoute';
 import {useTranslation} from 'react-i18next';
 import SettingsScreen from 'screens/Settings';
+import {Colors} from 'styles/layout';
 
 export type RootStackParamList = {
   Tabs: undefined;
   AddEntryStack: undefined;
   CategoriesStack: undefined;
+  SettingsStack: undefined;
   Settings: undefined;
   LanguageStack: {screen: 'Language'};
+  CurrencyStack: {screen: 'Currency'};
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -50,6 +59,12 @@ const Routes = (): JSX.Element => {
               component={LanguageStack}
               options={{headerShown: false}}
             />
+
+            <RootStack.Screen
+              name="CurrencyStack"
+              component={CurrencyStack}
+              options={{headerShown: false}}
+            />
           </RootStack.Group>
 
           <RootStack.Group>
@@ -57,6 +72,10 @@ const Routes = (): JSX.Element => {
               name="Settings"
               options={{
                 title: t('title-settings'),
+                headerStyle: {
+                  backgroundColor: Colors.primary,
+                },
+                headerTintColor: Colors.white,
               }}
               component={SettingsScreen}
             />

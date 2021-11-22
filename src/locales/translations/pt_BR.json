@@ -112,5 +112,10 @@
         "pt-BR": "Português",
         "en-US": "Inglês",
         "active": "Selecionada"
+    },
+
+    "currencies": { 
+        "title": "Moedas", 
+        "active": "Selecionada"
     }
 }

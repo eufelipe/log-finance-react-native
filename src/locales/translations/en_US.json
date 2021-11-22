@@ -112,6 +112,11 @@
         "pt-BR": "Portuguese",
         "en-US": "English",
         "active": "Selected"
+    },
+
+    "currencies": { 
+        "title": "Currencies", 
+        "active": "Selected"
     }
 
 }

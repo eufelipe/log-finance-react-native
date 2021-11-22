@@ -14,25 +14,27 @@ export const Container = styled(TouchableOpacity)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
 `;
 
 export const Content = styled.View`
   justify-content: space-between;
   flex-direction: row;
   flex: 1;
+  align-items: center;
   padding-left: ${({theme}) => theme.spacing.small}px;
 `;
+
+export const Description = styled.View``;
 
 export const Title = styled(Text)`
   color: ${({theme}) => theme.colors.paragraph};
   font-size: ${({theme}) => theme.fontSizes.small};
 `;
 
-export const SubTitle = styled(Text)`
-  color: ${({theme}) => theme.colors.paragraph};
-  font-size: ${({theme}) => theme.fontSizes.small};
+export const SubTitle = styled(Title)`
+  font-size: ${({theme}) => theme.fontSizes.tiny};
 `;
+export const Selected = styled(Title)``;
 
 export const BaseIcon = styled(MaterialIcons).attrs(
   ({name}: {name?: string}) => ({
