@@ -7,8 +7,14 @@
         "cancel": "Cancelar",
         "clear": "Limpar",
         "yes": "Sim",
-        "no": "Não"
+        "no": "Não",
+        "searchbar-placeholder": "search for an item"
     },
+
+    "routes": {
+        "title-settings": "Configurações"
+    },
+
     "tabs": {
         "home-label": "Início",
         "home-accessibility-label": "Toque aqui para ir para primeira tela do app",
@@ -97,5 +103,19 @@
         "kids": "Crianças",
         "amusement": "Diversão",
         "utilities": "Utilities"
+    },
+
+    "settings": {
+        "title-settings": "Configurações",
+        "language": "Idioma",
+        "currency": "Moeda",
+        "pt-BR": "Português",
+        "en-US": "Inglês",
+        "active": "Selecionada"
+    },
+
+    "currencies": { 
+        "title": "Moedas", 
+        "active": "Selecionada"
     }
 }

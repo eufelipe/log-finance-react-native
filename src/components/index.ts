@@ -6,3 +6,5 @@ export {default as Dismiss} from './Dismiss';
 export {default as SwipeRemoveButton} from './SwipeRemoveButton';
 export {default as NumberKeyboard} from './NumberKeyboard';
 export {default as Strap} from './Strap';
+export {default as List} from './List';
+export {default as Toolbar} from './Toolbar';

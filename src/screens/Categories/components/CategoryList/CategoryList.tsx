@@ -3,7 +3,6 @@ import withObservables from '@nozbe/with-observables';
 import {useNavigation} from '@react-navigation/native';
 import {filter} from 'lodash';
 
-import HeaderCategories from '../HeaderCategories';
 import CategoryItem from '../CategoryItem';
 
 import {Category} from 'models';
@@ -12,6 +11,7 @@ import {getCategories} from 'repositories/CategoryRepository';
 import {useEntry} from 'hooks/useEntry';
 import {sanitizeString} from 'utils/strings';
 import {FlatList} from './styles';
+import {Toolbar} from 'components';
 
 interface CategoryListProps {
   categories: Category[];
@@ -62,7 +62,7 @@ const CategoryList = ({categories}: CategoryListProps): JSX.Element => {
     <>
       <FlatList
         ListHeaderComponent={
-          <HeaderCategories onChangeText={handleSearch} query={query} />
+          <Toolbar onChangeText={handleSearch} query={query} />
         }
         testID="category-list"
         data={filteredCategories}

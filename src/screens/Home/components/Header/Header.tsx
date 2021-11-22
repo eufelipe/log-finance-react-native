@@ -24,8 +24,7 @@ const Header = ({entries = []}: HeaderProps): JSX.Element => {
   const {t} = useTranslation('home');
   const [balance, setBalance] = useState(0);
 
-  const handleSettings = () =>
-    navigation.navigate('SettingsStack', {screen: 'Settings'});
+  const handleSettings = () => navigation.navigate('Settings');
 
   const calculateCurrentBalance = useCallback((): void => {
     const sumValues = entries.reduce((previousEntry, currentEntry) => {

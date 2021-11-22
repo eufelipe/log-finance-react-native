@@ -2,11 +2,16 @@ import React from 'react';
 
 import {Container} from './styles';
 import {CategoryList} from './components';
+import {Category} from 'models';
 
-const CategoriesScreen = (): JSX.Element => {
+interface CategoriesScreenProps {
+  categories?: Category[];
+}
+
+const CategoriesScreen = ({categories}: CategoriesScreenProps): JSX.Element => {
   return (
     <Container>
-      <CategoryList />
+      <CategoryList categories={categories} />
     </Container>
   );
 };
