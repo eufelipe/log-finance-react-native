@@ -14,6 +14,7 @@ import {
   SettingTouchable,
   SettingIcon,
 } from './styles';
+import {useEntry} from 'hooks/useEntry';
 
 interface HeaderProps {
   entries?: Entry[];
@@ -24,24 +25,15 @@ const Header = ({entries = []}: HeaderProps): JSX.Element => {
   const {t} = useTranslation('home');
   const [balance, setBalance] = useState(0);
 
+  const {calculateCurrentBalance} = useEntry();
+
   const handleSettings = () => navigation.navigate('Settings');
-
-  const calculateCurrentBalance = useCallback((): void => {
-    const sumValues = entries.reduce((previousEntry, currentEntry) => {
-      let value = currentEntry.value;
-      if (currentEntry.type === 'expense') {
-        value = Math.abs(value) * -1;
-      }
-      return previousEntry + value;
-    }, 0);
-
-    setBalance(sumValues);
-  }, [entries]);
 
   useFocusEffect(
     useCallback(() => {
-      calculateCurrentBalance();
-    }, [calculateCurrentBalance]),
+      const sumValues = calculateCurrentBalance(entries);
+      setBalance(sumValues);
+    }, [calculateCurrentBalance, entries]),
   );
 
   return (

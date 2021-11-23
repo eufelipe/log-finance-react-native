@@ -23,6 +23,13 @@ export const getTodayEntries = (): Observable<Entry[]> => {
     .observe();
 };
 
+export const getTodayEntriesFetch = (): Promise<Entry[]> => {
+  const today = getDateToday();
+  return getEntryCollection()
+    .query(Q.where('date', Q.oneOf([today])))
+    .fetch();
+};
+
 const fill = (record: Entry, data: IEntry) => {
   const {description, type, value, category, date} = data;
   record.description = description;
@@ -58,6 +65,7 @@ export const removeEntry = async (entry: Entry): Promise<void> => {
 export default {
   getEntryCollection,
   getEntries,
+  getTodayEntriesFetch,
   getTodayEntries,
   getBalance,
   addEntry,

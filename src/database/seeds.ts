@@ -14,10 +14,11 @@ export const run = async (): Promise<void> => {
   await getDatabase().write(() => getDatabase().unsafeResetDatabase());
 
   await getDatabase().write(async () => {
-    const records = CATEGORIES.map(({description, key}) => {
+    const records = CATEGORIES.map(({description, key, color}) => {
       return getCategoryCollection().prepareCreate(record => {
         record.description = description;
         record.key = key;
+        record.color = color;
       });
     });
 

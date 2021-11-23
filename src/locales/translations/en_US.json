@@ -114,6 +114,10 @@
         "active": "Selected"
     },
 
+    "reports": { 
+        "title": "Reports"
+    },
+
     "currencies": { 
         "title": "Currencies", 
         "active": "Selected"

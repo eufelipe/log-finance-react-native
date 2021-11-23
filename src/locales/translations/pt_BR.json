@@ -114,6 +114,10 @@
         "active": "Selecionada"
     },
 
+    "reports": { 
+        "title": "Relatórios"
+    },
+
     "currencies": { 
         "title": "Moedas", 
         "active": "Selecionada"

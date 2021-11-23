@@ -19,6 +19,7 @@ interface EntryProviderProps {
 interface EntryContextData {
   saveEntry: () => void;
   removeEntry: (entry: Entry) => void;
+  calculateCurrentBalance: (entries: Entry[]) => number;
 
   entry?: Entry;
   setEntry: (entry: Entry) => void;
@@ -98,6 +99,18 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
     [],
   );
 
+  const calculateCurrentBalance = useCallback((entries: Entry[]): number => {
+    const sumValues = entries.reduce((previousEntry, currentEntry) => {
+      let value = currentEntry.value;
+      if (currentEntry.type === 'expense') {
+        value = Math.abs(value) * -1;
+      }
+      return previousEntry + value;
+    }, 0);
+
+    return sumValues;
+  }, []);
+
   useEffect(() => {
     if (categoryDefault && !category) {
       setCategory(categoryDefault);
@@ -122,6 +135,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       setEntryType,
       fillValuesFromEntry,
       cleanValues,
+      calculateCurrentBalance,
     }),
     [
       entry,
@@ -134,6 +148,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       removeEntry,
       fillValuesFromEntry,
       cleanValues,
+      calculateCurrentBalance,
     ],
   );
 
