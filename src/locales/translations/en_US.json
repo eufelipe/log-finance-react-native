@@ -115,7 +115,9 @@
     },
 
     "reports": { 
-        "title": "Reports"
+        "title": "Reports",
+        "expense": "Expense",
+        "earning": "Earning"
     },
 
     "currencies": { 

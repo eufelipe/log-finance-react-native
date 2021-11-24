@@ -115,7 +115,9 @@
     },
 
     "reports": { 
-        "title": "Relatórios"
+        "title": "Relatórios",
+        "expense": "Despesa",
+        "earning": "Receita"
     },
 
     "currencies": { 

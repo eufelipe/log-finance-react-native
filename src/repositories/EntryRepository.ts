@@ -13,6 +13,10 @@ export const getEntryCollection = (): Collection<Entry> =>
 export const getEntries = (): Observable<Entry[]> =>
   getEntryCollection().query().observe();
 
+export const getEntriesCount = (): Promise<number> =>
+  getEntryCollection().query().fetchCount();
+
+// TODO: implemetar uma melhora na query
 export const getBalance = (): Promise<Entry[]> =>
   getEntryCollection().query().fetch();
 
@@ -23,10 +27,9 @@ export const getTodayEntries = (): Observable<Entry[]> => {
     .observe();
 };
 
-export const getTodayEntriesFetch = (): Promise<Entry[]> => {
-  const today = getDateToday();
+export const getEntriesByPeriod = (dates: string[]): Promise<Entry[]> => {
   return getEntryCollection()
-    .query(Q.where('date', Q.oneOf([today])))
+    .query(Q.where('date', Q.oneOf(dates)))
     .fetch();
 };
 
@@ -64,8 +67,9 @@ export const removeEntry = async (entry: Entry): Promise<void> => {
 
 export default {
   getEntryCollection,
+  getEntriesCount,
   getEntries,
-  getTodayEntriesFetch,
+  getEntriesByPeriod,
   getTodayEntries,
   getBalance,
   addEntry,
