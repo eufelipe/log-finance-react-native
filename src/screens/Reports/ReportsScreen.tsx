@@ -5,10 +5,16 @@ import {useTranslation} from 'react-i18next';
 import {sumBy} from 'lodash';
 
 import {Currency} from 'components';
-import ReportsService, {ReportItem} from 'services/reports';
+import ReportsService, {ReportItem, GetValuesByPeriod} from 'services/reports';
 
 import {Colors} from 'styles/layout';
+
 import LegendList from './components/LegendList';
+
+import ListEmpty from './components/ListEmpty';
+import {EntryType} from 'interfaces/IEntry';
+import FilterPeriod from './components/FilterPeriod';
+import {FilterPeriodItem} from './components/FilterPeriod/data';
 
 import {
   Container,
@@ -19,29 +25,27 @@ import {
   Touchable,
   Label,
 } from './styles';
-import ListEmpty from './components/ListEmpty';
-import {EntryType} from 'interfaces/IEntry';
-import colors from 'styles/colors';
 
 const ReportsScreen = (): JSX.Element => {
   const [data, setData] = useState<ReportItem[]>([]);
   const [entryType, setEntryType] = useState<EntryType>('expense');
 
-  // TODO: implementar periodos Hoje, essa semana, 15 dias, este mes, etc
-  // const [period, setPeriod] = useState<string[]>([today]);
+  const periodDefault: GetValuesByPeriod = {
+    entryType,
+    start: new Date(),
+    end: new Date(),
+  };
+
+  const [period, setPeriod] = useState<GetValuesByPeriod>(periodDefault);
 
   const [showEmptyEntries, setShowEmptyEntries] = useState(false);
 
   const {t} = useTranslation('reports');
 
   const loadData = useCallback(async () => {
-    const values = await ReportsService.getValuesByPeriod({
-      entryType,
-      start: new Date(),
-      end: new Date(),
-    });
+    const values = await ReportsService.getValuesByPeriod(period);
     setData(values);
-  }, [entryType]);
+  }, [period]);
 
   const loadTotalEntries = useCallback(async () => {
     const countEntries = await ReportsService.getTotalEntries();
@@ -50,6 +54,15 @@ const ReportsScreen = (): JSX.Element => {
 
   const isExpense = entryType === 'expense';
   const isEarning = entryType === 'earning';
+
+  const onChangeFilter = (filterPeriod: FilterPeriodItem) => {
+    const {start, end} = filterPeriod.interval;
+    setPeriod({
+      entryType,
+      start,
+      end,
+    });
+  };
 
   useFocusEffect(
     useCallback(() => {
@@ -72,13 +85,13 @@ const ReportsScreen = (): JSX.Element => {
   return (
     <Container>
       <Header>
-        <Title>
-          {t('title')} {entryType}
-        </Title>
+        <Title>{t('title')}</Title>
+
+        <FilterPeriod onChangeFilter={onChangeFilter} />
 
         <PieChart
           radius={120}
-          data={isEmpty ? [{value: 0.1, color: colors.tertiary}] : data}
+          data={isEmpty ? [{value: 0.1, color: Colors.tertiary}] : data}
           donut
           innerCircleColor={Colors.white}
           strokeWidth={0}

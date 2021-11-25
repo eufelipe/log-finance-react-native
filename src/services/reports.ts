@@ -18,6 +18,12 @@ export interface RawItem {
   value: number;
 }
 
+export interface GetValuesByPeriod {
+  entryType: EntryType;
+  start: Date;
+  end: Date;
+}
+
 const formatValuesForChart = (values: RawItem[]) => {
   const items = map(groupBy(values, 'category'), (item, idx) => {
     const [value] = item;
@@ -33,12 +39,6 @@ const formatValuesForChart = (values: RawItem[]) => {
   return items;
 };
 
-interface GetValuesByPeriod {
-  entryType: EntryType;
-  start: Date;
-  end: Date;
-}
-
 export const getTotalEntries = (): Promise<number> => {
   return EntryRepository.getEntriesCount();
 };
@@ -53,7 +53,6 @@ export const getValuesByPeriod = async ({
     end,
   });
   const dates = interval.map(date => getDate(date));
-
   const entries = await EntryRepository.getEntriesByPeriod(dates);
 
   const expenseItems = entries.filter(({type}) => type === entryType);

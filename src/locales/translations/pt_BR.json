@@ -117,7 +117,14 @@
     "reports": { 
         "title": "Relatórios",
         "expense": "Despesa",
-        "earning": "Receita"
+        "earning": "Receita",
+        "today": "Hoje",
+        "week": "Esta Semana",
+        "15-days": "15 dias",
+        "month": "Este Mês",
+        "3-month": "3 meses",
+        "6-month": "6 meses",
+        "year": "Ano"
     },
 
     "currencies": { 

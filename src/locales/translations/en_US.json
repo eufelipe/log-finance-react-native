@@ -117,7 +117,14 @@
     "reports": { 
         "title": "Reports",
         "expense": "Expense",
-        "earning": "Earning"
+        "earning": "Earning",
+        "today": "Today",
+        "week": "Week",
+        "15-days": "15 days",
+        "month": "this month",
+        "3-month": "3 month",
+        "6-month": "6 month",
+        "year": "Year"
     },
 
     "currencies": { 
