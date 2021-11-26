@@ -19,11 +19,12 @@ const MOCK: IEntry = {
   description: 'Salário',
   type: 'earning',
   value: 99.45,
-  date: new Date(),
+  dateAt: new Date(),
   category: {
-    id: 1,
+    id: '1',
     description: 'Restaurante',
-    icon: 'money',
+    key: 'money',
+    color: 'red',
   },
 };
 

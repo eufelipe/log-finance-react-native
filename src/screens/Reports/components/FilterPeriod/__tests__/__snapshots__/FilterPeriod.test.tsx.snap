@@ -1,0 +1,446 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterPeriod Test match snapshot FilterPeriod 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "active": true,
+          "id": "today",
+          "interval": Object {
+            "end": 2021-11-27T02:59:59.999Z,
+            "start": 2021-11-26T02:59:59.999Z,
+          },
+        },
+        Object {
+          "id": "week",
+          "interval": Object {
+            "end": 2021-11-27T02:59:59.999Z,
+            "start": 2021-11-21T03:00:00.000Z,
+          },
+        },
+        Object {
+          "id": "15-days",
+          "interval": Object {
+            "end": 2021-11-27T02:59:59.999Z,
+            "start": 2021-11-12T02:59:59.999Z,
+          },
+        },
+        Object {
+          "id": "month",
+          "interval": Object {
+            "end": 2021-11-27T02:59:59.999Z,
+            "start": 2021-11-01T03:00:00.000Z,
+          },
+        },
+        Object {
+          "id": "quarter",
+          "interval": Object {
+            "end": 2021-11-27T02:59:59.999Z,
+            "start": 2021-10-01T03:00:00.000Z,
+          },
+        },
+        Object {
+          "id": "semester",
+          "interval": Object {
+            "end": 2021-11-27T02:59:59.999Z,
+            "start": 2021-05-31T02:59:59.999Z,
+          },
+        },
+        Object {
+          "id": "year",
+          "interval": Object {
+            "end": 2021-11-27T02:59:59.999Z,
+            "start": 2021-01-01T03:00:00.000Z,
+          },
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={true}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Array [
+        Object {
+          "paddingTop": 21.428571428571427,
+        },
+      ]
+    }
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 42.857142857142854,
+              "marginLeft": 21.428571428571427,
+              "marginRight": 21.428571428571427,
+              "marginTop": 0,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            active={true}
+            style={
+              Array [
+                Object {
+                  "color": "#ffffff",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            today
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 42.857142857142854,
+              "marginLeft": 21.428571428571427,
+              "marginRight": 21.428571428571427,
+              "marginTop": 0,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#464E5F",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            week
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 42.857142857142854,
+              "marginLeft": 21.428571428571427,
+              "marginRight": 21.428571428571427,
+              "marginTop": 0,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#464E5F",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            15-days
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 42.857142857142854,
+              "marginLeft": 21.428571428571427,
+              "marginRight": 21.428571428571427,
+              "marginTop": 0,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#464E5F",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            month
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 42.857142857142854,
+              "marginLeft": 21.428571428571427,
+              "marginRight": 21.428571428571427,
+              "marginTop": 0,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#464E5F",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            quarter
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 42.857142857142854,
+              "marginLeft": 21.428571428571427,
+              "marginRight": 21.428571428571427,
+              "marginTop": 0,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#464E5F",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            semester
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 42.857142857142854,
+              "marginLeft": 21.428571428571427,
+              "marginRight": 21.428571428571427,
+              "marginTop": 0,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#464E5F",
+                  "fontFamily": "Poppins-Regular",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            year
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

@@ -114,6 +114,19 @@
         "active": "Selecionada"
     },
 
+    "reports": { 
+        "title": "Relatórios",
+        "expense": "Despesa",
+        "earning": "Receita",
+        "today": "Hoje",
+        "week": "Esta Semana",
+        "15-days": "15 dias",
+        "month": "Este Mês",
+        "quarter": "3 meses",
+        "semester": "6 meses",
+        "year": "Ano"
+    },
+
     "currencies": { 
         "title": "Moedas", 
         "active": "Selecionada"

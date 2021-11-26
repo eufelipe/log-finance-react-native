@@ -25,10 +25,14 @@ export function currencyFormatter(
   const currentCurrency = currency ?? DEFAULT_CURRENCY;
   const currentLanguage = language ?? DEFAULT_LANGUAGE;
 
-  const amount = new Intl.NumberFormat(currentLanguage, {
+  const optionsNumber = {
     style: 'currency',
     currency: currentCurrency,
-  }).format(output / 100);
+  };
+
+  const amount = new Intl.NumberFormat(currentLanguage, optionsNumber).format(
+    output / 100,
+  );
 
   return `${amount}`;
 }

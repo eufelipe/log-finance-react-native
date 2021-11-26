@@ -9,6 +9,11 @@ export interface IconProp {
   };
 }
 
+// TODO: Mover as propreidades de name, type, contained e color para
+// categories.json para serem injetadas no banco.
+// Para no futuro toda a configuraçãos de categorias sejam feitas dinamicamente
+// Possibilitando assim a criação, alteração e exclusão de categorias
+
 export const icons: IconProp = {
   personal: {
     name: 'account-box',

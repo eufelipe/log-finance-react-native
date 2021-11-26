@@ -15,7 +15,12 @@ jest.mock('react-native-reanimated', () => {
 });
 
 jest.mock('react-i18next', () => ({
-  useTranslation: () => ({t: (key: any) => key}),
+  useTranslation: () => ({
+    t: (key: any) => key,
+    i18n: {
+      changeLanguage: () => new Promise(() => {}),
+    },
+  }),
 }));
 
 jest.mock('services/database', () => ({

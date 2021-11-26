@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import {useTranslation} from 'react-i18next';
 import {isToday, format} from 'date-fns';
@@ -7,13 +7,11 @@ import {useEntry} from 'hooks/useEntry';
 import Row from '../Row';
 
 import {Label, Title, Touchable} from './styles';
-import {DATE_FORMAT_ISO, parseStringToDate} from 'utils/dates';
 
 const EntryDate = (): JSX.Element => {
   const {t} = useTranslation('add');
-  const {date, setDate} = useEntry();
+  const {dateAt = new Date(), setDateAt} = useEntry();
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
-  const [dateTime, setDateTime] = useState(new Date());
 
   const showDatePicker = () => {
     setDatePickerVisibility(true);
@@ -24,21 +22,16 @@ const EntryDate = (): JSX.Element => {
   };
 
   const handleConfirm = (dateSelected: Date) => {
-    setDate(format(dateSelected, DATE_FORMAT_ISO));
+    setDateAt(dateSelected);
     hideDatePicker();
   };
 
-  const prefix = `${isToday(dateTime) ? t('today') + ', ' : t('day')}`;
-  const formattedDate = format(
-    dateTime,
-    `'${prefix}' dd '${t('of')}' MMMM', ${t('at')} ' HH:mm'h'`,
-  );
+  const prefix = `${isToday(dateAt) ? t('today') + ', ' : t('day')}`;
+  const formatPattern = `'${prefix}' dd '${t('of')}' MMMM', ${t(
+    'at',
+  )} ' HH:mm'h'`;
 
-  useEffect(() => {
-    if (date) {
-      setDateTime(parseStringToDate(date));
-    }
-  }, [date]);
+  const formattedDate = format(dateAt, formatPattern);
 
   return (
     <>
@@ -49,7 +42,7 @@ const EntryDate = (): JSX.Element => {
         </Row>
       </Touchable>
       <DateTimePickerModal
-        date={dateTime}
+        date={dateAt}
         isVisible={isDatePickerVisible}
         mode="date"
         onConfirm={handleConfirm}

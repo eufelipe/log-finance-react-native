@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LegendItem Test match snapshot LegendItem 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "paddingBottom": 5,
+        "paddingLeft": 2,
+        "paddingRight": 2,
+        "paddingTop": 5,
+        "width": "50%",
+      },
+    ]
+  }
+>
+  <View
+    color="red"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "red",
+          "borderRadius": 8,
+          "height": 16,
+          "marginRight": 5,
+          "width": 16,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#808080",
+          "fontFamily": "Poppins-Regular",
+          "fontSize": 20,
+          "fontWeight": "700",
+          "marginRight": 5,
+        },
+      ]
+    }
+  >
+    Teste
+     (
+    100
+    )
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#808080",
+          "fontFamily": "Poppins-Regular",
+          "fontSize": 20,
+          "fontWeight": "400",
+          "marginRight": 5,
+        },
+      ]
+    }
+  >
+    R$ 0,10
+  </Text>
+</View>
+`;

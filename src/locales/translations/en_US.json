@@ -114,6 +114,19 @@
         "active": "Selected"
     },
 
+    "reports": { 
+        "title": "Reports",
+        "expense": "Expense",
+        "earning": "Earning",
+        "today": "Today",
+        "week": "Week",
+        "15-days": "15 days",
+        "month": "this month",
+        "quarter": "3 month",
+        "semester": "6 month",
+        "year": "Year"
+    },
+
     "currencies": { 
         "title": "Currencies", 
         "active": "Selected"
