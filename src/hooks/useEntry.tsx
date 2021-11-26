@@ -12,7 +12,6 @@ import {Category, Entry} from 'models';
 import {EntryRepository} from 'repositories';
 
 import {useCategory} from 'hooks/useCategory';
-import {getDateToday} from 'utils/dates';
 interface EntryProviderProps {
   children: React.ReactNode;
 }
@@ -33,8 +32,8 @@ interface EntryContextData {
   category?: Category;
   setCategory: (value: Category) => void;
 
-  date?: string;
-  setDate: (value: string) => void;
+  dateAt?: Date;
+  setDateAt: (value: Date) => void;
 
   entryType?: EntryType;
   setEntryType: (value: EntryType) => void;
@@ -53,7 +52,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
   const [entry, setEntry] = useState<Entry>();
   const [value, setValue] = useState<number>(0);
   const [description, setDescription] = useState<string>();
-  const [date, setDate] = useState<string>();
+  const [dateAt, setDateAt] = useState<Date>();
   const [category, setCategory] = useState<Category>();
   const [entryType, setEntryType] = useState<EntryType>(entryTypeDefault);
 
@@ -62,7 +61,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
   const cleanValues = useCallback((): void => {
     setValue(0);
     setDescription(undefined);
-    setDate(undefined);
+    setDateAt(undefined);
     setCategory(undefined);
     setEntryType(entryTypeDefault);
   }, []);
@@ -71,7 +70,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
     setEntry(entry);
     setValue(entry.value);
     setDescription(entry.description);
-    setDate(entry.date);
+    setDateAt(entry.dateAt);
     setEntryType(entry.type);
   }, []);
 
@@ -80,7 +79,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
     const data: IEntry = {
       description,
       type: entryType,
-      date: date ?? getDateToday(),
+      dateAt: dateAt ?? new Date(),
       value,
       category,
     };
@@ -92,7 +91,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
     }
 
     cleanValues();
-  }, [entry, entryType, category, description, value, date, cleanValues]);
+  }, [entry, entryType, category, description, value, dateAt, cleanValues]);
 
   const removeEntry = useCallback(
     async (entry: Entry) => await EntryRepository.removeEntry(entry),
@@ -125,10 +124,10 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       entry,
       setEntry,
       setValue,
-      date,
+      dateAt,
       category,
       setCategory,
-      setDate,
+      setDateAt,
       description,
       setDescription,
       entryType,
@@ -141,7 +140,7 @@ export const EntryProvider = ({children}: EntryProviderProps): JSX.Element => {
       entry,
       value,
       description,
-      date,
+      dateAt,
       category,
       entryType,
       saveEntry,

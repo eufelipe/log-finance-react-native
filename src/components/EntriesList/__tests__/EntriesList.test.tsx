@@ -16,7 +16,8 @@ jest.mock('react-i18next', () => ({
 const CATEGORY_MOCK: ICategory = {
   id: 1,
   description: 'Restaurante',
-  icon: 'money',
+  key: 'money',
+  color: 'red',
 };
 
 const MOCK_ENTRY: IEntry = {
@@ -24,7 +25,7 @@ const MOCK_ENTRY: IEntry = {
   description: 'Salário',
   type: 'earning',
   value: 99.45,
-  date: new Date(),
+  dateAt: new Date(),
   category: CATEGORY_MOCK,
 };
 

@@ -5,6 +5,6 @@ export default interface IEntry {
   description?: string;
   type: EntryType;
   value: number;
-  date: string;
+  dateAt: Date;
   category: Category;
 }

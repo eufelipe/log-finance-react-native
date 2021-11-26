@@ -14,7 +14,7 @@ import LegendList from './components/LegendList';
 import ListEmpty from './components/ListEmpty';
 import {EntryType} from 'interfaces/IEntry';
 import FilterPeriod from './components/FilterPeriod';
-import {FilterPeriodItem} from './components/FilterPeriod/data';
+import DATA, {FilterPeriodItem} from './components/FilterPeriod/data';
 
 import {
   Container,
@@ -30,10 +30,12 @@ const ReportsScreen = (): JSX.Element => {
   const [data, setData] = useState<ReportItem[]>([]);
   const [entryType, setEntryType] = useState<EntryType>('expense');
 
+  const [today] = DATA;
+
   const periodDefault: GetValuesByPeriod = {
     entryType,
-    start: new Date(),
-    end: new Date(),
+    start: today.interval.start,
+    end: today.interval.end,
   };
 
   const [period, setPeriod] = useState<GetValuesByPeriod>(periodDefault);

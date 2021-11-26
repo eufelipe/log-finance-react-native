@@ -1,4 +1,12 @@
-import {addDays, startOfMonth, startOfWeek} from 'date-fns';
+import {
+  addDays,
+  endOfToday,
+  endOfYesterday,
+  startOfMonth,
+  startOfQuarter,
+  startOfWeek,
+  startOfYear,
+} from 'date-fns';
 
 export interface FilterPeriodItem {
   id: string;
@@ -9,16 +17,20 @@ export interface FilterPeriodItem {
   };
 }
 
-const today = new Date();
+const yerterday = endOfYesterday();
+const today = endOfToday();
 const last15Days = addDays(today, -15);
 const month = startOfMonth(today);
 const week = startOfWeek(today);
+const quarter = startOfQuarter(today);
+const semester = addDays(today, -180);
+const year = startOfYear(today);
 
 const DATA: FilterPeriodItem[] = [
   {
     id: 'today',
     interval: {
-      start: today,
+      start: yerterday,
       end: today,
     },
     active: true,
@@ -41,6 +53,27 @@ const DATA: FilterPeriodItem[] = [
     id: 'month',
     interval: {
       start: month,
+      end: today,
+    },
+  },
+  {
+    id: 'quarter',
+    interval: {
+      start: quarter,
+      end: today,
+    },
+  },
+  {
+    id: 'semester',
+    interval: {
+      start: semester,
+      end: today,
+    },
+  },
+  {
+    id: 'year',
+    interval: {
+      start: year,
       end: today,
     },
   },

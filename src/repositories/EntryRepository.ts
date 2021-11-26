@@ -5,7 +5,7 @@ import {COLLECTIONS} from 'database';
 import {Entry} from 'models';
 import {IEntry} from 'interfaces';
 import {getDatabase} from 'services/database';
-import {getDateToday} from 'utils/dates';
+import {endOfToday, endOfYesterday} from 'date-fns';
 
 export const getEntryCollection = (): Collection<Entry> =>
   getDatabase().collections.get<Entry>(COLLECTIONS.ENTRIES);
@@ -21,25 +21,30 @@ export const getBalance = (): Promise<Entry[]> =>
   getEntryCollection().query().fetch();
 
 export const getTodayEntries = (): Observable<Entry[]> => {
-  const today = getDateToday();
+  const today = endOfToday();
+  const yesterday = endOfYesterday();
+
   return getEntryCollection()
-    .query(Q.where('date', Q.oneOf([today])))
+    .query(Q.where('date_at', Q.between(yesterday.getTime(), today.getTime())))
     .observe();
 };
 
-export const getEntriesByPeriod = (dates: string[]): Promise<Entry[]> => {
+export const getEntriesByPeriod = (
+  start: Date,
+  end: Date,
+): Promise<Entry[]> => {
   return getEntryCollection()
-    .query(Q.where('date', Q.oneOf(dates)))
+    .query(Q.where('date_at', Q.between(start.getTime(), end.getTime())))
     .fetch();
 };
 
 const fill = (record: Entry, data: IEntry) => {
-  const {description, type, value, category, date} = data;
+  const {description, type, value, category, dateAt} = data;
   record.description = description;
   record.type = type;
   record.value = value;
   record.category.set(category);
-  record.date = date;
+  record.dateAt = dateAt;
 };
 
 export const addEntry = async (data: IEntry): Promise<Entry> => {

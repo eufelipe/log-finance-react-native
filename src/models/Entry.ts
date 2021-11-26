@@ -17,7 +17,7 @@ export default class Entry extends Model {
   @text('description') description?: string;
   @field('type') type!: EntryType;
   @field('value') value!: number;
-  @field('date') date!: string;
+  @date('date_at') dateAt!: Date;
 
   @relation(COLLECTIONS.CATEGORIES, 'category_id')
   category!: Relation<Category>;
@@ -35,7 +35,7 @@ export const COLUMNS: ColumnSchema[] = [
   {name: 'description', type: 'string', isOptional: true},
   {name: 'type', type: 'string'},
   {name: 'value', type: 'number'},
-  {name: 'date', type: 'string', isIndexed: true},
+  {name: 'date_at', type: 'number', isIndexed: true},
   {name: 'category_id', type: 'string', isIndexed: true},
   {name: 'created_at', type: 'number'},
   {name: 'updated_at', type: 'number'},

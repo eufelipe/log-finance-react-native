@@ -122,8 +122,8 @@
         "week": "Esta Semana",
         "15-days": "15 dias",
         "month": "Este Mês",
-        "3-month": "3 meses",
-        "6-month": "6 meses",
+        "quarter": "3 meses",
+        "semester": "6 meses",
         "year": "Ano"
     },
 

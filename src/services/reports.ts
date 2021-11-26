@@ -1,8 +1,6 @@
 import {EntryRepository} from 'repositories';
 import {groupBy, map, sumBy} from 'lodash';
 import {EntryType} from 'interfaces/IEntry';
-import {eachDayOfInterval} from 'date-fns';
-import {getDate} from 'utils/dates';
 
 export interface ReportItem {
   id: string;
@@ -48,12 +46,7 @@ export const getValuesByPeriod = async ({
   start,
   end,
 }: GetValuesByPeriod): Promise<ReportItem[]> => {
-  const interval = eachDayOfInterval({
-    start,
-    end,
-  });
-  const dates = interval.map(date => getDate(date));
-  const entries = await EntryRepository.getEntriesByPeriod(dates);
+  const entries = await EntryRepository.getEntriesByPeriod(start, end);
 
   const expenseItems = entries.filter(({type}) => type === entryType);
 
