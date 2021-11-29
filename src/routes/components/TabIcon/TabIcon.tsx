@@ -4,6 +4,8 @@ import {
   TAB_KEY_HOME,
   TAB_KEY_ADD_ENTRY,
   TAB_KEY_REPORTS,
+  TAB_KEY_HISTORIC,
+  TAB_KEY_BUDGET,
 } from 'routes/TabsRoute';
 
 import Colors from 'styles/colors';
@@ -20,6 +22,8 @@ const TabIcon = ({route, focused}: Props): JSX.Element => {
     [`${TAB_KEY_HOME}`]: 'home',
     [`${TAB_KEY_ADD_ENTRY}`]: 'add',
     [`${TAB_KEY_REPORTS}`]: 'assessment',
+    [`${TAB_KEY_HISTORIC}`]: 'article',
+    [`${TAB_KEY_BUDGET}`]: 'gps-fixed',
   };
 
   const icon = icons[route] ?? 'crop-square';

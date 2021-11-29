@@ -130,5 +130,14 @@
     "currencies": { 
         "title": "Moedas", 
         "active": "Selecionada"
+    },
+
+    "historic": { 
+        "title": "Histórico" ,
+        "today": "Hoje",
+        "yesterday": "Ontem",
+        "tomorow": "Amanha",
+        "no-entries": "Nenhum lançamento registrado esse mês",
+        "message-add-new": "Toque em (+) para adicionar um lançamento"
     }
 }
