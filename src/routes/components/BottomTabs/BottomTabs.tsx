@@ -62,7 +62,12 @@ const BottomTabs = ({
           if (!isFocused && !event.defaultPrevented) {
             navigation.navigate(routeName);
           } else {
-            navigation.dispatch(StackActions.popToTop());
+            const currentRoute = state.routes.find(
+              route => route.name === state.routeNames[index],
+            );
+            if (currentRoute?.state) {
+              navigation.dispatch(StackActions.popToTop());
+            }
           }
         };
 

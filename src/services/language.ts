@@ -37,10 +37,17 @@ export const languageDetector: LanguageDetectorAsyncModule = {
     if (isAndroid) {
       deviceLanguage = `${NativeModules.I18Manager.localeIdentifier}`;
     } else {
-      deviceLanguage = NativeModules.SettingsManager.settings.AppleLocale;
+      const currentLocale = NativeModules.SettingsManager.settings.AppleLocale;
+      const currentLocales = NativeModules.SettingsManager.settings.AppleLanguages; // fix iOS 13 
+      deviceLanguage = currentLocale ?? currentLocales[0];
     }
-
+ 
     deviceLanguage = deviceLanguage.replace('_', '-');
+
+
+    if(!deviceLanguage) {
+      deviceLanguage = DEFAULT_LANGUAGE
+    }
 
     return callback(deviceLanguage);
   },
