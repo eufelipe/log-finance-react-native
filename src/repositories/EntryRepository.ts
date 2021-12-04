@@ -38,6 +38,15 @@ export const getEntriesByPeriod = (
     .fetch();
 };
 
+export const getEntriesByPeriodObserve = (
+  start: Date,
+  end: Date,
+): Observable<Entry[]> => {
+  return getEntryCollection()
+    .query(Q.where('date_at', Q.between(start.getTime(), end.getTime())))
+    .observe();
+};
+
 const fill = (record: Entry, data: IEntry) => {
   const {description, type, value, category, dateAt} = data;
   record.description = description;
@@ -75,6 +84,7 @@ export default {
   getEntriesCount,
   getEntries,
   getEntriesByPeriod,
+  getEntriesByPeriodObserve,
   getTodayEntries,
   getBalance,
   addEntry,

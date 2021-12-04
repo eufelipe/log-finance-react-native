@@ -9,6 +9,7 @@ import locale from 'date-fns/locale/pt-BR';
 export const DATE_FORMAT_ISO = 'yyyy-MM-dd';
 export const DATE_FORMAT_BR = 'dd/MM/yyyy';
 export const DATE_FORMAT_FRIENDLY = " dd/MM 'às' HH:mm";
+export const DATE_FORMAT_FRIENDLY_TIME = "'às' HH:mm";
 
 export function parseStringToDate(value: string): Date {
   const parsedDate = parseISOFNS(value);
@@ -34,4 +35,12 @@ export const getDate = (date: Date): string => {
 export const getDateToday = (): string => {
   const today = new Date();
   return formatPattern(today, DATE_FORMAT_ISO, {locale});
+};
+
+export const getDateAndHourFriendly = (value: Date): string => {
+  return formatPattern(value, DATE_FORMAT_FRIENDLY, {locale});
+};
+
+export const getTimeFriendly = (value: Date): string => {
+  return formatPattern(value, DATE_FORMAT_FRIENDLY_TIME, {locale});
 };

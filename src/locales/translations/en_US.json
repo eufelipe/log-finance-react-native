@@ -20,7 +20,13 @@
         "add-label": "Add Entry",
         "add-accessibility-label": "Menu Add Entry - Tap here to open the earn or expense registration screen",
         "reports-label": "Reports",
-        "reports-accessibility-label": "Menu Reports - Tap here to open the financial report screen"
+        "reports-accessibility-label": "Menu Reports - Tap here to open the financial report screen",
+
+        "historic-label": "Historic",
+        "historic-accessibility-label": "Menu Historic - Tap here to open historic transactions screen",
+
+        "budget-label": "Budget",
+        "budget-accessibility-label": "Menu Budget - Tap here to open the Budget screen"
     },
 
     "entry": {
@@ -130,6 +136,15 @@
     "currencies": { 
         "title": "Currencies", 
         "active": "Selected"
+    },
+
+    "historic": { 
+        "title": "Historic",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "tomorow": "Tomorow",
+        "no-entries": "You have no transactions recorded this month.",
+        "message-add-new": "Tap (+) to add a new transaction"
     }
 
 }

@@ -4,8 +4,12 @@ import {LanguageDetectorAsyncModule} from 'i18next';
 import storage from './storage';
 import {isAndroid} from 'styles/mixins';
 
+import {ptBR, enUS} from 'date-fns/locale';
+
 import pt_br from 'locales/translations/pt_BR.json';
 import en_us from 'locales/translations/en_US.json';
+import i18n from 'locales';
+import {Locale} from 'date-fns';
 
 export const KEY_APP_LANGUAGE = '@app-language';
 export const LANG_PT_BR = 'pt-BR';
@@ -33,10 +37,17 @@ export const languageDetector: LanguageDetectorAsyncModule = {
     if (isAndroid) {
       deviceLanguage = `${NativeModules.I18Manager.localeIdentifier}`;
     } else {
-      deviceLanguage = NativeModules.SettingsManager.settings.AppleLocale;
+      const currentLocale = NativeModules.SettingsManager.settings.AppleLocale;
+      const currentLocales = NativeModules.SettingsManager.settings.AppleLanguages; // fix iOS 13 
+      deviceLanguage = currentLocale ?? currentLocales[0];
     }
-
+ 
     deviceLanguage = deviceLanguage.replace('_', '-');
+
+
+    if(!deviceLanguage) {
+      deviceLanguage = DEFAULT_LANGUAGE
+    }
 
     return callback(deviceLanguage);
   },
@@ -45,6 +56,12 @@ export const languageDetector: LanguageDetectorAsyncModule = {
   cacheUserLanguage: async language => {
     await saveLanguage(language);
   },
+};
+
+export const getCurrentLocale = (): Locale => {
+  const locale = i18n.language === LANG_PT_BR ? ptBR : enUS;
+
+  return locale;
 };
 
 export const saveLanguage = async (value: string): Promise<void> => {
