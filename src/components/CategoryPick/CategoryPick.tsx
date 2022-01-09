@@ -3,16 +3,23 @@ import React from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 import {CategoriesNavigationProp} from 'routes/StacksRoute';
-import {useEntry} from 'hooks/useEntry';
 
 import {CategoryIcon, Row} from 'components';
 
 import {Label, Title, Touchable} from './styles';
+import {Category} from 'models';
 
-const EntryCategory = (): JSX.Element => {
+interface CategoryPickProps {
+  category?: Category;
+  setCategory: (value: Category) => void;
+}
+
+const CategoryPick = ({
+  category,
+  setCategory,
+}: CategoryPickProps): JSX.Element => {
   const navigation = useNavigation<CategoriesNavigationProp>();
   const {t} = useTranslation('categories');
-  const {category, setCategory} = useEntry();
 
   const handleCategories = () => {
     navigation.navigate('CategoriesStack', {
@@ -32,4 +39,4 @@ const EntryCategory = (): JSX.Element => {
   );
 };
 
-export default EntryCategory;
+export default CategoryPick;

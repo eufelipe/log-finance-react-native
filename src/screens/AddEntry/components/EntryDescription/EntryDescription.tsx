@@ -1,7 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-
-import Row from '../Row';
+import {Row} from 'components';
 
 import {Label, Input} from './styles';
 import {useEntry} from 'hooks/useEntry';

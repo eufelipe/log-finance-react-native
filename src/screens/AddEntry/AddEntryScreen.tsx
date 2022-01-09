@@ -3,11 +3,10 @@ import {Keyboard as RNKeyboard} from 'react-native';
 import {useTranslation} from 'react-i18next';
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 
-import {Button, NumberKeyboard, Strap} from 'components';
+import {Button, NumberKeyboard, InputNumber, Strap} from 'components';
 
 import {
   MenuEntryType,
-  InputNumber,
   EntryDescription,
   EntryCategory,
   EntryDate,
@@ -100,7 +99,11 @@ const AddEntryScreen = (): JSX.Element => {
           <Strap />
           <MenuEntryType />
 
-          <InputNumber setShowKeyboard={() => setShowKeyboard(true)} />
+          <InputNumber
+            value={value}
+            setValue={setValue}
+            setShowKeyboard={() => setShowKeyboard(true)}
+          />
 
           <Content>
             <EntryDescription />
