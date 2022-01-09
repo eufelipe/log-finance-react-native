@@ -5,6 +5,7 @@ import {VERSION_MIGRATION} from './migrations';
 
 import {COLUMNS as EntryColumns} from 'models/Entry';
 import {COLUMNS as CategoryColumns} from 'models/Category';
+import {COLUMNS as BudgetColumns} from 'models/Budget';
 
 export const DATABASE_NAME = 'LogFinanceDb';
 
@@ -18,6 +19,10 @@ export const dbScheme = appSchema({
     tableSchema({
       name: COLLECTIONS.CATEGORIES,
       columns: CategoryColumns,
+    }),
+    tableSchema({
+      name: COLLECTIONS.BUDGETS,
+      columns: BudgetColumns,
     }),
   ],
 });

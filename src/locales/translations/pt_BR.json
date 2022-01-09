@@ -1,143 +1,146 @@
 {
-    "global": {
-        "remove-label": "Remover",
-        "accessibility-remove-label": "Remover lançamento",
-        "accessibility-remove-hint": "Toque aqui excluir esse lançamento",
-        "done": "Pronto",
-        "cancel": "Cancelar",
-        "clear": "Limpar",
-        "yes": "Sim",
-        "no": "Não",
-        "searchbar-placeholder": "search for an item"
-    },
+  "global": {
+    "remove-label": "Remover",
+    "accessibility-remove-label": "Remover lançamento",
+    "accessibility-remove-hint": "Toque aqui excluir esse lançamento",
+    "done": "Pronto",
+    "cancel": "Cancelar",
+    "clear": "Limpar",
+    "yes": "Sim",
+    "no": "Não",
+    "searchbar-placeholder": "search for an item"
+  },
 
-    "routes": {
-        "title-settings": "Configurações"
-    },
+  "routes": {
+    "title-settings": "Configurações"
+  },
 
-    "tabs": {
-        "home-label": "Início",
-        "home-accessibility-label": "Toque aqui para ir para primeira tela do app",
-        "add-label": "Adicionar Novo",
-        "add-accessibility-label": "Toque aqui para ir abrir a tela de cadastro de ganho ou despesa",
-        "reports-label": "Relatórios",
-        "reports-accessibility-label": "Toque aqui para ir abrir a tela de relatorio financeiro"
-    },
-    "entry": {
-        "accessibility-button": "Detalhes do lançamento",
-        "accessibility-button-hint": "Toque aqui para abrir detalhes do lançamento"
-    },
+  "tabs": {
+    "home-label": "Início",
+    "home-accessibility-label": "Toque aqui para ir para primeira tela do app",
+    "add-label": "Adicionar Novo",
+    "add-accessibility-label": "Toque aqui para ir abrir a tela de cadastro de ganho ou despesa",
+    "reports-label": "Relatórios",
+    "reports-accessibility-label": "Toque aqui para ir abrir a tela de relatorio financeiro"
+  },
+  "entry": {
+    "accessibility-button": "Detalhes do lançamento",
+    "accessibility-button-hint": "Toque aqui para abrir detalhes do lançamento"
+  },
 
-    "add": {
-        "expense": "Despesa",
-        "earning": "Receita",
-        "description": "Descrição",
-        "description-placeholder": "Adicione uma descrição",
-        "category": "Categoria",
-        "date": "Data",
-        "save": "Salvar",
-        "today": "Hoje",
-        "at": "às",
-        "day": "Dia",
-        "of": "de",
-        "yes": "Sim",
-        "no": "Não",
-        "confirm-delete-title": "Tem certeza?",
-        "confirm-delete-description": "Tem certeza que deseja remover esse lançamento",
-        "category-default": "Outros",
-        "remove": "Remover",
-        "accessibility-button-type-hint": "Toque para mudar o tipo de lançamento para",
-        "accessibility-button-backspace": "Apagar",
-        "accessibility-button-backspace-hint": "Toque para apagar o valor informado",
-        "accessibility-button-category": "Incluir categoria",
-        "accessibility-button-category-hint": "Toque para adicionar a categoria",
-        "accessibility-button-submit": "Salvar",
-        "accessibility-button-submit-hint": "Toque para Salvar os dados"
-    },
+  "add": {
+    "expense": "Despesa",
+    "earning": "Receita",
+    "description": "Descrição",
+    "description-placeholder": "Adicione uma descrição",
+    "category": "Categoria",
+    "date": "Data",
+    "save": "Salvar",
+    "today": "Hoje",
+    "at": "às",
+    "day": "Dia",
+    "of": "de",
+    "yes": "Sim",
+    "no": "Não",
+    "confirm-delete-title": "Tem certeza?",
+    "confirm-delete-description": "Tem certeza que deseja remover esse lançamento",
+    "category-default": "Outros",
+    "remove": "Remover",
+    "accessibility-button-type-hint": "Toque para mudar o tipo de lançamento para",
+    "accessibility-button-backspace": "Apagar",
+    "accessibility-button-backspace-hint": "Toque para apagar o valor informado",
+    "accessibility-button-category": "Incluir categoria",
+    "accessibility-button-category-hint": "Toque para adicionar a categoria",
+    "accessibility-button-submit": "Salvar",
+    "accessibility-button-submit-hint": "Toque para Salvar os dados"
+  },
 
-    "home": {
-        "balance": "Balanço",
-        "today": "Hoje",
-        "no-entries": "Nenhum lançamento registrado ainda",
-        "message-add-new": "Toque em (+) para adicionar um lançamento"
-    },
+  "home": {
+    "balance": "Balanço",
+    "today": "Hoje",
+    "no-entries": "Nenhum lançamento registrado ainda",
+    "message-add-new": "Toque em (+) para adicionar um lançamento"
+  },
 
-    "categories": {
+  "categories": {
+    "category": "Categoria",
+    "category-default": "Escolha uma categoria",
 
-        "category": "Categoria",
-        "category-default": "Escolha uma categoria",
+    "searchbar-placeholder": "Procure uma categoria",
+    "accessibility-button-label": "Categoria",
+    "accessibility-button-hint": "Toque aqui para escolher uma categoria:",
 
-        "searchbar-placeholder": "Procure uma categoria",
-        "accessibility-button-label": "Categoria",
-        "accessibility-button-hint": "Toque aqui para escolher uma categoria:",
+    "personal": "Pessoal",
+    "payments": "Pagamentos",
+    "car": "Carro",
+    "clothing": "Roupas",
+    "salary": "Salário",
+    "bonus": "Bônus",
+    "education": "Educação",
+    "electronics": "Eletrônicos",
+    "health": "Saúde",
+    "home": "Casa",
+    "leisure": "Lazer",
+    "others": "Outros",
+    "restaurant": "Restaurante",
+    "services": "Serviços",
+    "supermarket": "Mercado",
+    "transportation": "Transporte",
+    "debits": "Debits",
+    "loans": "Empréstimos",
+    "entertainment": "Entretenimento",
+    "hobbies": "Hobbies",
+    "food": "Alimentação",
+    "family": "Família",
+    "gift": "Presentes",
+    "donations": "Doações",
+    "investiments": "Investimentos",
+    "shopping": "Shopping",
+    "pets": "Pets",
+    "taxes": "Impostos e taxas",
+    "work": "Trabalho",
+    "kids": "Crianças",
+    "amusement": "Diversão",
+    "utilities": "Utilities"
+  },
 
-        "personal": "Pessoal",
-        "payments": "Pagamentos",
-        "car": "Carro",
-        "clothing": "Roupas",
-        "salary": "Salário",
-        "bonus": "Bônus",
-        "education": "Educação",
-        "electronics": "Eletrônicos",
-        "health": "Saúde",
-        "home": "Casa",
-        "leisure": "Lazer",
-        "others": "Outros",
-        "restaurant": "Restaurante",
-        "services": "Serviços",
-        "supermarket": "Mercado",
-        "transportation": "Transporte",
-        "debits": "Debits",
-        "loans": "Empréstimos",
-        "entertainment": "Entretenimento",
-        "hobbies": "Hobbies",
-        "food": "Alimentação",
-        "family": "Família",
-        "gift": "Presentes",
-        "donations": "Doações",
-        "investiments": "Investimentos",
-        "shopping": "Shopping",
-        "pets": "Pets",
-        "taxes": "Impostos e taxas",
-        "work": "Trabalho",
-        "kids": "Crianças",
-        "amusement": "Diversão",
-        "utilities": "Utilities"
-    },
+  "settings": {
+    "title-settings": "Configurações",
+    "language": "Idioma",
+    "currency": "Moeda",
+    "pt-BR": "Português",
+    "en-US": "Inglês",
+    "active": "Selecionada"
+  },
 
-    "settings": {
-        "title-settings": "Configurações",
-        "language": "Idioma",
-        "currency": "Moeda",
-        "pt-BR": "Português",
-        "en-US": "Inglês",
-        "active": "Selecionada"
-    },
+  "reports": {
+    "title": "Relatórios",
+    "expense": "Despesa",
+    "earning": "Receita",
+    "today": "Hoje",
+    "week": "Esta Semana",
+    "15-days": "15 dias",
+    "month": "Este Mês",
+    "quarter": "3 meses",
+    "semester": "6 meses",
+    "year": "Ano"
+  },
 
-    "reports": { 
-        "title": "Relatórios",
-        "expense": "Despesa",
-        "earning": "Receita",
-        "today": "Hoje",
-        "week": "Esta Semana",
-        "15-days": "15 dias",
-        "month": "Este Mês",
-        "quarter": "3 meses",
-        "semester": "6 meses",
-        "year": "Ano"
-    },
+  "currencies": {
+    "title": "Moedas",
+    "active": "Selecionada"
+  },
 
-    "currencies": { 
-        "title": "Moedas", 
-        "active": "Selecionada"
-    },
+  "historic": {
+    "title": "Histórico",
+    "today": "Hoje",
+    "yesterday": "Ontem",
+    "tomorow": "Amanha",
+    "no-entries": "Nenhum lançamento registrado esse mês",
+    "message-add-new": "Toque em (+) para adicionar um lançamento"
+  },
 
-    "historic": { 
-        "title": "Histórico" ,
-        "today": "Hoje",
-        "yesterday": "Ontem",
-        "tomorow": "Amanha",
-        "no-entries": "Nenhum lançamento registrado esse mês",
-        "message-add-new": "Toque em (+) para adicionar um lançamento"
-    }
+  "budget": {
+    "title": "Orçamento"
+  }
 }

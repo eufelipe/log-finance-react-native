@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next';
 import {isToday, format} from 'date-fns';
 
 import {useEntry} from 'hooks/useEntry';
-import Row from '../Row';
+import {Row} from 'components';
 
 import {Label, Title, Touchable} from './styles';
 

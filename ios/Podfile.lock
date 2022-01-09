@@ -392,7 +392,7 @@ PODS:
   - RNVectorIcons (9.0.0):
     - React-Core
   - simdjson (1.0.0)
-  - WatermelonDB (0.24.0):
+  - WatermelonDB (0.24.1-1):
     - React
     - React-jsi
   - Yoga (1.14.0)
@@ -633,7 +633,7 @@ SPEC CHECKSUMS:
   RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
   RNVectorIcons: 4143ba35feebab8fdbe6bc43d1e776b393d47ac8
   simdjson: c96317b3a50dff3468a42f586ab7ed22c6ab2fd9
-  WatermelonDB: e043b1a32ddc63864eb539b562e86ef80f8224cd
+  WatermelonDB: aff8cc6a8984a2ef4e316571e1ee53a0a463761e
   Yoga: 9a08effa851c1d8cc1647691895540bc168ea65f
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 

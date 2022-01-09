@@ -5,4 +5,6 @@ export const Container = styled.View`
   background: ${({theme}) => theme.colors.primary};
 `;
 
-export const Title = styled.Text``;
+export const Loader = styled.ActivityIndicator`
+  margin-top: 20px;
+`;

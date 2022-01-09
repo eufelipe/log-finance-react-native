@@ -17,7 +17,7 @@
     "prettier:check": "prettier --check ."
   },
   "dependencies": {
-    "@nozbe/watermelondb": "^0.24.0",
+    "@nozbe/watermelondb": "^v0.24.1-1",
     "@react-native-async-storage/async-storage": "^1.15.11",
     "@react-native-community/datetimepicker": "^3.5.2",
     "@react-navigation/bottom-tabs": "^6.0.9",

@@ -8,18 +8,20 @@ import CategoryItem from '../CategoryItem';
 import {Category} from 'models';
 import {getCategories} from 'repositories/CategoryRepository';
 
-import {useEntry} from 'hooks/useEntry';
 import {sanitizeString} from 'utils/strings';
 import {FlatList} from './styles';
 import {Toolbar} from 'components';
 
 interface CategoryListProps {
   categories: Category[];
+  setCategory: (value: Category) => void;
 }
 
-const CategoryList = ({categories}: CategoryListProps): JSX.Element => {
+const CategoryList = ({
+  categories,
+  setCategory,
+}: CategoryListProps): JSX.Element => {
   const navigation = useNavigation();
-  const {setCategory} = useEntry();
 
   const [query, setQuery] = useState('');
   const [filteredCategories, setFilteredCategories] = useState<Category[]>(

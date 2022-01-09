@@ -1,16 +1,19 @@
 import React, {useEffect, useState} from 'react';
 
-import {useEntry} from 'hooks/useEntry';
 import {Container, Input, InputValue, Touchable, BackspaceIcon} from './styles';
 import {Currency} from 'components';
 
 interface Props {
   setShowKeyboard: () => void;
+  value?: number;
+  setValue: (value: number) => void;
 }
 
-const InputNumber = ({setShowKeyboard}: Props): JSX.Element => {
-  const {value = 0, setValue} = useEntry();
-
+const InputNumber = ({
+  value = 0,
+  setValue,
+  setShowKeyboard,
+}: Props): JSX.Element => {
   const [showBackSpace, setShowBackSpace] = useState(false);
 
   const onBackSpace = () => {

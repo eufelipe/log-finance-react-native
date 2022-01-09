@@ -7,16 +7,19 @@ import {
   LanguageStack,
   CategoriesStack,
   CurrencyStack,
+  AddBudgetStack,
 } from './StacksRoute';
 
 import TabsRoute from './TabsRoute';
 import {useTranslation} from 'react-i18next';
 import SettingsScreen from 'screens/Settings';
 import {Colors} from 'styles/layout';
+import {BudgetProvider} from 'contexts';
 
 export type RootStackParamList = {
   Tabs: undefined;
   AddEntryStack: undefined;
+  AddBudgetStack: undefined;
   CategoriesStack: undefined;
   SettingsStack: undefined;
   Settings: undefined;
@@ -31,56 +34,64 @@ const Routes = (): JSX.Element => {
   return (
     <NavigationContainer>
       <EntryContext>
-        <RootStack.Navigator>
-          <RootStack.Group>
-            <RootStack.Screen
-              name="Tabs"
-              component={TabsRoute}
-              options={{headerShown: false}}
-            />
-          </RootStack.Group>
+        <BudgetProvider>
+          <RootStack.Navigator>
+            <RootStack.Group>
+              <RootStack.Screen
+                name="Tabs"
+                component={TabsRoute}
+                options={{headerShown: false}}
+              />
+            </RootStack.Group>
 
-          <RootStack.Group screenOptions={{presentation: 'modal'}}>
-            <RootStack.Screen
-              name="AddEntryStack"
-              component={AddEntryStack}
-              options={{headerShown: false}}
-            />
-            <RootStack.Screen
-              name="CategoriesStack"
-              component={CategoriesStack}
-              options={{headerShown: false}}
-            />
-          </RootStack.Group>
+            <RootStack.Group screenOptions={{presentation: 'modal'}}>
+              <RootStack.Screen
+                name="AddEntryStack"
+                component={AddEntryStack}
+                options={{headerShown: false}}
+              />
+              <RootStack.Screen
+                name="CategoriesStack"
+                component={CategoriesStack}
+                options={{headerShown: false}}
+              />
 
-          <RootStack.Group screenOptions={{presentation: 'modal'}}>
-            <RootStack.Screen
-              name="LanguageStack"
-              component={LanguageStack}
-              options={{headerShown: false}}
-            />
+              <RootStack.Screen
+                name="AddBudgetStack"
+                component={AddBudgetStack}
+                options={{headerShown: false}}
+              />
+            </RootStack.Group>
 
-            <RootStack.Screen
-              name="CurrencyStack"
-              component={CurrencyStack}
-              options={{headerShown: false}}
-            />
-          </RootStack.Group>
+            <RootStack.Group screenOptions={{presentation: 'modal'}}>
+              <RootStack.Screen
+                name="LanguageStack"
+                component={LanguageStack}
+                options={{headerShown: false}}
+              />
 
-          <RootStack.Group>
-            <RootStack.Screen
-              name="Settings"
-              options={{
-                title: t('title-settings'),
-                headerStyle: {
-                  backgroundColor: Colors.primary,
-                },
-                headerTintColor: Colors.white,
-              }}
-              component={SettingsScreen}
-            />
-          </RootStack.Group>
-        </RootStack.Navigator>
+              <RootStack.Screen
+                name="CurrencyStack"
+                component={CurrencyStack}
+                options={{headerShown: false}}
+              />
+            </RootStack.Group>
+
+            <RootStack.Group>
+              <RootStack.Screen
+                name="Settings"
+                options={{
+                  title: t('title-settings'),
+                  headerStyle: {
+                    backgroundColor: Colors.primary,
+                  },
+                  headerTintColor: Colors.white,
+                }}
+                component={SettingsScreen}
+              />
+            </RootStack.Group>
+          </RootStack.Navigator>
+        </BudgetProvider>
       </EntryContext>
     </NavigationContainer>
   );
