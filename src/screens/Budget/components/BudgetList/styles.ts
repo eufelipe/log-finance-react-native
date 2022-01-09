@@ -23,7 +23,7 @@ export const Value = styled(Title)`
 
 export const Card = styled.View<{color?: string}>`
   background: ${({theme}) => theme.colors.primary};
-  margin: ${({theme}) => theme.spacing.great}px
+  margin: ${({theme}) => theme.spacing.small}px
     ${({theme}) => theme.spacing.tall}px;
   padding: ${({theme}) => theme.spacing.great}px;
   height: 100px;
