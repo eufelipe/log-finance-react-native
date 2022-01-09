@@ -10,18 +10,25 @@ import SettingsScreen from 'screens/Settings';
 import LanguageScreen from 'screens/Language';
 import CategoriesScreen from 'screens/Categories';
 import CurrencyScreen from 'screens/Currency';
+import AddBudgetScreen from 'screens/AddBudget';
 
-import {Entry} from 'models';
+import {Category, Entry} from 'models';
 
 export type StackParamList = {
   AddEntry: {entry?: Entry};
   AddEntryStack: {screen: 'AddEntry'; params: {entry?: Entry}};
-  Categories: undefined;
-  CategoriesStack: undefined;
+  Categories: {setCategory: (category: Category) => void};
+  CategoriesStack: {
+    screen: 'Categories';
+    setCategory: (category: Category) => void;
+    params: {setCategory: (category: Category) => void};
+  };
   Settings: undefined;
   SettingsStack: undefined;
   Language: undefined;
   LanguageStack: undefined;
+  AddBudget: undefined;
+  AddBudgetStack: {screen: 'AddBudget'};
 };
 
 export type CategoriesNavigationProp = CompositeNavigationProp<
@@ -31,6 +38,11 @@ export type CategoriesNavigationProp = CompositeNavigationProp<
 
 export type AddEntryNavigationProp = CompositeNavigationProp<
   StackNavigationProp<StackParamList, 'AddEntryStack'>,
+  StackNavigationProp<StackParamList>
+>;
+
+export type AddBudgetNavigationProp = CompositeNavigationProp<
+  StackNavigationProp<StackParamList, 'AddBudgetStack'>,
   StackNavigationProp<StackParamList>
 >;
 
@@ -52,6 +64,7 @@ export const AddEntryStack = () => {
     </RootStack.Navigator>
   );
 };
+
 export const SettingsStack = () => {
   return (
     <RootStack.Navigator>
@@ -95,6 +108,20 @@ export const CategoriesStack = () => {
         name="Categories"
         component={CategoriesScreen}
         options={{headerShown: false}}
+      />
+    </RootStack.Navigator>
+  );
+};
+
+export const AddBudgetStack = () => {
+  return (
+    <RootStack.Navigator>
+      <RootStack.Screen
+        name="AddBudget"
+        component={AddBudgetScreen}
+        options={{
+          headerShown: false,
+        }}
       />
     </RootStack.Navigator>
   );
