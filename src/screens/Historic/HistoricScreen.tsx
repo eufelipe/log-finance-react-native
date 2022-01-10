@@ -72,8 +72,8 @@ const HistoricScreen = (): JSX.Element => {
     entriesSubscription = EntryRepository.getEntriesByPeriodObserve(
       start,
       end,
-    ).subscribe(
-      items => {
+    ).subscribe({
+      next: items => {
         setLoading(false);
         const sectionItems = parseEntriesForSectionList(items);
         const ordered = orderBy(sectionItems, ['title'], ['desc']);
@@ -81,10 +81,7 @@ const HistoricScreen = (): JSX.Element => {
         setEmpty(!ordered.length);
         setHistoric(ordered);
       },
-      () => {
-        setEmpty(true);
-      },
-    );
+    });
   }, [date]);
 
   const currentMonth = () => {

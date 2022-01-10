@@ -132,6 +132,11 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     defaultConfig {
         applicationId "com.logfinance"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -148,6 +153,14 @@ android {
         }
     }
     signingConfigs {
+        release {
+            if (project.hasProperty('APP_UPLOAD_STORE_FILE')) {
+                storeFile file(APP_UPLOAD_STORE_FILE)
+                storePassword APP_UPLOAD_STORE_PASSWORD
+                keyAlias APP_UPLOAD_KEY_ALIAS
+                keyPassword APP_UPLOAD_KEY_PASSWORD
+            }
+        }
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
@@ -156,6 +169,9 @@ android {
         }
     }
     buildTypes {
+        release { 
+            signingConfig signingConfigs.release
+        }
         debug {
             signingConfig signingConfigs.debug
             if (nativeArchitectures) {
