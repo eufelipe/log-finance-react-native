@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryItem Test match snapshot CategoryItem 1`] = `
+<View
+  accessibilityHint="accessibility-button-hint undefined"
+  accessibilityLabel="accessibility-button-label undefined"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "flexBasis": 0,
+      "flexGrow": 1,
+      "marginBottom": 21.428571428571427,
+      "marginLeft": 10.714285714285714,
+      "marginRight": 10.714285714285714,
+      "marginTop": 21.428571428571427,
+      "opacity": 1,
+    }
+  }
+  testID="category-item-button"
+>
+  <View
+    color="#6F7D9B"
+    large={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#6F7D9B",
+          "borderRadius": 25,
+          "height": 50,
+          "justifyContent": "center",
+          "width": 50,
+        },
+      ]
+    }
+  >
+    <Icon
+      color="#ffffff"
+      name="list"
+      size={24}
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    />
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontFamily": "Poppins-Regular",
+          "fontSize": 28,
+          "fontWeight": "400",
+          "paddingTop": 10.714285714285714,
+        },
+      ]
+    }
+  />
+</View>
+`;

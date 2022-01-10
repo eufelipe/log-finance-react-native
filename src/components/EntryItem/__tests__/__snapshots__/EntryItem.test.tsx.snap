@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntryItem Test match snapshot EntryItem 1`] = `
+<View
+  collapsable={false}
+  forwardedRef={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onLayout={[Function]}
+  style={
+    Object {
+      "overflow": "hidden",
+    }
+  }
+>
+  <View
+    collapsable={false}
+    nativeID="animatedComponent"
+    style={
+      Object {
+        "bottom": 0,
+        "flexDirection": "row-reverse",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "transform": Array [
+          Object {
+            "translateX": -10000,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      accessibilityHint="accessibility-remove-hint"
+      accessibilityLabel="accessibility-remove-label"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E96245",
+          "borderRadius": 21.428571428571427,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginBottom": 10.714285714285714,
+          "marginLeft": 0,
+          "marginRight": 21.428571428571427,
+          "marginTop": 10.714285714285714,
+          "opacity": 1,
+          "paddingBottom": 0,
+          "paddingLeft": 42.857142857142854,
+          "paddingRight": 42.857142857142854,
+          "paddingTop": 0,
+        }
+      }
+      testID="remove-item-button"
+    >
+      <Icon
+        color="#ffffff"
+        name="delete"
+        size={24}
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#ffffff",
+              "fontFamily": "Poppins-Regular",
+              "fontSize": 28,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        remove-label
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+    />
+  </View>
+  <View
+    collapsable={false}
+    forwardedRef={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    pointerEvents="auto"
+    style={
+      Object {
+        "transform": Array [
+          Object {
+            "translateX": -0,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      accessibilityHint="accessibility-button-hint"
+      accessibilityLabel="accessibility-button"
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 21.428571428571427,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 10.714285714285714,
+          "marginLeft": 42.857142857142854,
+          "marginRight": 42.857142857142854,
+          "marginTop": 10.714285714285714,
+          "opacity": 1,
+          "paddingBottom": 42.857142857142854,
+          "paddingLeft": 21.428571428571427,
+          "paddingRight": 21.428571428571427,
+          "paddingTop": 42.857142857142854,
+        }
+      }
+      testID="entry-item-button"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "marginRight": 21.428571428571427,
+            },
+          ]
+        }
+      >
+        <Icon
+          color="#464E5F"
+          name="list"
+          size={24}
+          style={
+            Array [
+              Object {},
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#808080",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          Salário
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#808080",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 28,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          Restaurante
+        </Text>
+      </View>
+      <Text
+        isExpense={false}
+        style={
+          Array [
+            Object {
+              "color": "#50806A",
+              "fontFamily": "Poppins-Regular",
+              "fontSize": 28,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        R$ 99,45
+      </Text>
+    </View>
+  </View>
+</View>
+`;

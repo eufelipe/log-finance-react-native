@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntryDate Test match snapshot EntryDate 1`] = `
+Array [
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderBottomColor": "#E1E3E510",
+            "borderBottomWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 0,
+            "marginLeft": 42.857142857142854,
+            "marginRight": 42.857142857142854,
+            "marginTop": 21.428571428571427,
+            "paddingBottom": 42.857142857142854,
+          },
+        ]
+      }
+    >
+      <Icon
+        color="#ffffff"
+        name="event"
+        size={24}
+        style={
+          Array [
+            Object {
+              "marginRight": 21.428571428571427,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff50",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 28,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          date
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 28,
+                "fontWeight": "700",
+              },
+            ]
+          }
+        >
+          today,  20 of November, at  15:41h
+        </Text>
+      </View>
+    </View>
+  </View>,
+  <Modal
+    animationType="none"
+    hardwareAccelerated={false}
+    isVisible={false}
+    onHide={[Function]}
+    transparent={true}
+    visible={false}
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "black",
+          "bottom": 0,
+          "height": 1334,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "width": 750,
+        }
+      }
+    />
+  </Modal>,
+]
+`;

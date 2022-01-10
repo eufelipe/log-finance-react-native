@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SwipeRemoveButton Test match snapshot SwipeRemoveButton 1`] = `
+<View
+  accessibilityHint="accessibility-remove-hint"
+  accessibilityLabel="accessibility-remove-label"
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  nativeID="animatedComponent"
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#E96245",
+      "borderRadius": 21.428571428571427,
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginBottom": 10.714285714285714,
+      "marginLeft": 0,
+      "marginRight": 21.428571428571427,
+      "marginTop": 10.714285714285714,
+      "opacity": 1,
+      "paddingBottom": 0,
+      "paddingLeft": 42.857142857142854,
+      "paddingRight": 42.857142857142854,
+      "paddingTop": 0,
+    }
+  }
+  testID="remove-item-button"
+>
+  <Icon
+    color="#ffffff"
+    name="delete"
+    size={24}
+    style={
+      Array [
+        Object {},
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontFamily": "Poppins-Regular",
+          "fontSize": 28,
+          "fontWeight": "400",
+        },
+      ]
+    }
+  >
+    Remover
+  </Text>
+</View>
+`;

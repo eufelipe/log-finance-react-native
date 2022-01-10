@@ -1,0 +1,34 @@
+[{
+        "id": 1,
+        "description": "Salário",
+        "type": "earning",
+        "value": 10000,
+        "category": {
+            "id": 1,
+            "description": "Salario",
+            "key": "money"
+        }
+    }, {
+        "id": 2,
+        "description": "Pizza de carne seca",
+        "type": "expense",
+        "value": 49.90,
+        "category": {
+            "id": 1,
+            "description": "Restaurante",
+            "key": "food"
+        }
+    },
+    {
+        "id": 3,
+        "description": "Gasolina",
+        "type": "expense",
+        "value": 100,
+        "category": {
+            "id": 1,
+            "description": "Conveniência",
+            "key": "others"
+        }
+
+    }
+]

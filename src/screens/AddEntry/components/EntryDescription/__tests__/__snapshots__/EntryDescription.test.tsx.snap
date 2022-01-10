@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntryDescription Test match snapshot EntryDescription 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#E1E3E510",
+        "borderBottomWidth": 1,
+        "flexDirection": "row",
+        "marginBottom": 0,
+        "marginLeft": 42.857142857142854,
+        "marginRight": 42.857142857142854,
+        "marginTop": 21.428571428571427,
+        "paddingBottom": 42.857142857142854,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#ffffff50",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 28,
+            "fontWeight": "400",
+          },
+        ]
+      }
+    >
+      description
+    </Text>
+    <TextInput
+      blurOnSubmit={true}
+      numberOfLines={1}
+      placeholder="description-placeholder"
+      placeholderTextColor="#E1E3E5"
+      style={
+        Array [
+          Object {
+            "color": "#E1E3E5",
+            "fontFamily": "Poppins-Regular",
+            "fontSize": 28,
+            "fontWeight": "700",
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

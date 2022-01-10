@@ -1,0 +1,860 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberKeyboard Test match snapshot NumberKeyboard 1`] = `
+Array [
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "blurRadius": 90,
+        "bottom": 0,
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "left": 0,
+        "opacity": 1,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />,
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#181D26",
+          "borderTopLeftRadius": 21.428571428571427,
+          "borderTopRightRadius": 21.428571428571427,
+          "bottom": 0,
+          "elevation": 10,
+          "justifyContent": "center",
+          "left": 0,
+          "paddingBottom": 64.28571428571428,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 5,
+          "position": "absolute",
+          "right": 0,
+          "shadowColor": "#000000",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 1,
+          },
+          "shadowOpacity": 0.22,
+          "shadowRadius": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderBottom": "1px solid red",
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "space-between",
+            "paddingBottom": 10.714285714285714,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 10.714285714285714,
+            "width": 710,
+          },
+        ]
+      }
+    >
+      <Text
+        lines={1}
+        style={
+          Array [
+            Object {
+              "color": "#ffffff",
+              "fontFamily": "Poppins-Regular",
+              "fontSize": 60,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        R$ 0,00
+      </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "justifyContent": "center",
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 28,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          clear
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#464E5F10",
+            "borderRadius": 2.5,
+            "height": 5,
+            "marginBottom": 10,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 10,
+            "width": 100,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "wrap",
+            "justifyContent": "flex-start",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          1
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          2
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          3
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "wrap",
+            "justifyContent": "flex-start",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          4
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          5
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          6
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "wrap",
+            "justifyContent": "flex-start",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          7
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          8
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          9
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "flexWrap": "wrap",
+            "justifyContent": "flex-start",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          ,
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2B303A",
+            "borderRadius": 30,
+            "height": 60,
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "opacity": 1,
+            "width": 60,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "400",
+              },
+            ]
+          }
+        >
+          0
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 30,
+              "height": 60,
+              "justifyContent": "center",
+              "marginBottom": 10.714285714285714,
+              "marginLeft": 10.714285714285714,
+              "marginRight": 10.714285714285714,
+              "marginTop": 10.714285714285714,
+              "width": 60,
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          nativeID="animatedComponent"
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "justifyContent": "center",
+              "opacity": 1,
+            }
+          }
+        >
+          <Icon
+            color="#ffffff"
+            name="backspace"
+            size={24}
+            style={
+              Array [
+                Object {
+                  "marginLeft": 21.428571428571427,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 0,
+            "marginTop": 64.28571428571428,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#37AF78",
+            "borderRadius": 42.857142857142854,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "minWidth": 120,
+            "opacity": 1,
+            "paddingBottom": 21.428571428571427,
+            "paddingLeft": 42.857142857142854,
+            "paddingRight": 42.857142857142854,
+            "paddingTop": 21.428571428571427,
+          }
+        }
+      >
+        <Text
+          inverse={true}
+          style={
+            Array [
+              Object {
+                "color": "#37AF78",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          cancel
+        </Text>
+      </View>
+      <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#37AF78",
+            "borderColor": "transparent",
+            "borderRadius": 42.857142857142854,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 10.714285714285714,
+            "marginLeft": 10.714285714285714,
+            "marginRight": 10.714285714285714,
+            "marginTop": 10.714285714285714,
+            "minWidth": 120,
+            "opacity": 1,
+            "paddingBottom": 21.428571428571427,
+            "paddingLeft": 42.857142857142854,
+            "paddingRight": 42.857142857142854,
+            "paddingTop": 21.428571428571427,
+          }
+        }
+      >
+        <Text
+          inverse={false}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "Poppins-Regular",
+                "fontSize": 36,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          done
+        </Text>
+      </View>
+    </View>
+  </View>,
+]
+`;

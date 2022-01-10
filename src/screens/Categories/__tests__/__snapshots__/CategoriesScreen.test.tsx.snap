@@ -1,0 +1,2972 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoriesScreen Test match snapshot CategoriesScreen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#2B303A",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ListHeaderComponent={
+      <HeaderCategories
+        onChangeText={[Function]}
+        query=""
+      />
+    }
+    data={
+      Array [
+        Object {
+          "description": "Pessoal",
+          "icon": "personal",
+          "id": 1,
+        },
+        Object {
+          "description": "Pagamentos",
+          "icon": "payments",
+          "id": 2,
+        },
+        Object {
+          "description": "Carro",
+          "icon": "car",
+          "id": 3,
+        },
+        Object {
+          "description": "Roupas",
+          "icon": "clothing",
+          "id": 4,
+        },
+        Object {
+          "description": "Salário",
+          "icon": "salary",
+          "id": 5,
+        },
+        Object {
+          "description": "Bônus",
+          "icon": "bonus",
+          "id": 6,
+        },
+        Object {
+          "description": "Educação",
+          "icon": "education",
+          "id": 7,
+        },
+        Object {
+          "description": "Eletrônicos",
+          "icon": "electronics",
+          "id": 8,
+        },
+        Object {
+          "description": "Saúde",
+          "icon": "health",
+          "id": 9,
+        },
+        Object {
+          "description": "Casa",
+          "icon": "home",
+          "id": 10,
+        },
+        Object {
+          "description": "Lazer",
+          "icon": "leisure",
+          "id": 11,
+        },
+        Object {
+          "description": "Outros",
+          "icon": "others",
+          "id": 12,
+        },
+        Object {
+          "description": "Restaurante",
+          "icon": "restaurant",
+          "id": 13,
+        },
+        Object {
+          "description": "Serviços",
+          "icon": "services",
+          "id": 14,
+        },
+        Object {
+          "description": "Mercado",
+          "icon": "supermarket",
+          "id": 15,
+        },
+        Object {
+          "description": "Transporte",
+          "icon": "transportation",
+          "id": 16,
+        },
+        Object {
+          "description": "Empréstimos",
+          "icon": "loans",
+          "id": 18,
+        },
+        Object {
+          "description": "Entretenimento",
+          "icon": "entertainment",
+          "id": 19,
+        },
+        Object {
+          "description": "Hobbies",
+          "icon": "hobbies",
+          "id": 20,
+        },
+        Object {
+          "description": "Alimentação",
+          "icon": "food",
+          "id": 21,
+        },
+        Object {
+          "description": "Família",
+          "icon": "family",
+          "id": 22,
+        },
+        Object {
+          "description": "Presentes",
+          "icon": "gift",
+          "id": 23,
+        },
+        Object {
+          "description": "Doações",
+          "icon": "donations",
+          "id": 24,
+        },
+        Object {
+          "description": "Investimentos",
+          "icon": "investiments",
+          "id": 25,
+        },
+        Object {
+          "description": "Shopping",
+          "icon": "shopping",
+          "id": 26,
+        },
+        Object {
+          "description": "Pets",
+          "icon": "pets",
+          "id": 27,
+        },
+        Object {
+          "description": "Impostos e taxas",
+          "icon": "taxes",
+          "id": 28,
+        },
+        Object {
+          "description": "Trabalho",
+          "icon": "work",
+          "id": 29,
+        },
+        Object {
+          "description": "Crianças",
+          "icon": "kids",
+          "id": 30,
+        },
+        Object {
+          "description": "Utilities",
+          "icon": "utilities",
+          "id": 32,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Array [
+        Object {},
+      ]
+    }
+    testID="category-list"
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#181D26",
+                "flexDirection": "row",
+                "height": 60,
+                "marginBottom": 21.428571428571427,
+                "paddingBottom": 0,
+                "paddingLeft": 42.857142857142854,
+                "paddingRight": 42.857142857142854,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff50",
+                    "fontSize": 32,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Design Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              󰬦
+            </Text>
+          </View>
+          <TextInput
+            autoCapitalize="none"
+            autoCorrect={false}
+            clearButtonMode="always"
+            onChangeText={[Function]}
+            placeholder="searchbar-placeholder"
+            placeholderTextColor="#ffffff50"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#2B303A80",
+                  "borderRadius": 10.714285714285714,
+                  "color": "#ffffff",
+                  "flexBasis": 0,
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                  "marginLeft": 21.428571428571427,
+                  "paddingBottom": 21.428571428571427,
+                  "paddingLeft": 21.428571428571427,
+                  "paddingRight": 21.428571428571427,
+                  "paddingTop": 21.428571428571427,
+                },
+              ]
+            }
+            value=""
+          />
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint personal"
+            accessibilityLabel="accessibility-button-label personal"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#2E82B0"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#2E82B0",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              personal
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint payments"
+            accessibilityLabel="accessibility-button-label payments"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#6FCA44"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#6FCA44",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              payments
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint car"
+            accessibilityLabel="accessibility-button-label car"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#693790"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#693790",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              car
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint clothing"
+            accessibilityLabel="accessibility-button-label clothing"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#E522AF"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#E522AF",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              clothing
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint salary"
+            accessibilityLabel="accessibility-button-label salary"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#237A40"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#237A40",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              salary
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint bonus"
+            accessibilityLabel="accessibility-button-label bonus"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#CD7C1C"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#CD7C1C",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              bonus
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint education"
+            accessibilityLabel="accessibility-button-label education"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#3377B6"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#3377B6",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              education
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint electronics"
+            accessibilityLabel="accessibility-button-label electronics"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#E87522"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#E87522",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              electronics
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint health"
+            accessibilityLabel="accessibility-button-label health"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#309317"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#309317",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              health
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint home"
+            accessibilityLabel="accessibility-button-label home"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#2C6A6D"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#2C6A6D",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              home
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint leisure"
+            accessibilityLabel="accessibility-button-label leisure"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#2747B8"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#2747B8",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              leisure
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint others"
+            accessibilityLabel="accessibility-button-label others"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#6F7D9B"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#6F7D9B",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              others
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint restaurant"
+            accessibilityLabel="accessibility-button-label restaurant"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#A3252C"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#A3252C",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              restaurant
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint services"
+            accessibilityLabel="accessibility-button-label services"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#283C64"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#283C64",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              services
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint supermarket"
+            accessibilityLabel="accessibility-button-label supermarket"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#AD29AF"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#AD29AF",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              supermarket
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint transportation"
+            accessibilityLabel="accessibility-button-label transportation"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#314372"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#314372",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              transportation
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint loans"
+            accessibilityLabel="accessibility-button-label loans"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#309317"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#309317",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              loans
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint entertainment"
+            accessibilityLabel="accessibility-button-label entertainment"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#18A180"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#18A180",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              entertainment
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint hobbies"
+            accessibilityLabel="accessibility-button-label hobbies"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#0588A5"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#0588A5",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              hobbies
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint food"
+            accessibilityLabel="accessibility-button-label food"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#9A2121"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#9A2121",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              food
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint family"
+            accessibilityLabel="accessibility-button-label family"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#A411BC"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#A411BC",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              family
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint gift"
+            accessibilityLabel="accessibility-button-label gift"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#DA620B"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#DA620B",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              gift
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint donations"
+            accessibilityLabel="accessibility-button-label donations"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#309317"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#309317",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              donations
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint investiments"
+            accessibilityLabel="accessibility-button-label investiments"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#60781C"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#60781C",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              investiments
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint shopping"
+            accessibilityLabel="accessibility-button-label shopping"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#591C39"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#591C39",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              shopping
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint pets"
+            accessibilityLabel="accessibility-button-label pets"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#845C36"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#845C36",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              pets
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint taxes"
+            accessibilityLabel="accessibility-button-label taxes"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#194F11"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#194F11",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              taxes
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "space-between",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint work"
+            accessibilityLabel="accessibility-button-label work"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#3B4876"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#3B4876",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              work
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint kids"
+            accessibilityLabel="accessibility-button-label kids"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#A320A6"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#A320A6",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              kids
+            </Text>
+          </View>
+          <View
+            accessibilityHint="accessibility-button-hint utilities"
+            accessibilityLabel="accessibility-button-label utilities"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "marginBottom": 21.428571428571427,
+                "marginLeft": 10.714285714285714,
+                "marginRight": 10.714285714285714,
+                "marginTop": 21.428571428571427,
+                "opacity": 1,
+              }
+            }
+            testID="category-item-button"
+          >
+            <View
+              color="#6F7D9B"
+              large={true}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#6F7D9B",
+                    "borderRadius": 25,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "width": 50,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#ffffff",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                    "paddingTop": 10.714285714285714,
+                  },
+                ]
+              }
+            >
+              utilities
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

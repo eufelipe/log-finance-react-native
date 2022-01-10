@@ -1,0 +1,152 @@
+{
+  "global": {
+    "remove-label": "Remove",
+    "accessibility-remove-label": "Remove entry",
+    "accessibility-remove-hint": "Tap here to delete this transaction",
+    "done": "Done",
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "yes": "Yes",
+    "no": "No",
+    "searchbar-placeholder": "pesquise um item"
+  },
+  "routes": {
+    "title-settings": "Settings"
+  },
+
+  "tabs": {
+    "home-label": "Home",
+    "home-accessibility-label": "Menu Home Screen - Tap here go to app's first screen",
+    "add-label": "Add Entry",
+    "add-accessibility-label": "Menu Add Entry - Tap here to open the earn or expense registration screen",
+    "reports-label": "Reports",
+    "reports-accessibility-label": "Menu Reports - Tap here to open the financial report screen",
+
+    "historic-label": "Historic",
+    "historic-accessibility-label": "Menu Historic - Tap here to open historic transactions screen",
+
+    "budget-label": "Budget",
+    "budget-accessibility-label": "Menu Budget - Tap here to open the Budget screen"
+  },
+
+  "entry": {
+    "accessibility-button": "Entry details",
+    "accessibility-button-hint": "Tap here to open entry details"
+  },
+
+  "add": {
+    "expense": "Expense",
+    "earning": "Earning",
+    "description": "Description",
+    "description-placeholder": "add a description",
+    "category": "Category",
+    "date": "Date",
+    "save": "Save",
+    "today": "Today",
+    "at": "at",
+    "day": "Day",
+    "of": "of",
+    "yes": "Yes",
+    "no": "No",
+    "confirm-delete-title": "Are your sure?",
+    "confirm-delete-description": "Are you sure you want to remove this transaction",
+    "remove": "Remove",
+    "category-default": "Others",
+    "accessibility-button-type-hint": "Tap to change release type to",
+    "accessibility-button-backspace": "Backspace",
+    "accessibility-button-backspace-hint": "Tap to clear the entered value",
+    "accessibility-button-category": "add category",
+    "accessibility-button-category-hint": "Tap to add category",
+    "accessibility-button-submit": "Save",
+    "accessibility-button-submit-hint": "Tap to save data"
+  },
+
+  "home": {
+    "balance": "Balance",
+    "today": "Today",
+    "no-entries": "You have no transaction registered",
+    "message-add-new": "Tap (+) to add a new transaction"
+  },
+
+  "categories": {
+    "category": "Category",
+    "category-default": "Choose a category",
+
+    "searchbar-placeholder": "Search Category",
+    "accessibility-button-label": "Category",
+    "accessibility-button-hint": "Tap here to choose a category:",
+
+    "personal": "Personal",
+    "payments": "Payments",
+    "car": "Car",
+    "clothing": "Clothing",
+    "salary": "Salary",
+    "bonus": "Bonus",
+    "education": "Education",
+    "electronics": "Electronics",
+    "health": "Health",
+    "home": "Home",
+    "leisure": "Leisure",
+    "others": "Others",
+    "restaurant": "Restaurant",
+    "services": "Services",
+    "supermarket": "Supermarket",
+    "transportation": "Transportation",
+    "debits": "Debts",
+    "loans": "Loans",
+    "entertainment": "Entertainment",
+    "hobbies": "Hobbies",
+    "food": "Food",
+    "family": "Family",
+    "gift": "Gifts",
+    "donations": "Donations",
+    "investiments": "Investiments",
+    "shopping": "Shopping",
+    "pets": "Pets",
+    "taxes": "Taxes",
+    "work": "Work",
+    "kids": "Kids",
+    "amusement": "Amusement",
+    "utilities": "Utilities"
+  },
+
+  "settings": {
+    "title-settings": "Settings",
+    "language": "Language",
+    "currency": "Currency",
+    "pt-BR": "Portuguese",
+    "en-US": "English",
+    "active": "Selected"
+  },
+
+  "reports": {
+    "title": "Reports",
+    "expense": "Expense",
+    "earning": "Earning",
+    "today": "Today",
+    "week": "Week",
+    "15-days": "15 days",
+    "month": "this month",
+    "quarter": "3 month",
+    "semester": "6 month",
+    "year": "Year"
+  },
+
+  "currencies": {
+    "title": "Currencies",
+    "active": "Selected"
+  },
+
+  "historic": {
+    "title": "Historic",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorow": "Tomorow",
+    "no-entries": "You have no transactions recorded this month.",
+    "message-add-new": "Tap (+) to add a new transaction"
+  },
+
+  "budget": {
+    "title": "Targets"
+  }
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "id": 12,
+    "description": "Outros",
+    "key": "others",
+    "color": "#6F7D9B"
+  },
+  {
+    "id": 1,
+    "description": "Pessoal",
+    "key": "personal",
+    "color": "#2E82B0"
+  },
+  {
+    "id": 2,
+    "description": "Pagamentos",
+    "key": "payments",
+    "color": "#6FCA44"
+  },
+  {
+    "id": 3,
+    "description": "Carro",
+    "key": "car",
+    "color": "#693790"
+  },
+  {
+    "id": 4,
+    "description": "Roupas",
+    "key": "clothing",
+    "color": "#E522AF"
+  },
+
+  {
+    "id": 5,
+    "description": "Salário",
+    "key": "salary",
+    "color": "#237A40"
+  },
+  {
+    "id": 6,
+    "description": "Bônus",
+    "key": "bonus",
+    "color": "#CD7C1C"
+  },
+
+  {
+    "id": 7,
+    "description": "Educação",
+    "key": "education",
+    "color": "#3377B6"
+  },
+  {
+    "id": 8,
+    "description": "Eletrônicos",
+    "key": "electronics",
+    "color": "#E87522"
+  },
+
+  {
+    "id": 9,
+    "description": "Saúde",
+    "key": "health",
+    "color": "#309317"
+  },
+  {
+    "id": 10,
+    "description": "Casa",
+    "key": "home",
+    "color": "#2C6A6D"
+  },
+  {
+    "id": 11,
+    "description": "Lazer",
+    "key": "leisure",
+    "color": "#2747B8"
+  },
+  {
+    "id": 13,
+    "description": "Restaurante",
+    "key": "restaurant",
+    "color": "#A3252C"
+  },
+  {
+    "id": 14,
+    "description": "Serviços",
+    "key": "services",
+    "color": "#283C64"
+  },
+  {
+    "id": 15,
+    "description": "Mercado",
+    "key": "supermarket",
+    "color": "#AD29AF"
+  },
+  {
+    "id": 16,
+    "description": "Transporte",
+    "key": "transportation",
+    "color": "#314372"
+  },
+  {
+    "id": 18,
+    "description": "Empréstimos",
+    "key": "loans",
+    "color": "#0F680D"
+  },
+  {
+    "id": 19,
+    "description": "Entretenimento",
+    "key": "entertainment",
+    "color": "#18A180"
+  },
+  {
+    "id": 20,
+    "description": "Hobbies",
+    "key": "hobbies",
+    "color": "#0588A5"
+  },
+  {
+    "id": 21,
+    "description": "Alimentação",
+    "key": "food",
+    "color": "#9A2121"
+  },
+  {
+    "id": 22,
+    "description": "Família",
+    "key": "family",
+    "color": "#A411BC"
+  },
+
+  {
+    "id": 23,
+    "description": "Presentes",
+    "key": "gift",
+    "color": "#DA620B"
+  },
+
+  {
+    "id": 24,
+    "description": "Doações",
+    "key": "donations",
+    "color": "#309317"
+  },
+
+  {
+    "id": 25,
+    "description": "Investimentos",
+    "key": "investiments",
+    "color": "#60781C"
+  },
+  {
+    "id": 26,
+    "description": "Shopping",
+    "key": "shopping",
+    "color": "#591C39"
+  },
+  {
+    "id": 27,
+    "description": "Pets",
+    "key": "pets",
+    "color": "#845C36"
+  },
+
+  {
+    "id": 28,
+    "description": "Impostos e taxas",
+    "key": "taxes",
+    "color": "#194F11"
+  },
+  {
+    "id": 29,
+    "description": "Trabalho",
+    "key": "work",
+    "color": "#3B4876"
+  },
+  {
+    "id": 30,
+    "description": "Crianças",
+    "key": "kids",
+    "color": "#CD471D"
+  },
+  {
+    "id": 32,
+    "description": "Utilities",
+    "key": "utilities",
+    "color": "#6F7D9B"
+  }
+]

@@ -1,0 +1,826 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntriesList Test match snapshot EntriesList 1`] = `
+<RCTScrollView
+  data={
+    Array [
+      Object {
+        "category": Object {
+          "description": "Restaurante",
+          "icon": "money",
+          "id": 1,
+        },
+        "date": 2021-11-18T13:33:21.093Z,
+        "description": "Salário",
+        "id": 1,
+        "type": "earning",
+        "value": 99.45,
+      },
+      Object {
+        "category": Object {
+          "description": "Restaurante",
+          "icon": "money",
+          "id": 1,
+        },
+        "date": 2021-11-18T13:33:21.093Z,
+        "description": "Pizza",
+        "id": 2,
+        "type": "earning",
+        "value": 99.45,
+      },
+      Object {
+        "category": Object {
+          "description": "Restaurante",
+          "icon": "money",
+          "id": 1,
+        },
+        "date": 2021-11-18T13:33:21.093Z,
+        "description": "Hamburguer",
+        "id": 3,
+        "type": "earning",
+        "value": 99.45,
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Array [
+      Object {},
+    ]
+  }
+  testID="entries-list"
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        collapsable={false}
+        forwardedRef={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onLayout={[Function]}
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          nativeID="animatedComponent"
+          style={
+            Object {
+              "bottom": 0,
+              "flexDirection": "row-reverse",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "transform": Array [
+                Object {
+                  "translateX": -10000,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessibilityHint="accessibility-remove-hint"
+            accessibilityLabel="accessibility-remove-label"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#E96245",
+                "borderRadius": 21.428571428571427,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "marginBottom": 10.714285714285714,
+                "marginLeft": 0,
+                "marginRight": 21.428571428571427,
+                "marginTop": 10.714285714285714,
+                "opacity": 1,
+                "paddingBottom": 0,
+                "paddingLeft": 42.857142857142854,
+                "paddingRight": 42.857142857142854,
+                "paddingTop": 0,
+              }
+            }
+            testID="remove-item-button"
+          >
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                  },
+                ]
+              }
+            >
+              remove-label
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+          />
+        </View>
+        <View
+          collapsable={false}
+          forwardedRef={[Function]}
+          onGestureHandlerEvent={[Function]}
+          onGestureHandlerStateChange={[Function]}
+          pointerEvents="auto"
+          style={
+            Object {
+              "transform": Array [
+                Object {
+                  "translateX": -0,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint"
+            accessibilityLabel="accessibility-button"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 21.428571428571427,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "marginBottom": 10.714285714285714,
+                "marginLeft": 42.857142857142854,
+                "marginRight": 42.857142857142854,
+                "marginTop": 10.714285714285714,
+                "opacity": 1,
+                "paddingBottom": 42.857142857142854,
+                "paddingLeft": 21.428571428571427,
+                "paddingRight": 21.428571428571427,
+                "paddingTop": 42.857142857142854,
+              }
+            }
+            testID="entry-item-button"
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "marginRight": 21.428571428571427,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#464E5F",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#808080",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 36,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                Salário
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#808080",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 28,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                Restaurante
+              </Text>
+            </View>
+            <Text
+              isExpense={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#50806A",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              R$ 99,45
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        collapsable={false}
+        forwardedRef={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onLayout={[Function]}
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          nativeID="animatedComponent"
+          style={
+            Object {
+              "bottom": 0,
+              "flexDirection": "row-reverse",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "transform": Array [
+                Object {
+                  "translateX": -10000,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessibilityHint="accessibility-remove-hint"
+            accessibilityLabel="accessibility-remove-label"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#E96245",
+                "borderRadius": 21.428571428571427,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "marginBottom": 10.714285714285714,
+                "marginLeft": 0,
+                "marginRight": 21.428571428571427,
+                "marginTop": 10.714285714285714,
+                "opacity": 1,
+                "paddingBottom": 0,
+                "paddingLeft": 42.857142857142854,
+                "paddingRight": 42.857142857142854,
+                "paddingTop": 0,
+              }
+            }
+            testID="remove-item-button"
+          >
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                  },
+                ]
+              }
+            >
+              remove-label
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+          />
+        </View>
+        <View
+          collapsable={false}
+          forwardedRef={[Function]}
+          onGestureHandlerEvent={[Function]}
+          onGestureHandlerStateChange={[Function]}
+          pointerEvents="auto"
+          style={
+            Object {
+              "transform": Array [
+                Object {
+                  "translateX": -0,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint"
+            accessibilityLabel="accessibility-button"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 21.428571428571427,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "marginBottom": 10.714285714285714,
+                "marginLeft": 42.857142857142854,
+                "marginRight": 42.857142857142854,
+                "marginTop": 10.714285714285714,
+                "opacity": 1,
+                "paddingBottom": 42.857142857142854,
+                "paddingLeft": 21.428571428571427,
+                "paddingRight": 21.428571428571427,
+                "paddingTop": 42.857142857142854,
+              }
+            }
+            testID="entry-item-button"
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "marginRight": 21.428571428571427,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#464E5F",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#808080",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 36,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                Pizza
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#808080",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 28,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                Restaurante
+              </Text>
+            </View>
+            <Text
+              isExpense={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#50806A",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              R$ 99,45
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        collapsable={false}
+        forwardedRef={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onLayout={[Function]}
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          nativeID="animatedComponent"
+          style={
+            Object {
+              "bottom": 0,
+              "flexDirection": "row-reverse",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "transform": Array [
+                Object {
+                  "translateX": -10000,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessibilityHint="accessibility-remove-hint"
+            accessibilityLabel="accessibility-remove-label"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#E96245",
+                "borderRadius": 21.428571428571427,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "marginBottom": 10.714285714285714,
+                "marginLeft": 0,
+                "marginRight": 21.428571428571427,
+                "marginTop": 10.714285714285714,
+                "opacity": 1,
+                "paddingBottom": 0,
+                "paddingLeft": 42.857142857142854,
+                "paddingRight": 42.857142857142854,
+                "paddingTop": 0,
+              }
+            }
+            testID="remove-item-button"
+          >
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 24,
+                  },
+                  Array [
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "Material Icons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "400",
+                  },
+                ]
+              }
+            >
+              remove-label
+            </Text>
+          </View>
+          <View
+            onLayout={[Function]}
+          />
+        </View>
+        <View
+          collapsable={false}
+          forwardedRef={[Function]}
+          onGestureHandlerEvent={[Function]}
+          onGestureHandlerStateChange={[Function]}
+          pointerEvents="auto"
+          style={
+            Object {
+              "transform": Array [
+                Object {
+                  "translateX": -0,
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessibilityHint="accessibility-button-hint"
+            accessibilityLabel="accessibility-button"
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            nativeID="animatedComponent"
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#ffffff",
+                "borderRadius": 21.428571428571427,
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "marginBottom": 10.714285714285714,
+                "marginLeft": 42.857142857142854,
+                "marginRight": 42.857142857142854,
+                "marginTop": 10.714285714285714,
+                "opacity": 1,
+                "paddingBottom": 42.857142857142854,
+                "paddingLeft": 21.428571428571427,
+                "paddingRight": 21.428571428571427,
+                "paddingTop": 42.857142857142854,
+              }
+            }
+            testID="entry-item-button"
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "marginRight": 21.428571428571427,
+                  },
+                ]
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#464E5F",
+                      "fontSize": 24,
+                    },
+                    Array [
+                      Object {},
+                    ],
+                    Object {
+                      "fontFamily": "Material Icons",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "flexBasis": 0,
+                    "flexGrow": 1,
+                    "flexShrink": 1,
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#808080",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 36,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                Hamburguer
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#808080",
+                      "fontFamily": "Poppins-Regular",
+                      "fontSize": 28,
+                      "fontWeight": "400",
+                    },
+                  ]
+                }
+              >
+                Restaurante
+              </Text>
+            </View>
+            <Text
+              isExpense={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#50806A",
+                    "fontFamily": "Poppins-Regular",
+                    "fontSize": 28,
+                    "fontWeight": "700",
+                  },
+                ]
+              }
+            >
+              R$ 99,45
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
