@@ -3,10 +3,10 @@ import {getBottomSpace} from 'react-native-iphone-x-helper';
 
 import {Text, TouchableOpacity} from 'styles/layout';
 import shadow from 'styles/shadow';
-import {width} from 'styles/mixins';
+import {isIos, width} from 'styles/mixins';
 
-const TAB_BAR_HEIGHT_WITH_TITLE = 60 + getBottomSpace();
-const TAB_BAR_HEIGHT_WITHOUT_TITLE = 40 + getBottomSpace();
+const TAB_BAR_HEIGHT_WITH_TITLE = (isIos ? 40 : 80) + getBottomSpace();
+const TAB_BAR_HEIGHT_WITHOUT_TITLE = (isIos ? 60 : 100) + getBottomSpace();
 
 export const Button = styled(TouchableOpacity).attrs(
   ({disableActiveOpacity = false}: {disableActiveOpacity: boolean}) => ({

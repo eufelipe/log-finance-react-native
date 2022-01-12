@@ -2,7 +2,6 @@ import React, {useCallback, useState} from 'react';
 import {useFocusEffect} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 import {startOfMonth, endOfMonth, format, addMonths} from 'date-fns';
-import {Subscription} from 'rxjs';
 
 import {Entry} from 'models';
 import {EntryRepository} from 'repositories';
@@ -23,9 +22,7 @@ import {
   Loader,
 } from './styles';
 import {orderBy} from 'lodash';
-import ListEmpty from './components/ListEmpty';
-
-let entriesSubscription = new Subscription();
+import ListEmpty from './components/ListEmpty'; 
 
 export interface HistoricSection {
   title: string;
@@ -69,7 +66,8 @@ const HistoricScreen = (): JSX.Element => {
     const start = startOfMonth(date);
     const end = endOfMonth(date);
     setLoading(true);
-    entriesSubscription = EntryRepository.getEntriesByPeriodObserve(
+
+  EntryRepository.getEntriesByPeriodObserve(
       start,
       end,
     ).subscribe({
@@ -77,10 +75,15 @@ const HistoricScreen = (): JSX.Element => {
         setLoading(false);
         const sectionItems = parseEntriesForSectionList(items);
         const ordered = orderBy(sectionItems, ['title'], ['desc']);
-
+  
         setEmpty(!ordered.length);
         setHistoric(ordered);
       },
+      complete: () => { 
+        setLoading(false);
+        setEmpty(true)
+      }
+     
     });
   }, [date]);
 
@@ -98,9 +101,7 @@ const HistoricScreen = (): JSX.Element => {
 
   useFocusEffect(
     useCallback(() => {
-      loadData();
-
-      return entriesSubscription.unsubscribe();
+      loadData(); 
     }, [loadData]),
   );
 
@@ -126,7 +127,7 @@ const HistoricScreen = (): JSX.Element => {
 
       {empty && <ListEmpty />}
 
-      {loading && <Loader />}
+      {!!loading && <Loader />}
       <HistoricList historic={historic} />
     </Container>
   );
