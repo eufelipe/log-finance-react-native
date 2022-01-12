@@ -21,7 +21,14 @@
     "add-label": "Adicionar Novo",
     "add-accessibility-label": "Toque aqui para ir abrir a tela de cadastro de ganho ou despesa",
     "reports-label": "Relatórios",
-    "reports-accessibility-label": "Toque aqui para ir abrir a tela de relatorio financeiro"
+    "reports-accessibility-label": "Toque aqui para ir abrir a tela de relatorio financeiro",
+
+    "historic-label": "Histórico",
+    "historic-accessibility-label": "Menu Histórico - Toque aqui para abrir o histórico de transações",
+
+    "budget-label": "Orçamento",
+    "budget-accessibility-label": "Menu Orçamento - Toque aqui para abrir a tela de orçamento"
+
   },
   "entry": {
     "accessibility-button": "Detalhes do lançamento",
