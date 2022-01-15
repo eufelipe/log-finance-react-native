@@ -1,5 +1,11 @@
 
-<h1 align="center">💰 Log Finance</h1>
+
+
+<p align="center">
+  <img width="50" height="50" alt="Log Finance" src="https://res.cloudinary.com/eufelipe/image/upload/v1642222955/play_store_512_zr4qam.png">
+</p>
+
+<h1 align="center">Log Finance</h1>
 
 
 > 🚧 projeto em desenvolvimento e constante evolução 🚧
@@ -70,6 +76,16 @@ $ react-native run-ios
 # Run the app (Android)
 $ react-native run-android
 ```
+
+
+## ✅ Próximos updates
+
+- Incluir uma Splash screen;
+- Melhorar a acessibilidade;
+- Melhorar e aumentar a cobertura de testes;
+- Mostrar a versão e sobre o autor; 
+- Melhorar as consultas;
+- sync database com WatermelonDB e Firebase;
 
 ## Icones e Lotties (créditos)
 

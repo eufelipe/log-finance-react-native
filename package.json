@@ -5,7 +5,7 @@
     "email": "contato@eufelipe.com",
     "url": "http://eufelipe.com"
   },
-  "version": "0.0.1",
+  "version": "1.1.0-alpha",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
