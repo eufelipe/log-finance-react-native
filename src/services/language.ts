@@ -1,8 +1,7 @@
 import {NativeModules} from 'react-native';
 
 import i18next, {LanguageDetectorAsyncModule} from 'i18next';
-import storage from './storage';
-import {isAndroid} from 'styles/mixins';
+import storage from './storage'; 
 
 import {ptBR, enUS} from 'date-fns/locale';
 
@@ -21,6 +20,24 @@ export const resources = {
 
 export const DEFAULT_LANGUAGE = LANG_PT_BR;
 
+const getSystemLocale = (): string => {
+  let locale = undefined;
+  if (
+    NativeModules.SettingsManager &&
+    NativeModules.SettingsManager.settings &&
+    NativeModules.SettingsManager.settings.AppleLanguages
+  ) {
+    locale = NativeModules.SettingsManager.settings.AppleLanguages[0];
+  } else if (NativeModules.I18nManager) {
+    locale = NativeModules.I18nManager.localeIdentifier;
+  }
+
+  if (typeof locale === 'undefined') {
+    return DEFAULT_LANGUAGE;
+  }
+  return locale.replace('_', '-');
+};
+
 export const languageDetector: LanguageDetectorAsyncModule = {
   type: 'languageDetector',
   async: true,
@@ -32,26 +49,7 @@ export const languageDetector: LanguageDetectorAsyncModule = {
       return callback(storageLanguage);
     }
 
-    let deviceLanguage = null;
-    if (isAndroid) {
-      deviceLanguage = `${NativeModules.I18Manager.localeIdentifier}`;
-    } else {
-      const currentLocale = NativeModules.SettingsManager.settings.AppleLocale;
-
-      // fix iOS 13
-      const currentLocales =
-        NativeModules.SettingsManager.settings.AppleLanguages;
-
-      deviceLanguage = currentLocale ?? currentLocales[0];
-    }
-
-    deviceLanguage = deviceLanguage.replace('_', '-');
-
-    if (!deviceLanguage) {
-      deviceLanguage = DEFAULT_LANGUAGE;
-    }
-
-    return callback(deviceLanguage);
+    return callback(getSystemLocale());
   },
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   init: () => {},
