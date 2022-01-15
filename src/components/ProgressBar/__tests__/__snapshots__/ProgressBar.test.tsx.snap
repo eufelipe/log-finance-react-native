@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar Test match snapshot ProgressBar 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#181D26",
+        "borderRadius": 10.714285714285714,
+      },
+    ]
+  }
+>
+  <View
+    percent={10}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#37AF7850",
+          "borderRadius": 10.714285714285714,
+          "height": 10,
+          "width": "10%",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`ProgressBar Test match snapshot ProgressBar with color 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#181D26",
+        "borderRadius": 10.714285714285714,
+      },
+    ]
+  }
+>
+  <View
+    color="#0000000"
+    percent={45}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#37AF7850",
+          "borderRadius": 10.714285714285714,
+          "height": 10,
+          "width": "45%",
+        },
+      ]
+    }
+  />
+</View>
+`;

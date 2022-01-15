@@ -4,5 +4,6 @@
     "source.fixAll.eslint": true,
     "source.organizeImports": false
   },
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "editor.folding": false
 }
