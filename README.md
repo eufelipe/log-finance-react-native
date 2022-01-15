@@ -85,6 +85,9 @@ $ react-native run-android
 - [Drawkit charts and graphs ](https://lottiefiles.com/50628-drawkit-charts-and-graphs) by Yasmina Luria
 
 
+- [target-color-Red and blue](https://lottiefiles.com/70001-target-color-red-and-blue) by Eduardo Henrique Costa
+
+
 
  
 

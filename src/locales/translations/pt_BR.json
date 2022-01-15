@@ -148,6 +148,8 @@
   },
 
   "budget": {
-    "title": "Orçamento"
+    "title": "Orçamento",
+    "no-entries": "Nenhum orçamento registrado ainda",
+    "message-add-new": "Toque em (+) no topo e crie um orçamento de gastos por categoria para controlar melhor para onde vai seu dinheiro"
   }
 }
