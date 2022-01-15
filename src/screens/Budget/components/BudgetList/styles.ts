@@ -26,7 +26,7 @@ export const Card = styled.View<{color?: string}>`
   margin: ${({theme}) => theme.spacing.small}px
     ${({theme}) => theme.spacing.tall}px;
   padding: ${({theme}) => theme.spacing.great}px;
-  height: 100px;
+  height: 110px;
   border-radius: ${({theme}) => theme.spacing.great}px;
   justify-content: center;
 `;

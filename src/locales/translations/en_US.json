@@ -150,5 +150,10 @@
     "title": "Targets",
     "no-entries": "You have no targets recorded this month.",
     "message-add-new": "Tap (+) at the top and create a spending budget by category to better control where your money goes"
+  },
+  "add-budget": {
+    "title": "Add new target",
+    "description-placeholder": "add a description",
+    "save": "Save"
   }
 }

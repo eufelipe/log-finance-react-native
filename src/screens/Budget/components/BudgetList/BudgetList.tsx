@@ -14,7 +14,7 @@ interface BudgetListProps {
   budgets: Budget[];
 }
 
-const BudgetList = ({budgets}: BudgetListProps): JSX.Element => {
+const BudgetList = ({budgets = []}: BudgetListProps): JSX.Element => {
   const {removeBudget} = useBudgetContext();
 
   const listKeyExtractor = useCallback(item => item.id, []);
@@ -25,7 +25,7 @@ const BudgetList = ({budgets}: BudgetListProps): JSX.Element => {
 
   return (
     <Container>
-      {!!budgets && <ListEmpty />}
+      {!budgets.length && <ListEmpty />}
 
       <List
         testID="budget-list"

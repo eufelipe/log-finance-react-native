@@ -5,7 +5,7 @@ import {COLLECTIONS} from 'database';
 import {Entry} from 'models';
 import {IEntry} from 'interfaces';
 import {getDatabase} from 'services/database';
-import {endOfToday, endOfYesterday} from 'date-fns';
+import {endOfMonth, endOfToday, endOfYesterday, startOfMonth} from 'date-fns';
 
 export const getEntryCollection = (): Collection<Entry> =>
   getDatabase().collections.get<Entry>(COLLECTIONS.ENTRIES);
@@ -41,11 +41,25 @@ export const getEntriesByPeriod = (
 export const getEntriesByPeriodObserve = (
   start: Date,
   end: Date,
-): Observable<Entry[]> => 
-   getEntryCollection()
+): Observable<Entry[]> =>
+  getEntryCollection()
     .query(Q.where('date_at', Q.between(start.getTime(), end.getTime())))
     .observe();
 
+export const getEntriesByPeriodAndCategory = (
+  categoryId: string,
+): Promise<Entry[]> => {
+  const date = new Date();
+  const start = startOfMonth(date);
+  const end = endOfMonth(date);
+
+  return getEntryCollection()
+    .query(
+      Q.where('date_at', Q.between(start.getTime(), end.getTime())),
+      Q.and(Q.where('category_id', Q.eq(categoryId))),
+    )
+    .fetch();
+};
 
 const fill = (record: Entry, data: IEntry) => {
   const {description, type, value, category, dateAt} = data;
@@ -84,6 +98,7 @@ export default {
   getEntriesCount,
   getEntries,
   getEntriesByPeriod,
+  getEntriesByPeriodAndCategory,
   getEntriesByPeriodObserve,
   getTodayEntries,
   getBalance,
