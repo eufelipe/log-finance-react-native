@@ -28,7 +28,6 @@
 
     "budget-label": "Orçamento",
     "budget-accessibility-label": "Menu Orçamento - Toque aqui para abrir a tela de orçamento"
-
   },
   "entry": {
     "accessibility-button": "Detalhes do lançamento",
@@ -148,6 +147,13 @@
   },
 
   "budget": {
-    "title": "Orçamento"
+    "title": "Orçamento",
+    "no-entries": "Nenhum orçamento registrado ainda",
+    "message-add-new": "Toque em (+) no topo e crie um orçamento de gastos por categoria para controlar melhor para onde vai seu dinheiro"
+  },
+  "add-budget": {
+    "title": "Adicionar nova meta",
+    "description-placeholder": "Adicione uma descrição", 
+    "save": "Salvar"
   }
 }

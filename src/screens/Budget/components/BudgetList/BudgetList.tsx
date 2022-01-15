@@ -2,17 +2,19 @@ import React, {useCallback} from 'react';
 import withObservables from '@nozbe/with-observables';
 
 import {useBudgetContext} from 'contexts/BudgetContext';
-import BudgetItem from './BudgetItem';
 
-import {List} from './styles';
 import {Budget} from 'models';
-import BudgetRepository from 'repositories/BudgetRepository';
+import {BudgetRepository} from 'repositories';
+
+import BudgetItem from './BudgetItem';
+import ListEmpty from '../ListEmpty';
+import {Container, List} from './styles';
 
 interface BudgetListProps {
   budgets: Budget[];
 }
 
-const BudgetList = ({budgets}: BudgetListProps): JSX.Element => {
+const BudgetList = ({budgets = []}: BudgetListProps): JSX.Element => {
   const {removeBudget} = useBudgetContext();
 
   const listKeyExtractor = useCallback(item => item.id, []);
@@ -22,12 +24,16 @@ const BudgetList = ({budgets}: BudgetListProps): JSX.Element => {
   );
 
   return (
-    <List
-      testID="budget-list"
-      data={budgets}
-      renderItem={renderItem}
-      keyExtractor={listKeyExtractor}
-    />
+    <Container>
+      {!budgets.length && <ListEmpty />}
+
+      <List
+        testID="budget-list"
+        data={budgets}
+        renderItem={renderItem}
+        keyExtractor={listKeyExtractor}
+      />
+    </Container>
   );
 };
 

@@ -60,3 +60,7 @@ buck-out/
 /ios/Pods/
 
 android/gradle.properties
+
+android/app/release/app-release.apk
+
+android/app/release/output-metadata.json

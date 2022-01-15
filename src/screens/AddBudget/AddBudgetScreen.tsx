@@ -21,7 +21,7 @@ const AddBudgetScreen = (): JSX.Element => {
   const [value, setValue] = useState(0);
   const [category, setCategory] = useState<Category>();
   const [showKeyboard, setShowKeyboard] = useState(true);
-  const {t} = useTranslation('add');
+  const {t} = useTranslation('add-budget');
 
   const {saveBudget} = useBudgetContext();
 
@@ -45,7 +45,7 @@ const AddBudgetScreen = (): JSX.Element => {
   return (
     <>
       <Container>
-        <Toolbar title="add" />
+        <Toolbar title={t('title')} />
         <Content>
           <InputNumber
             value={value}

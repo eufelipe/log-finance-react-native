@@ -11,3 +11,4 @@ export {default as Row} from './Row';
 export {default as Toolbar} from './Toolbar';
 export {default as InputNumber} from './InputNumber';
 export {default as CategoryPick} from './CategoryPick';
+export {default as ProgressBar} from './ProgressBar';

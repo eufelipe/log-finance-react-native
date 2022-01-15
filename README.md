@@ -1,5 +1,11 @@
 
-<h1 align="center">💰 Log Finance</h1>
+
+
+<p align="center">
+  <img width="50" height="50" alt="Log Finance" src="https://res.cloudinary.com/eufelipe/image/upload/v1642222955/play_store_512_zr4qam.png">
+</p>
+
+<h1 align="center">Log Finance</h1>
 
 
 > 🚧 projeto em desenvolvimento e constante evolução 🚧
@@ -71,6 +77,16 @@ $ react-native run-ios
 $ react-native run-android
 ```
 
+
+## ✅ Próximos updates
+
+- Incluir uma Splash screen;
+- Melhorar a acessibilidade;
+- Melhorar e aumentar a cobertura de testes;
+- Mostrar a versão e sobre o autor; 
+- Melhorar as consultas;
+- sync database com WatermelonDB e Firebase;
+
 ## Icones e Lotties (créditos)
 
 - [MaterialIcons](https://www.google.com/design/icons/)  by Google, Inc. (v4.0.0, 1547 icons)
@@ -83,6 +99,9 @@ $ react-native run-android
 
 
 - [Drawkit charts and graphs ](https://lottiefiles.com/50628-drawkit-charts-and-graphs) by Yasmina Luria
+
+
+- [target-color-Red and blue](https://lottiefiles.com/70001-target-color-red-and-blue) by Eduardo Henrique Costa
 
 
 
